@@ -5,55 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "Free|HongKong|02 [Thin Node]", server: pro.tls.hongkongaz.dnsfree.top, port: 55091, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 免费|香港|04 永久免费机场, server: baidu.hongkong.dnsfree.top, port: 55093, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 免费|香港|05 永久免费机场, server: baidu.hongkong.dnsfree.top, port: 55094, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 免费|香港|06 永久免费机场, server: baidu.hongkong.dnsfree.top, port: 55095, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 免费|香港|02 永久免费机场, server: baidu.hongkong.dnsfree.top, port: 55091, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 免费|香港|03 永久免费机场, server: baidu.hongkong.dnsfree.top, port: 55092, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 台湾-tg频道:@ripaojiedian, server: cn1.iepl.starlink.st, port: 50200, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: 咪萌5.20 MB/s 晚高峰不可用 日本01|公益|×1.0, server: shcu.mimon.cc, port: 26133, type: trojan, password: 61642317-a73a-4b99-869c-2c2bcf3fd545, sni: shcu.mimon.cc, skip-cert-verify: true, udp: true}
+  - {name: "16.75 MB/s [Telelink]｜Hong Kong", server: 40.83.89.223, port: 443, type: trojan, password: b156aa92-8e05-47df-9d10-9b04c1b3cf4c, skip-cert-verify: true, udp: true}
+  - {name: QQ197 起点 17.92 MB/s香港 ➤ 05, server: hk05.startmy.cc, port: 80, type: vmess, uuid: 3243b86e-8914-3bd6-a7dd-4039c858a440, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: "18.62 MB/ [VM] HK | 免流02", server: hkml.fenglingcloud.com, port: 80, type: vmess, uuid: 4560dd54-c0c4-4d25-8486-4a92e71065c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hkml.fenglingcloud.com}, udp: true}
+  - {name: QQ197 起点 3.12 MB/s 日本 ➤ 01, server: jp01.startmy.cc, port: 80, type: vmess, uuid: 3243b86e-8914-3bd6-a7dd-4039c858a440, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: "3.57 MB/s [Telelink]｜Japan", server: 20.222.84.185, port: 443, type: trojan, password: b156aa92-8e05-47df-9d10-9b04c1b3cf4c, skip-cert-verify: true, udp: true}
+  - {name: QQ197 起点 3.12 MB/s 香港 ➤ 02, server: hk02.startmy.cc, port: 80, type: vmess, uuid: 3243b86e-8914-3bd6-a7dd-4039c858a440, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: "4.71 MB/s [Telelink]｜Singapore", server: 20.212.197.126, port: 443, type: trojan, password: b156aa92-8e05-47df-9d10-9b04c1b3cf4c, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Free|HongKong|02 [Thin Node]
-      - 免费|香港|04 永久免费机场
-      - 免费|香港|05 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - 免费|香港|03 永久免费机场
-      - 台湾-tg频道:@ripaojiedian
-      - 咪萌5.20 MB/s 晚高峰不可用 日本01|公益|×1.0
+      - 16.75 MB/s [Telelink]｜Hong Kong
+      - QQ197 起点 17.92 MB/s香港 ➤ 05
+      - 18.62 MB/ [VM] HK | 免流02
+      - QQ197 起点 3.12 MB/s 日本 ➤ 01
+      - 3.57 MB/s [Telelink]｜Japan
+      - QQ197 起点 3.12 MB/s 香港 ➤ 02
+      - 4.71 MB/s [Telelink]｜Singapore
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Free|HongKong|02 [Thin Node]
-      - 免费|香港|04 永久免费机场
-      - 免费|香港|05 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - 免费|香港|03 永久免费机场
-      - 台湾-tg频道:@ripaojiedian
-      - 咪萌5.20 MB/s 晚高峰不可用 日本01|公益|×1.0
+      - 16.75 MB/s [Telelink]｜Hong Kong
+      - QQ197 起点 17.92 MB/s香港 ➤ 05
+      - 18.62 MB/ [VM] HK | 免流02
+      - QQ197 起点 3.12 MB/s 日本 ➤ 01
+      - 3.57 MB/s [Telelink]｜Japan
+      - QQ197 起点 3.12 MB/s 香港 ➤ 02
+      - 4.71 MB/s [Telelink]｜Singapore
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Free|HongKong|02 [Thin Node]
-      - 免费|香港|04 永久免费机场
-      - 免费|香港|05 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - 免费|香港|03 永久免费机场
-      - 台湾-tg频道:@ripaojiedian
-      - 咪萌5.20 MB/s 晚高峰不可用 日本01|公益|×1.0
+      - 16.75 MB/s [Telelink]｜Hong Kong
+      - QQ197 起点 17.92 MB/s香港 ➤ 05
+      - 18.62 MB/ [VM] HK | 免流02
+      - QQ197 起点 3.12 MB/s 日本 ➤ 01
+      - 3.57 MB/s [Telelink]｜Japan
+      - QQ197 起点 3.12 MB/s 香港 ➤ 02
+      - 4.71 MB/s [Telelink]｜Singapore
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,65 +68,57 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Free|HongKong|02 [Thin Node]
-      - 免费|香港|04 永久免费机场
-      - 免费|香港|05 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - 免费|香港|03 永久免费机场
-      - 台湾-tg频道:@ripaojiedian
-      - 咪萌5.20 MB/s 晚高峰不可用 日本01|公益|×1.0
+      - 16.75 MB/s [Telelink]｜Hong Kong
+      - QQ197 起点 17.92 MB/s香港 ➤ 05
+      - 18.62 MB/ [VM] HK | 免流02
+      - QQ197 起点 3.12 MB/s 日本 ➤ 01
+      - 3.57 MB/s [Telelink]｜Japan
+      - QQ197 起点 3.12 MB/s 香港 ➤ 02
+      - 4.71 MB/s [Telelink]｜Singapore
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 免费|香港|04 永久免费机场
-      - 免费|香港|05 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - 免费|香港|03 永久免费机场
-      - 台湾-tg频道:@ripaojiedian
+      - QQ197 起点 17.92 MB/s香港 ➤ 05
+      - QQ197 起点 3.12 MB/s 香港 ➤ 02
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Free|HongKong|02 [Thin Node]
-      - 免费|香港|04 永久免费机场
-      - 免费|香港|05 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - 免费|香港|03 永久免费机场
-      - 台湾-tg频道:@ripaojiedian
-      - 咪萌5.20 MB/s 晚高峰不可用 日本01|公益|×1.0
+      - 16.75 MB/s [Telelink]｜Hong Kong
+      - QQ197 起点 17.92 MB/s香港 ➤ 05
+      - 18.62 MB/ [VM] HK | 免流02
+      - QQ197 起点 3.12 MB/s 日本 ➤ 01
+      - 3.57 MB/s [Telelink]｜Japan
+      - QQ197 起点 3.12 MB/s 香港 ➤ 02
+      - 4.71 MB/s [Telelink]｜Singapore
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Free|HongKong|02 [Thin Node]
-      - 免费|香港|04 永久免费机场
-      - 免费|香港|05 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - 免费|香港|03 永久免费机场
-      - 台湾-tg频道:@ripaojiedian
-      - 咪萌5.20 MB/s 晚高峰不可用 日本01|公益|×1.0
+      - 16.75 MB/s [Telelink]｜Hong Kong
+      - QQ197 起点 17.92 MB/s香港 ➤ 05
+      - 18.62 MB/ [VM] HK | 免流02
+      - QQ197 起点 3.12 MB/s 日本 ➤ 01
+      - 3.57 MB/s [Telelink]｜Japan
+      - QQ197 起点 3.12 MB/s 香港 ➤ 02
+      - 4.71 MB/s [Telelink]｜Singapore
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Free|HongKong|02 [Thin Node]
-      - 免费|香港|04 永久免费机场
-      - 免费|香港|05 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - 免费|香港|03 永久免费机场
-      - 台湾-tg频道:@ripaojiedian
-      - 咪萌5.20 MB/s 晚高峰不可用 日本01|公益|×1.0
+      - 16.75 MB/s [Telelink]｜Hong Kong
+      - QQ197 起点 17.92 MB/s香港 ➤ 05
+      - 18.62 MB/ [VM] HK | 免流02
+      - QQ197 起点 3.12 MB/s 日本 ➤ 01
+      - 3.57 MB/s [Telelink]｜Japan
+      - QQ197 起点 3.12 MB/s 香港 ➤ 02
+      - 4.71 MB/s [Telelink]｜Singapore
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -146,14 +134,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Free|HongKong|02 [Thin Node]
-      - 免费|香港|04 永久免费机场
-      - 免费|香港|05 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - 免费|香港|03 永久免费机场
-      - 台湾-tg频道:@ripaojiedian
-      - 咪萌5.20 MB/s 晚高峰不可用 日本01|公益|×1.0
+      - 16.75 MB/s [Telelink]｜Hong Kong
+      - QQ197 起点 17.92 MB/s香港 ➤ 05
+      - 18.62 MB/ [VM] HK | 免流02
+      - QQ197 起点 3.12 MB/s 日本 ➤ 01
+      - 3.57 MB/s [Telelink]｜Japan
+      - QQ197 起点 3.12 MB/s 香港 ➤ 02
+      - 4.71 MB/s [Telelink]｜Singapore
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
