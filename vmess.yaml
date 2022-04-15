@@ -1,103 +1,75 @@
-﻿port: 7890
+port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: AZ200HK, server: 20.187.116.183, port: 10010, type: vmess, uuid: 66111c6b-7141-496f-8d20-ff6fd9a0d4ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.187.116.183}, udp: true}
-  - {name: 免费|香港|09 永久免费机场, server: pro.tls.hongkongaz.dnsfree.top, port: 55093, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 免费|香港|13 永久免费机场, server: pro.tls.hongkongaz.dnsfree.top, port: 55097, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
   - {name: 免费|香港|11 永久免费机场, server: pro.tls.hongkongaz.dnsfree.top, port: 55095, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 免费|印度|03 加入@DnsFreePort或者全额抵扣券, server: 52.172.91.107, port: 12347, type: ss, cipher: chacha20-ietf-poly1305, password: f94ef179-dbd0-459a-b316-1e9431316db5, udp: true}
-  - {name: 免费|印度|02 https://t.me/DnsFreePort, server: 52.172.91.107, port: 12346, type: ss, cipher: chacha20-ietf-poly1305, password: f94ef179-dbd0-459a-b316-1e9431316db5, udp: true}
-  - {name: 免费|印度|04 永久免费机场, server: 52.172.91.107, port: 12348, type: ss, cipher: chacha20-ietf-poly1305, password: f94ef179-dbd0-459a-b316-1e9431316db5, udp: true}
-  - {name: 免费|印度|05 永久免费机场, server: 52.172.91.107, port: 12349, type: ss, cipher: chacha20-ietf-poly1305, password: f94ef179-dbd0-459a-b316-1e9431316db5, udp: true}
-  - {name: "Free|South Korea|01 [Thin Node]", server: aead.tls.sksupersususu.dnsfree.top, port: 12345, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: aead.tls.sksupersususu.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 中转 | Chuncheon, server: fast.llcool.xyz, port: 63239, type: vmess, uuid: 66111c6b-7141-496f-8d20-ff6fd9a0d4ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fast.llcool.xyz}, udp: true}
-  - {name: 中转 | Netflix, server: fast.llcool.xyz, port: 14813, type: vmess, uuid: 66111c6b-7141-496f-8d20-ff6fd9a0d4ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fast.llcool.xyz}, udp: true}
-  - {name: 免费|香港|08 永久免费机场, server: pro.tls.hongkongaz.dnsfree.top, port: 55092, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: GCPHK, server: 34.92.122.3, port: 10010, type: vmess, uuid: 66111c6b-7141-496f-8d20-ff6fd9a0d4ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 34.92.122.3}, udp: true}
+  - {name: 免费|香港|02 永久免费机场, server: baidu.hongkong.dnsfree.top, port: 55091, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 免费|香港|06 永久免费机场, server: baidu.hongkong.dnsfree.top, port: 55095, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 免费|香港|03 永久免费机场, server: baidu.hongkong.dnsfree.top, port: 55092, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 免费|香港|09 永久免费机场, server: pro.tls.hongkongaz.dnsfree.top, port: 55093, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【DnsFree】香港-80端口, server: 20.239.49.44, port: 80, type: vmess, uuid: f94ef179-dbd0-459a-b316-1e9431316db5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tiebapic.baidu.com}, udp: true}
+  - {name: 【DnsFree】香港 0x, server: 20.239.49.44, port: 59814, type: ss, cipher: chacha20-ietf-poly1305, password: f94ef179-dbd0-459a-b316-1e9431316db5, udp: true}
+  - {name: 免费|香港|04 永久免费机场, server: baidu.hongkong.dnsfree.top, port: 55093, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【DnsFree】日本-80端口, server: 20.27.53.193, port: 80, type: vmess, uuid: f94ef179-dbd0-459a-b316-1e9431316db5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tiebapic.baidu.com}, udp: true}
+  - {name: 免费|香港|12 永久免费机场, server: pro.tls.hongkongaz.dnsfree.top, port: 55096, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
   - {name: "Free|HongKong|02 [Thin Node]", server: pro.tls.hongkongaz.dnsfree.top, port: 55091, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 中转 | Melbourne, server: fast.llcool.xyz, port: 26634, type: vmess, uuid: 66111c6b-7141-496f-8d20-ff6fd9a0d4ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fast.llcool.xyz}, udp: true}
-  - {name: 中转 | Sydney, server: fast.llcool.xyz, port: 35874, type: vmess, uuid: 66111c6b-7141-496f-8d20-ff6fd9a0d4ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fast.llcool.xyz}, udp: true}
-  - {name: 中转 | 联通流量, server: fast.llcool.xyz, port: 33606, type: vmess, uuid: 66111c6b-7141-496f-8d20-ff6fd9a0d4ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fast.llcool.xyz}, udp: true}
-  - {name: 中转 | Tokyo, server: fast.llcool.xyz, port: 18535, type: vmess, uuid: 66111c6b-7141-496f-8d20-ff6fd9a0d4ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fast.llcool.xyz}, udp: true}
-  - {name: 中转 | Osaka, server: fast.llcool.xyz, port: 26113, type: vmess, uuid: 66111c6b-7141-496f-8d20-ff6fd9a0d4ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fast.llcool.xyz}, udp: true}
-  - {name: 中转 | Singapore, server: fast.llcool.xyz, port: 11083, type: vmess, uuid: 66111c6b-7141-496f-8d20-ff6fd9a0d4ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fast.llcool.xyz}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AZ200HK
-      - 免费|香港|09 永久免费机场
+      - 免费|香港|13 永久免费机场
       - 免费|香港|11 永久免费机场
-      - 免费|印度|03 加入@DnsFreePort或者全额抵扣券
-      - 免费|印度|02 https://t.me/DnsFreePort
-      - 免费|印度|04 永久免费机场
-      - 免费|印度|05 永久免费机场
-      - Free|South Korea|01 [Thin Node]
-      - 中转 | Chuncheon
-      - 中转 | Netflix
-      - 免费|香港|08 永久免费机场
-      - GCPHK
+      - 免费|香港|02 永久免费机场
+      - 免费|香港|06 永久免费机场
+      - 免费|香港|03 永久免费机场
+      - 免费|香港|09 永久免费机场
+      - 【DnsFree】香港-80端口
+      - 【DnsFree】香港 0x
+      - 免费|香港|04 永久免费机场
+      - 【DnsFree】日本-80端口
+      - 免费|香港|12 永久免费机场
       - Free|HongKong|02 [Thin Node]
-      - 中转 | Melbourne
-      - 中转 | Sydney
-      - 中转 | 联通流量
-      - 中转 | Tokyo
-      - 中转 | Osaka
-      - 中转 | Singapore
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - AZ200HK
-      - 免费|香港|09 永久免费机场
+      - 免费|香港|13 永久免费机场
       - 免费|香港|11 永久免费机场
-      - 免费|印度|03 加入@DnsFreePort或者全额抵扣券
-      - 免费|印度|02 https://t.me/DnsFreePort
-      - 免费|印度|04 永久免费机场
-      - 免费|印度|05 永久免费机场
-      - Free|South Korea|01 [Thin Node]
-      - 中转 | Chuncheon
-      - 中转 | Netflix
-      - 免费|香港|08 永久免费机场
-      - GCPHK
+      - 免费|香港|02 永久免费机场
+      - 免费|香港|06 永久免费机场
+      - 免费|香港|03 永久免费机场
+      - 免费|香港|09 永久免费机场
+      - 【DnsFree】香港-80端口
+      - 【DnsFree】香港 0x
+      - 免费|香港|04 永久免费机场
+      - 【DnsFree】日本-80端口
+      - 免费|香港|12 永久免费机场
       - Free|HongKong|02 [Thin Node]
-      - 中转 | Melbourne
-      - 中转 | Sydney
-      - 中转 | 联通流量
-      - 中转 | Tokyo
-      - 中转 | Osaka
-      - 中转 | Singapore
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AZ200HK
-      - 免费|香港|09 永久免费机场
+      - 免费|香港|13 永久免费机场
       - 免费|香港|11 永久免费机场
-      - 免费|印度|03 加入@DnsFreePort或者全额抵扣券
-      - 免费|印度|02 https://t.me/DnsFreePort
-      - 免费|印度|04 永久免费机场
-      - 免费|印度|05 永久免费机场
-      - Free|South Korea|01 [Thin Node]
-      - 中转 | Chuncheon
-      - 中转 | Netflix
-      - 免费|香港|08 永久免费机场
-      - GCPHK
+      - 免费|香港|02 永久免费机场
+      - 免费|香港|06 永久免费机场
+      - 免费|香港|03 永久免费机场
+      - 免费|香港|09 永久免费机场
+      - 【DnsFree】香港-80端口
+      - 【DnsFree】香港 0x
+      - 免费|香港|04 永久免费机场
+      - 【DnsFree】日本-80端口
+      - 免费|香港|12 永久免费机场
       - Free|HongKong|02 [Thin Node]
-      - 中转 | Melbourne
-      - 中转 | Sydney
-      - 中转 | 联通流量
-      - 中转 | Tokyo
-      - 中转 | Osaka
-      - 中转 | Singapore
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -116,106 +88,85 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AZ200HK
-      - 免费|香港|09 永久免费机场
+      - 免费|香港|13 永久免费机场
       - 免费|香港|11 永久免费机场
-      - 免费|印度|03 加入@DnsFreePort或者全额抵扣券
-      - 免费|印度|02 https://t.me/DnsFreePort
-      - 免费|印度|04 永久免费机场
-      - 免费|印度|05 永久免费机场
-      - Free|South Korea|01 [Thin Node]
-      - 中转 | Chuncheon
-      - 中转 | Netflix
-      - 免费|香港|08 永久免费机场
-      - GCPHK
+      - 免费|香港|02 永久免费机场
+      - 免费|香港|06 永久免费机场
+      - 免费|香港|03 永久免费机场
+      - 免费|香港|09 永久免费机场
+      - 【DnsFree】香港-80端口
+      - 【DnsFree】香港 0x
+      - 免费|香港|04 永久免费机场
+      - 【DnsFree】日本-80端口
+      - 免费|香港|12 永久免费机场
       - Free|HongKong|02 [Thin Node]
-      - 中转 | Melbourne
-      - 中转 | Sydney
-      - 中转 | 联通流量
-      - 中转 | Tokyo
-      - 中转 | Osaka
-      - 中转 | Singapore
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 免费|香港|09 永久免费机场
+      - 免费|香港|13 永久免费机场
       - 免费|香港|11 永久免费机场
-      - 免费|香港|08 永久免费机场
+      - 免费|香港|02 永久免费机场
+      - 免费|香港|06 永久免费机场
+      - 免费|香港|03 永久免费机场
+      - 免费|香港|09 永久免费机场
+      - 【DnsFree】香港-80端口
+      - 【DnsFree】香港 0x
+      - 免费|香港|04 永久免费机场
+      - 免费|香港|12 永久免费机场
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - AZ200HK
-      - 免费|香港|09 永久免费机场
+      - 免费|香港|13 永久免费机场
       - 免费|香港|11 永久免费机场
-      - 免费|印度|03 加入@DnsFreePort或者全额抵扣券
-      - 免费|印度|02 https://t.me/DnsFreePort
-      - 免费|印度|04 永久免费机场
-      - 免费|印度|05 永久免费机场
-      - Free|South Korea|01 [Thin Node]
-      - 中转 | Chuncheon
-      - 中转 | Netflix
-      - 免费|香港|08 永久免费机场
-      - GCPHK
+      - 免费|香港|02 永久免费机场
+      - 免费|香港|06 永久免费机场
+      - 免费|香港|03 永久免费机场
+      - 免费|香港|09 永久免费机场
+      - 【DnsFree】香港-80端口
+      - 【DnsFree】香港 0x
+      - 免费|香港|04 永久免费机场
+      - 【DnsFree】日本-80端口
+      - 免费|香港|12 永久免费机场
       - Free|HongKong|02 [Thin Node]
-      - 中转 | Melbourne
-      - 中转 | Sydney
-      - 中转 | 联通流量
-      - 中转 | Tokyo
-      - 中转 | Osaka
-      - 中转 | Singapore
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - AZ200HK
-      - 免费|香港|09 永久免费机场
+      - 免费|香港|13 永久免费机场
       - 免费|香港|11 永久免费机场
-      - 免费|印度|03 加入@DnsFreePort或者全额抵扣券
-      - 免费|印度|02 https://t.me/DnsFreePort
-      - 免费|印度|04 永久免费机场
-      - 免费|印度|05 永久免费机场
-      - Free|South Korea|01 [Thin Node]
-      - 中转 | Chuncheon
-      - 中转 | Netflix
-      - 免费|香港|08 永久免费机场
-      - GCPHK
+      - 免费|香港|02 永久免费机场
+      - 免费|香港|06 永久免费机场
+      - 免费|香港|03 永久免费机场
+      - 免费|香港|09 永久免费机场
+      - 【DnsFree】香港-80端口
+      - 【DnsFree】香港 0x
+      - 免费|香港|04 永久免费机场
+      - 【DnsFree】日本-80端口
+      - 免费|香港|12 永久免费机场
       - Free|HongKong|02 [Thin Node]
-      - 中转 | Melbourne
-      - 中转 | Sydney
-      - 中转 | 联通流量
-      - 中转 | Tokyo
-      - 中转 | Osaka
-      - 中转 | Singapore
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AZ200HK
-      - 免费|香港|09 永久免费机场
+      - 免费|香港|13 永久免费机场
       - 免费|香港|11 永久免费机场
-      - 免费|印度|03 加入@DnsFreePort或者全额抵扣券
-      - 免费|印度|02 https://t.me/DnsFreePort
-      - 免费|印度|04 永久免费机场
-      - 免费|印度|05 永久免费机场
-      - Free|South Korea|01 [Thin Node]
-      - 中转 | Chuncheon
-      - 中转 | Netflix
-      - 免费|香港|08 永久免费机场
-      - GCPHK
+      - 免费|香港|02 永久免费机场
+      - 免费|香港|06 永久免费机场
+      - 免费|香港|03 永久免费机场
+      - 免费|香港|09 永久免费机场
+      - 【DnsFree】香港-80端口
+      - 【DnsFree】香港 0x
+      - 免费|香港|04 永久免费机场
+      - 【DnsFree】日本-80端口
+      - 免费|香港|12 永久免费机场
       - Free|HongKong|02 [Thin Node]
-      - 中转 | Melbourne
-      - 中转 | Sydney
-      - 中转 | 联通流量
-      - 中转 | Tokyo
-      - 中转 | Osaka
-      - 中转 | Singapore
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -231,25 +182,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AZ200HK
-      - 免费|香港|09 永久免费机场
+      - 免费|香港|13 永久免费机场
       - 免费|香港|11 永久免费机场
-      - 免费|印度|03 加入@DnsFreePort或者全额抵扣券
-      - 免费|印度|02 https://t.me/DnsFreePort
-      - 免费|印度|04 永久免费机场
-      - 免费|印度|05 永久免费机场
-      - Free|South Korea|01 [Thin Node]
-      - 中转 | Chuncheon
-      - 中转 | Netflix
-      - 免费|香港|08 永久免费机场
-      - GCPHK
+      - 免费|香港|02 永久免费机场
+      - 免费|香港|06 永久免费机场
+      - 免费|香港|03 永久免费机场
+      - 免费|香港|09 永久免费机场
+      - 【DnsFree】香港-80端口
+      - 【DnsFree】香港 0x
+      - 免费|香港|04 永久免费机场
+      - 【DnsFree】日本-80端口
+      - 免费|香港|12 永久免费机场
       - Free|HongKong|02 [Thin Node]
-      - 中转 | Melbourne
-      - 中转 | Sydney
-      - 中转 | 联通流量
-      - 中转 | Tokyo
-      - 中转 | Osaka
-      - 中转 | Singapore
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
