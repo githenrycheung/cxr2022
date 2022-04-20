@@ -5,135 +5,75 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45184, type: vmess, uuid: 5db3f708-6fd9-4f7f-bfc2-f8e23cf74789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 新加坡IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45149, type: vmess, uuid: 5db3f708-6fd9-4f7f-bfc2-f8e23cf74789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 日本IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: 5db3f708-6fd9-4f7f-bfc2-f8e23cf74789, udp: true}
-  - {name: 台湾家庭宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45392, type: ss, cipher: chacha20-ietf-poly1305, password: 5db3f708-6fd9-4f7f-bfc2-f8e23cf74789, udp: true}
-  - {name: 台湾家庭宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45394, type: vmess, uuid: 5db3f708-6fd9-4f7f-bfc2-f8e23cf74789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 香港IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45239, type: vmess, uuid: 5db3f708-6fd9-4f7f-bfc2-f8e23cf74789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 香港家庭宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45250, type: vmess, uuid: 5db3f708-6fd9-4f7f-bfc2-f8e23cf74789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 香港IDC宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: 5db3f708-6fd9-4f7f-bfc2-f8e23cf74789, udp: true}
-  - {name: 美国IDC宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: 5db3f708-6fd9-4f7f-bfc2-f8e23cf74789, udp: true}
-  - {name: 香港IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: 5db3f708-6fd9-4f7f-bfc2-f8e23cf74789, udp: true}
-  - {name: 香港家庭宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: 5db3f708-6fd9-4f7f-bfc2-f8e23cf74789, udp: true}
-  - {name: 香港IDC宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45239, type: vmess, uuid: 5db3f708-6fd9-4f7f-bfc2-f8e23cf74789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 美国IDC宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45194, type: vmess, uuid: 5db3f708-6fd9-4f7f-bfc2-f8e23cf74789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hz.bgp.rx.naiun.pw}, udp: true}
-  - {name: Japan-Tokyo 07, server: sh.circlecloud123.com, port: 40007, type: vmess, uuid: 0f3f1e72-eca6-4c58-9d1e-da833379c199, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sh.circlecloud123.com}, udp: true}
-  - {name: 台湾家庭宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45392, type: ss, cipher: chacha20-ietf-poly1305, password: 5db3f708-6fd9-4f7f-bfc2-f8e23cf74789, udp: true}
-  - {name: 美国IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45194, type: vmess, uuid: 5db3f708-6fd9-4f7f-bfc2-f8e23cf74789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 日本IDC宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45184, type: vmess, uuid: 5db3f708-6fd9-4f7f-bfc2-f8e23cf74789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 欢迎使用Welink345 请定期更新订阅, server: tw.node.qchwnd.moe, port: 44608, type: trojan, password: 28d85c0f-71b0-4c56-9561-7deb47e04c83, sni: tw.node.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: 美国IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: 5db3f708-6fd9-4f7f-bfc2-f8e23cf74789, udp: true}
-  - {name: 新加坡IDC宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45144, type: ss, cipher: chacha20-ietf-poly1305, password: 5db3f708-6fd9-4f7f-bfc2-f8e23cf74789, udp: true}
-  - {name: 新加坡IDC宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45149, type: vmess, uuid: 5db3f708-6fd9-4f7f-bfc2-f8e23cf74789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hz.bgp.rx.naiun.pw}, udp: true}
-  - {name: Japan-Tokyo 03, server: sh.circlecloud123.com, port: 40003, type: vmess, uuid: 0f3f1e72-eca6-4c58-9d1e-da833379c199, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sh.circlecloud123.com}, udp: true}
-  - {name: 台湾家庭宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45394, type: vmess, uuid: 5db3f708-6fd9-4f7f-bfc2-f8e23cf74789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 日本IDC宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: 5db3f708-6fd9-4f7f-bfc2-f8e23cf74789, udp: true}
-  - {name: Japan-Tokyo 负载均衡, server: sh.circlecloud123.com, port: 40000, type: vmess, uuid: 0f3f1e72-eca6-4c58-9d1e-da833379c199, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sh.circlecloud123.com}, udp: true}
-  - {name: 香港家庭宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45250, type: vmess, uuid: 5db3f708-6fd9-4f7f-bfc2-f8e23cf74789, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 香港家庭宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: 5db3f708-6fd9-4f7f-bfc2-f8e23cf74789, udp: true}
-  - {name: 新加坡IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45144, type: ss, cipher: chacha20-ietf-poly1305, password: 5db3f708-6fd9-4f7f-bfc2-f8e23cf74789, udp: true}
+  - {name: 【直连】 香港09, server: pro.tls.hongkongaz.dnsfree.top, port: 55092, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【直连】 香港07, server: baidu.hongkong.dnsfree.top, port: 55094, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【直连】香港01【免流】, server: 20.239.49.44, port: 80, type: vmess, uuid: 18c7133d-a808-43a1-bac7-75b27e07018e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tiebapic.baidu.com}, udp: true}
+  - {name: 【直连】 香港03, server: pro.tls.hongkongaz.dnsfree.top, port: 55091, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【直连】 香港13, server: pro.tls.hongkongaz.dnsfree.top, port: 55096, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【直连】 香港05, server: baidu.hongkong.dnsfree.top, port: 55092, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【直连】 香港06, server: baidu.hongkong.dnsfree.top, port: 55093, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【直连】 香港12, server: pro.tls.hongkongaz.dnsfree.top, port: 55095, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【直连】 香港11, server: pro.tls.hongkongaz.dnsfree.top, port: 55094, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【直连】 香港10, server: pro.tls.hongkongaz.dnsfree.top, port: 55093, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【直连】 香港14, server: pro.tls.hongkongaz.dnsfree.top, port: 55097, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【直连】 香港04, server: baidu.hongkong.dnsfree.top, port: 55091, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【直连】香港02【0x】, server: 20.239.49.44, port: 59814, type: ss, cipher: chacha20-ietf-poly1305, password: 18c7133d-a808-43a1-bac7-75b27e07018e, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本IDC宽频|NF解锁|V2|A01
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|V2|A01
-      - 香港家庭宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|SS|B01
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|SS|A01
-      - 香港IDC宽频|NF解锁|V2|B01
-      - 美国IDC宽频|NF解锁|V2|B01
-      - Japan-Tokyo 07
-      - 台湾家庭宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 欢迎使用Welink345 请定期更新订阅
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|V2|B01
-      - Japan-Tokyo 03
-      - 台湾家庭宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - Japan-Tokyo 负载均衡
-      - 香港家庭宽频|NF解锁|V2|B01
-      - 香港家庭宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 【直连】 香港09
+      - 【直连】 香港07
+      - 【直连】香港01【免流】
+      - 【直连】 香港03
+      - 【直连】 香港13
+      - 【直连】 香港05
+      - 【直连】 香港06
+      - 【直连】 香港12
+      - 【直连】 香港11
+      - 【直连】 香港10
+      - 【直连】 香港14
+      - 【直连】 香港04
+      - 【直连】香港02【0x】
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日本IDC宽频|NF解锁|V2|A01
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|V2|A01
-      - 香港家庭宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|SS|B01
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|SS|A01
-      - 香港IDC宽频|NF解锁|V2|B01
-      - 美国IDC宽频|NF解锁|V2|B01
-      - Japan-Tokyo 07
-      - 台湾家庭宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 欢迎使用Welink345 请定期更新订阅
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|V2|B01
-      - Japan-Tokyo 03
-      - 台湾家庭宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - Japan-Tokyo 负载均衡
-      - 香港家庭宽频|NF解锁|V2|B01
-      - 香港家庭宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 【直连】 香港09
+      - 【直连】 香港07
+      - 【直连】香港01【免流】
+      - 【直连】 香港03
+      - 【直连】 香港13
+      - 【直连】 香港05
+      - 【直连】 香港06
+      - 【直连】 香港12
+      - 【直连】 香港11
+      - 【直连】 香港10
+      - 【直连】 香港14
+      - 【直连】 香港04
+      - 【直连】香港02【0x】
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本IDC宽频|NF解锁|V2|A01
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|V2|A01
-      - 香港家庭宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|SS|B01
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|SS|A01
-      - 香港IDC宽频|NF解锁|V2|B01
-      - 美国IDC宽频|NF解锁|V2|B01
-      - Japan-Tokyo 07
-      - 台湾家庭宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 欢迎使用Welink345 请定期更新订阅
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|V2|B01
-      - Japan-Tokyo 03
-      - 台湾家庭宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - Japan-Tokyo 负载均衡
-      - 香港家庭宽频|NF解锁|V2|B01
-      - 香港家庭宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 【直连】 香港09
+      - 【直连】 香港07
+      - 【直连】香港01【免流】
+      - 【直连】 香港03
+      - 【直连】 香港13
+      - 【直连】 香港05
+      - 【直连】 香港06
+      - 【直连】 香港12
+      - 【直连】 香港11
+      - 【直连】 香港10
+      - 【直连】 香港14
+      - 【直连】 香港04
+      - 【直连】香港02【0x】
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -152,151 +92,92 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本IDC宽频|NF解锁|V2|A01
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|V2|A01
-      - 香港家庭宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|SS|B01
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|SS|A01
-      - 香港IDC宽频|NF解锁|V2|B01
-      - 美国IDC宽频|NF解锁|V2|B01
-      - Japan-Tokyo 07
-      - 台湾家庭宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 欢迎使用Welink345 请定期更新订阅
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|V2|B01
-      - Japan-Tokyo 03
-      - 台湾家庭宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - Japan-Tokyo 负载均衡
-      - 香港家庭宽频|NF解锁|V2|B01
-      - 香港家庭宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 【直连】 香港09
+      - 【直连】 香港07
+      - 【直连】香港01【免流】
+      - 【直连】 香港03
+      - 【直连】 香港13
+      - 【直连】 香港05
+      - 【直连】 香港06
+      - 【直连】 香港12
+      - 【直连】 香港11
+      - 【直连】 香港10
+      - 【直连】 香港14
+      - 【直连】 香港04
+      - 【直连】香港02【0x】
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|V2|A01
-      - 香港家庭宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|SS|A01
-      - 香港IDC宽频|NF解锁|V2|B01
-      - 台湾家庭宽频|NF解锁|SS|B01
-      - 台湾家庭宽频|NF解锁|V2|B01
-      - 香港家庭宽频|NF解锁|V2|B01
-      - 香港家庭宽频|NF解锁|SS|B01
+      - 【直连】 香港09
+      - 【直连】 香港07
+      - 【直连】香港01【免流】
+      - 【直连】 香港03
+      - 【直连】 香港13
+      - 【直连】 香港05
+      - 【直连】 香港06
+      - 【直连】 香港12
+      - 【直连】 香港11
+      - 【直连】 香港10
+      - 【直连】 香港14
+      - 【直连】 香港04
+      - 【直连】香港02【0x】
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本IDC宽频|NF解锁|V2|A01
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|V2|A01
-      - 香港家庭宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|SS|B01
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|SS|A01
-      - 香港IDC宽频|NF解锁|V2|B01
-      - 美国IDC宽频|NF解锁|V2|B01
-      - Japan-Tokyo 07
-      - 台湾家庭宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 欢迎使用Welink345 请定期更新订阅
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|V2|B01
-      - Japan-Tokyo 03
-      - 台湾家庭宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - Japan-Tokyo 负载均衡
-      - 香港家庭宽频|NF解锁|V2|B01
-      - 香港家庭宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 【直连】 香港09
+      - 【直连】 香港07
+      - 【直连】香港01【免流】
+      - 【直连】 香港03
+      - 【直连】 香港13
+      - 【直连】 香港05
+      - 【直连】 香港06
+      - 【直连】 香港12
+      - 【直连】 香港11
+      - 【直连】 香港10
+      - 【直连】 香港14
+      - 【直连】 香港04
+      - 【直连】香港02【0x】
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本IDC宽频|NF解锁|V2|A01
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|V2|A01
-      - 香港家庭宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|SS|B01
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|SS|A01
-      - 香港IDC宽频|NF解锁|V2|B01
-      - 美国IDC宽频|NF解锁|V2|B01
-      - Japan-Tokyo 07
-      - 台湾家庭宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 欢迎使用Welink345 请定期更新订阅
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|V2|B01
-      - Japan-Tokyo 03
-      - 台湾家庭宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - Japan-Tokyo 负载均衡
-      - 香港家庭宽频|NF解锁|V2|B01
-      - 香港家庭宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 【直连】 香港09
+      - 【直连】 香港07
+      - 【直连】香港01【免流】
+      - 【直连】 香港03
+      - 【直连】 香港13
+      - 【直连】 香港05
+      - 【直连】 香港06
+      - 【直连】 香港12
+      - 【直连】 香港11
+      - 【直连】 香港10
+      - 【直连】 香港14
+      - 【直连】 香港04
+      - 【直连】香港02【0x】
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本IDC宽频|NF解锁|V2|A01
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|V2|A01
-      - 香港家庭宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|SS|B01
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|SS|A01
-      - 香港IDC宽频|NF解锁|V2|B01
-      - 美国IDC宽频|NF解锁|V2|B01
-      - Japan-Tokyo 07
-      - 台湾家庭宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 欢迎使用Welink345 请定期更新订阅
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|V2|B01
-      - Japan-Tokyo 03
-      - 台湾家庭宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - Japan-Tokyo 负载均衡
-      - 香港家庭宽频|NF解锁|V2|B01
-      - 香港家庭宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 【直连】 香港09
+      - 【直连】 香港07
+      - 【直连】香港01【免流】
+      - 【直连】 香港03
+      - 【直连】 香港13
+      - 【直连】 香港05
+      - 【直连】 香港06
+      - 【直连】 香港12
+      - 【直连】 香港11
+      - 【直连】 香港10
+      - 【直连】 香港14
+      - 【直连】 香港04
+      - 【直连】香港02【0x】
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -312,34 +193,19 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本IDC宽频|NF解锁|V2|A01
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|V2|A01
-      - 香港家庭宽频|NF解锁|V2|A01
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|SS|B01
-      - 香港IDC宽频|NF解锁|SS|A01
-      - 香港家庭宽频|NF解锁|SS|A01
-      - 香港IDC宽频|NF解锁|V2|B01
-      - 美国IDC宽频|NF解锁|V2|B01
-      - Japan-Tokyo 07
-      - 台湾家庭宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 欢迎使用Welink345 请定期更新订阅
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 新加坡IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|V2|B01
-      - Japan-Tokyo 03
-      - 台湾家庭宽频|NF解锁|V2|B01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - Japan-Tokyo 负载均衡
-      - 香港家庭宽频|NF解锁|V2|B01
-      - 香港家庭宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 【直连】 香港09
+      - 【直连】 香港07
+      - 【直连】香港01【免流】
+      - 【直连】 香港03
+      - 【直连】 香港13
+      - 【直连】 香港05
+      - 【直连】 香港06
+      - 【直连】 香港12
+      - 【直连】 香港11
+      - 【直连】 香港10
+      - 【直连】 香港14
+      - 【直连】 香港04
+      - 【直连】香港02【0x】
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
