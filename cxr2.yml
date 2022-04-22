@@ -5,71 +5,27 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "新加坡02\t", server: gy.cm.02.211129.xyz, port: 45117, type: trojan, password: 9c402eee-b51e-38b8-9f58-3264ff766b34, sni: gy.cm.02.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: "新加坡03\t", server: gy.cm.01.211129.xyz, port: 58407, type: trojan, password: 9c402eee-b51e-38b8-9f58-3264ff766b34, sni: gy.cm.01.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: "日本-02_|NF\t", server: az.hk.02.211129.xyz, port: 19369, type: trojan, password: 9c402eee-b51e-38b8-9f58-3264ff766b34, sni: az.hk.02.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: "美国-04_|NF\t", server: gy.cm.02.211129.xyz, port: 32339, type: trojan, password: 9c402eee-b51e-38b8-9f58-3264ff766b34, sni: gy.cm.02.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: "新加坡01\t", server: gy.cm.02.211129.xyz, port: 57907, type: trojan, password: 9c402eee-b51e-38b8-9f58-3264ff766b34, sni: gy.cm.02.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: "新加坡04\t", server: gy.cm.01.211129.xyz, port: 27818, type: trojan, password: 9c402eee-b51e-38b8-9f58-3264ff766b34, sni: gy.cm.01.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: "日本-05_|NF\t", server: gy.cm.01.211129.xyz, port: 52723, type: trojan, password: 9c402eee-b51e-38b8-9f58-3264ff766b34, sni: gy.cm.01.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: "日本-03_|NF\t", server: gy.cm.01.211129.xyz, port: 22879, type: trojan, password: 9c402eee-b51e-38b8-9f58-3264ff766b34, sni: gy.cm.01.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: "美国-05_|NF\t", server: sh.cu.01.211129.xyz, port: 55261, type: trojan, password: 9c402eee-b51e-38b8-9f58-3264ff766b34, sni: sh.cu.01.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港04, server: sh.cu.01.211129.xyz, port: 56015, type: trojan, password: 9c402eee-b51e-38b8-9f58-3264ff766b34, sni: sh.cu.01.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港03, server: sh.cu.01.211129.xyz, port: 43154, type: trojan, password: 9c402eee-b51e-38b8-9f58-3264ff766b34, sni: sh.cu.01.211129.xyz, skip-cert-verify: true, udp: true}
-  - {name: "美国-03_|NF\t", server: cs.cu.01.211129.xyz, port: 16308, type: trojan, password: 9c402eee-b51e-38b8-9f58-3264ff766b34, sni: cs.cu.01.211129.xyz, skip-cert-verify: true, udp: true}
+  - {name: 【直连】香港01【免流】port.dnsfree.top, server: 20.239.49.44, port: 80, type: vmess, uuid: 241f299f-52e2-4c32-99ef-0c17f10e5bc8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tiebapic.baidu.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "新加坡02\t"
-      - "新加坡03\t"
-      - "日本-02_|NF\t"
-      - "美国-04_|NF\t"
-      - "新加坡01\t"
-      - "新加坡04\t"
-      - "日本-05_|NF\t"
-      - "日本-03_|NF\t"
-      - "美国-05_|NF\t"
-      - 香港04
-      - 香港03
-      - "美国-03_|NF\t"
+      - 【直连】香港01【免流】port.dnsfree.top
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "新加坡02\t"
-      - "新加坡03\t"
-      - "日本-02_|NF\t"
-      - "美国-04_|NF\t"
-      - "新加坡01\t"
-      - "新加坡04\t"
-      - "日本-05_|NF\t"
-      - "日本-03_|NF\t"
-      - "美国-05_|NF\t"
-      - 香港04
-      - 香港03
-      - "美国-03_|NF\t"
+      - 【直连】香港01【免流】port.dnsfree.top
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "新加坡02\t"
-      - "新加坡03\t"
-      - "日本-02_|NF\t"
-      - "美国-04_|NF\t"
-      - "新加坡01\t"
-      - "新加坡04\t"
-      - "日本-05_|NF\t"
-      - "日本-03_|NF\t"
-      - "美国-05_|NF\t"
-      - 香港04
-      - 香港03
-      - "美国-03_|NF\t"
+      - 【直连】香港01【免流】port.dnsfree.top
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -88,77 +44,32 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "新加坡02\t"
-      - "新加坡03\t"
-      - "日本-02_|NF\t"
-      - "美国-04_|NF\t"
-      - "新加坡01\t"
-      - "新加坡04\t"
-      - "日本-05_|NF\t"
-      - "日本-03_|NF\t"
-      - "美国-05_|NF\t"
-      - 香港04
-      - 香港03
-      - "美国-03_|NF\t"
+      - 【直连】香港01【免流】port.dnsfree.top
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港04
-      - 香港03
+      - 【直连】香港01【免流】port.dnsfree.top
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "新加坡02\t"
-      - "新加坡03\t"
-      - "日本-02_|NF\t"
-      - "美国-04_|NF\t"
-      - "新加坡01\t"
-      - "新加坡04\t"
-      - "日本-05_|NF\t"
-      - "日本-03_|NF\t"
-      - "美国-05_|NF\t"
-      - 香港04
-      - 香港03
-      - "美国-03_|NF\t"
+      - 【直连】香港01【免流】port.dnsfree.top
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "新加坡02\t"
-      - "新加坡03\t"
-      - "日本-02_|NF\t"
-      - "美国-04_|NF\t"
-      - "新加坡01\t"
-      - "新加坡04\t"
-      - "日本-05_|NF\t"
-      - "日本-03_|NF\t"
-      - "美国-05_|NF\t"
-      - 香港04
-      - 香港03
-      - "美国-03_|NF\t"
+      - 【直连】香港01【免流】port.dnsfree.top
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "新加坡02\t"
-      - "新加坡03\t"
-      - "日本-02_|NF\t"
-      - "美国-04_|NF\t"
-      - "新加坡01\t"
-      - "新加坡04\t"
-      - "日本-05_|NF\t"
-      - "日本-03_|NF\t"
-      - "美国-05_|NF\t"
-      - 香港04
-      - 香港03
-      - "美国-03_|NF\t"
+      - 【直连】香港01【免流】port.dnsfree.top
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -174,18 +85,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "新加坡02\t"
-      - "新加坡03\t"
-      - "日本-02_|NF\t"
-      - "美国-04_|NF\t"
-      - "新加坡01\t"
-      - "新加坡04\t"
-      - "日本-05_|NF\t"
-      - "日本-03_|NF\t"
-      - "美国-05_|NF\t"
-      - 香港04
-      - 香港03
-      - "美国-03_|NF\t"
+      - 【直连】香港01【免流】port.dnsfree.top
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
