@@ -5,27 +5,17 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港04 | Azure | NF | 1x, server: 52.175.18.149, port: 47899, type: ss, cipher: aes-256-gcm, password: b8680d3e-bae5-420c-b2e3-4a38a9051866, udp: true}
   - {name: Fake IPLC | 2x, server: cn1.node.zeroteam.top, port: 59641, type: ss, cipher: chacha20-ietf-poly1305, password: b8680d3e-bae5-420c-b2e3-4a38a9051866, udp: true}
-  - {name: 香港06 | Azure | NF | 1x 5Gbps, server: 20.24.211.220, port: 25431, type: ss, cipher: chacha20-ietf-poly1305, password: b8680d3e-bae5-420c-b2e3-4a38a9051866, udp: true}
-  - {name: 香港06 | Azure | NF | 1x 5Gbps 2, server: 20.24.211.220, port: 25431, type: ss, cipher: chacha20-ietf-poly1305, password: b8680d3e-bae5-420c-b2e3-4a38a9051866, udp: true}
   - {name: SP*香港 01, server: hkml01.fenglingcloud.com, port: 80, type: vmess, uuid: 4560dd54-c0c4-4d25-8486-4a92e71065c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hkml01.fenglingcloud.com}, udp: true}
-  - {name: 日本01 | NF | 1x, server: 52.253.105.88, port: 443, type: vmess, uuid: b8680d3e-bae5-420c-b2e3-4a38a9051866, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: 52.253.105.88}, udp: true}
-  - {name: 马来西亚02 | 沪港 | NF | 1x, server: gycm.01.211129.xyz, port: 28564, type: ss, cipher: chacha20-ietf-poly1305, password: b8680d3e-bae5-420c-b2e3-4a38a9051866, udp: true}
   - {name: 日本07 | Softbank GMAE | NF | 1x, server: 137.220.217.121, port: 9929, type: vmess, uuid: b8680d3e-bae5-420c-b2e3-4a38a9051866, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: 137.220.217.121}, udp: true}
-  - {name: 日本01 | NF | 1x 2, server: 52.253.105.88, port: 443, type: vmess, uuid: b8680d3e-bae5-420c-b2e3-4a38a9051866, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: 52.253.105.88}, udp: true}
-  - {name: 英国01 | NF | 1x, server: gycm.02.211129.xyz, port: 25644, type: ss, cipher: chacha20-ietf-poly1305, password: b8680d3e-bae5-420c-b2e3-4a38a9051866, udp: true}
-  - {name: 日本03 | STCP GAME | NF | 1x, server: cn2.node.zeroteam.top, port: 52312, type: vmess, uuid: b8680d3e-bae5-420c-b2e3-4a38a9051866, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: cn2.node.zeroteam.top}, udp: true}
   - {name: SR*灾难备用 SG, server: cm.fenglingcloud.com, port: 37611, type: ss, cipher: chacha20-ietf-poly1305, password: 4560dd54-c0c4-4d25-8486-4a92e71065c9, udp: true}
   - {name: 澳大利亚01 | 广移 | NF | 1x, server: gz.syhwdz.top, port: 37903, type: vmess, uuid: b8680d3e-bae5-420c-b2e3-4a38a9051866, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /onefall.top, ws-headers: {Host: gz.syhwdz.top}, udp: true}
   - {name: 日本04 | 福移 | NF | 1x, server: cn2.node.zeroteam.top, port: 10823, type: vmess, uuid: b8680d3e-bae5-420c-b2e3-4a38a9051866, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: cn2.node.zeroteam.top}, udp: true}
-  - {name: 日本08 | 福移 | 1x, server: cn2.node.zeroteam.top, port: 11038, type: vmess, uuid: b8680d3e-bae5-420c-b2e3-4a38a9051866, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: cn2.node.zeroteam.top}, udp: true}
-  - {name: 日本08 | 福移 | 1x 2, server: cn2.node.zeroteam.top, port: 11038, type: vmess, uuid: b8680d3e-bae5-420c-b2e3-4a38a9051866, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: cn2.node.zeroteam.top}, udp: true}
-  - {name: 香港03 | 广移 | NF | 1x, server: gz.syhwdz.top, port: 10347, type: vmess, uuid: b8680d3e-bae5-420c-b2e3-4a38a9051866, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: gz.syhwdz.top}, udp: true}
-  - {name: 马来西亚01 | 广港 | NF | 1x, server: gycm.02.211129.xyz, port: 25425, type: ss, cipher: chacha20-ietf-poly1305, password: b8680d3e-bae5-420c-b2e3-4a38a9051866, udp: true}
-  - {name: 韩国01 | 广移 | 1x, server: gycm.01.211129.xyz, port: 11491, type: vmess, uuid: b8680d3e-bae5-420c-b2e3-4a38a9051866, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall.top, ws-headers: {Host: gycm.01.211129.xyz}, udp: true}
-  - {name: 香港05 | 广移 | NF | 1.2x, server: gz.syhwdz.top, port: 25431, type: ss, cipher: chacha20-ietf-poly1305, password: b8680d3e-bae5-420c-b2e3-4a38a9051866, udp: true}
+  - {name: 日本03 | STCP GAME | NF | 1x, server: cn2.node.zeroteam.top, port: 52312, type: vmess, uuid: b8680d3e-bae5-420c-b2e3-4a38a9051866, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: cn2.node.zeroteam.top}, udp: true}
+  - {name: 马来西亚02 | 沪港 | NF | 1x, server: gycm.01.211129.xyz, port: 28564, type: ss, cipher: chacha20-ietf-poly1305, password: b8680d3e-bae5-420c-b2e3-4a38a9051866, udp: true}
+  - {name: 香港04 | Azure | NF | 1x, server: 52.175.18.149, port: 47899, type: ss, cipher: aes-256-gcm, password: b8680d3e-bae5-420c-b2e3-4a38a9051866, udp: true}
   - {name: 日本02 | Softbank GMAE | NF | 1x, server: gycm.01.211129.xyz, port: 10323, type: vmess, uuid: b8680d3e-bae5-420c-b2e3-4a38a9051866, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: gycm.01.211129.xyz}, udp: true}
+  - {name: 香港05 | 广移 | NF | 1.2x, server: gz.syhwdz.top, port: 25431, type: ss, cipher: chacha20-ietf-poly1305, password: b8680d3e-bae5-420c-b2e3-4a38a9051866, udp: true}
   - {name: SP*香港 00, server: hkml00.fenglingcloud.com, port: 80, type: vmess, uuid: 4560dd54-c0c4-4d25-8486-4a92e71065c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /linggg, ws-headers: {Host: hkml00.fenglingcloud.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
@@ -33,54 +23,34 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港04 | Azure | NF | 1x
       - Fake IPLC | 2x
-      - 香港06 | Azure | NF | 1x 5Gbps
-      - 香港06 | Azure | NF | 1x 5Gbps 2
       - SP*香港 01
-      - 日本01 | NF | 1x
-      - 马来西亚02 | 沪港 | NF | 1x
       - 日本07 | Softbank GMAE | NF | 1x
-      - 日本01 | NF | 1x 2
-      - 英国01 | NF | 1x
-      - 日本03 | STCP GAME | NF | 1x
       - SR*灾难备用 SG
       - 澳大利亚01 | 广移 | NF | 1x
       - 日本04 | 福移 | NF | 1x
-      - 日本08 | 福移 | 1x
-      - 日本08 | 福移 | 1x 2
-      - 香港03 | 广移 | NF | 1x
-      - 马来西亚01 | 广港 | NF | 1x
-      - 韩国01 | 广移 | 1x
-      - 香港05 | 广移 | NF | 1.2x
+      - 日本03 | STCP GAME | NF | 1x
+      - 马来西亚02 | 沪港 | NF | 1x
+      - 香港04 | Azure | NF | 1x
       - 日本02 | Softbank GMAE | NF | 1x
+      - 香港05 | 广移 | NF | 1.2x
       - SP*香港 00
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港04 | Azure | NF | 1x
       - Fake IPLC | 2x
-      - 香港06 | Azure | NF | 1x 5Gbps
-      - 香港06 | Azure | NF | 1x 5Gbps 2
       - SP*香港 01
-      - 日本01 | NF | 1x
-      - 马来西亚02 | 沪港 | NF | 1x
       - 日本07 | Softbank GMAE | NF | 1x
-      - 日本01 | NF | 1x 2
-      - 英国01 | NF | 1x
-      - 日本03 | STCP GAME | NF | 1x
       - SR*灾难备用 SG
       - 澳大利亚01 | 广移 | NF | 1x
       - 日本04 | 福移 | NF | 1x
-      - 日本08 | 福移 | 1x
-      - 日本08 | 福移 | 1x 2
-      - 香港03 | 广移 | NF | 1x
-      - 马来西亚01 | 广港 | NF | 1x
-      - 韩国01 | 广移 | 1x
-      - 香港05 | 广移 | NF | 1.2x
+      - 日本03 | STCP GAME | NF | 1x
+      - 马来西亚02 | 沪港 | NF | 1x
+      - 香港04 | Azure | NF | 1x
       - 日本02 | Softbank GMAE | NF | 1x
+      - 香港05 | 广移 | NF | 1.2x
       - SP*香港 00
   - name: 🎥 NETFLIX
     type: select
@@ -88,27 +58,17 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港04 | Azure | NF | 1x
       - Fake IPLC | 2x
-      - 香港06 | Azure | NF | 1x 5Gbps
-      - 香港06 | Azure | NF | 1x 5Gbps 2
       - SP*香港 01
-      - 日本01 | NF | 1x
-      - 马来西亚02 | 沪港 | NF | 1x
       - 日本07 | Softbank GMAE | NF | 1x
-      - 日本01 | NF | 1x 2
-      - 英国01 | NF | 1x
-      - 日本03 | STCP GAME | NF | 1x
       - SR*灾难备用 SG
       - 澳大利亚01 | 广移 | NF | 1x
       - 日本04 | 福移 | NF | 1x
-      - 日本08 | 福移 | 1x
-      - 日本08 | 福移 | 1x 2
-      - 香港03 | 广移 | NF | 1x
-      - 马来西亚01 | 广港 | NF | 1x
-      - 韩国01 | 广移 | 1x
-      - 香港05 | 广移 | NF | 1.2x
+      - 日本03 | STCP GAME | NF | 1x
+      - 马来西亚02 | 沪港 | NF | 1x
+      - 香港04 | Azure | NF | 1x
       - 日本02 | Softbank GMAE | NF | 1x
+      - 香港05 | 广移 | NF | 1.2x
       - SP*香港 00
   - name: ⛔️ 广告拦截
     type: select
@@ -128,39 +88,25 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港04 | Azure | NF | 1x
       - Fake IPLC | 2x
-      - 香港06 | Azure | NF | 1x 5Gbps
-      - 香港06 | Azure | NF | 1x 5Gbps 2
       - SP*香港 01
-      - 日本01 | NF | 1x
-      - 马来西亚02 | 沪港 | NF | 1x
       - 日本07 | Softbank GMAE | NF | 1x
-      - 日本01 | NF | 1x 2
-      - 英国01 | NF | 1x
-      - 日本03 | STCP GAME | NF | 1x
       - SR*灾难备用 SG
       - 澳大利亚01 | 广移 | NF | 1x
       - 日本04 | 福移 | NF | 1x
-      - 日本08 | 福移 | 1x
-      - 日本08 | 福移 | 1x 2
-      - 香港03 | 广移 | NF | 1x
-      - 马来西亚01 | 广港 | NF | 1x
-      - 韩国01 | 广移 | 1x
-      - 香港05 | 广移 | NF | 1.2x
+      - 日本03 | STCP GAME | NF | 1x
+      - 马来西亚02 | 沪港 | NF | 1x
+      - 香港04 | Azure | NF | 1x
       - 日本02 | Softbank GMAE | NF | 1x
+      - 香港05 | 广移 | NF | 1.2x
       - SP*香港 00
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港04 | Azure | NF | 1x
-      - 香港06 | Azure | NF | 1x 5Gbps
-      - 香港06 | Azure | NF | 1x 5Gbps 2
       - SP*香港 01
       - 马来西亚02 | 沪港 | NF | 1x
-      - 香港03 | 广移 | NF | 1x
-      - 马来西亚01 | 广港 | NF | 1x
+      - 香港04 | Azure | NF | 1x
       - 香港05 | 广移 | NF | 1.2x
       - SP*香港 00
       - 🔰 节点选择
@@ -169,54 +115,34 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港04 | Azure | NF | 1x
       - Fake IPLC | 2x
-      - 香港06 | Azure | NF | 1x 5Gbps
-      - 香港06 | Azure | NF | 1x 5Gbps 2
       - SP*香港 01
-      - 日本01 | NF | 1x
-      - 马来西亚02 | 沪港 | NF | 1x
       - 日本07 | Softbank GMAE | NF | 1x
-      - 日本01 | NF | 1x 2
-      - 英国01 | NF | 1x
-      - 日本03 | STCP GAME | NF | 1x
       - SR*灾难备用 SG
       - 澳大利亚01 | 广移 | NF | 1x
       - 日本04 | 福移 | NF | 1x
-      - 日本08 | 福移 | 1x
-      - 日本08 | 福移 | 1x 2
-      - 香港03 | 广移 | NF | 1x
-      - 马来西亚01 | 广港 | NF | 1x
-      - 韩国01 | 广移 | 1x
-      - 香港05 | 广移 | NF | 1.2x
+      - 日本03 | STCP GAME | NF | 1x
+      - 马来西亚02 | 沪港 | NF | 1x
+      - 香港04 | Azure | NF | 1x
       - 日本02 | Softbank GMAE | NF | 1x
+      - 香港05 | 广移 | NF | 1.2x
       - SP*香港 00
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港04 | Azure | NF | 1x
       - Fake IPLC | 2x
-      - 香港06 | Azure | NF | 1x 5Gbps
-      - 香港06 | Azure | NF | 1x 5Gbps 2
       - SP*香港 01
-      - 日本01 | NF | 1x
-      - 马来西亚02 | 沪港 | NF | 1x
       - 日本07 | Softbank GMAE | NF | 1x
-      - 日本01 | NF | 1x 2
-      - 英国01 | NF | 1x
-      - 日本03 | STCP GAME | NF | 1x
       - SR*灾难备用 SG
       - 澳大利亚01 | 广移 | NF | 1x
       - 日本04 | 福移 | NF | 1x
-      - 日本08 | 福移 | 1x
-      - 日本08 | 福移 | 1x 2
-      - 香港03 | 广移 | NF | 1x
-      - 马来西亚01 | 广港 | NF | 1x
-      - 韩国01 | 广移 | 1x
-      - 香港05 | 广移 | NF | 1.2x
+      - 日本03 | STCP GAME | NF | 1x
+      - 马来西亚02 | 沪港 | NF | 1x
+      - 香港04 | Azure | NF | 1x
       - 日本02 | Softbank GMAE | NF | 1x
+      - 香港05 | 广移 | NF | 1.2x
       - SP*香港 00
   - name: 🍎 苹果服务
     type: select
@@ -224,27 +150,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港04 | Azure | NF | 1x
       - Fake IPLC | 2x
-      - 香港06 | Azure | NF | 1x 5Gbps
-      - 香港06 | Azure | NF | 1x 5Gbps 2
       - SP*香港 01
-      - 日本01 | NF | 1x
-      - 马来西亚02 | 沪港 | NF | 1x
       - 日本07 | Softbank GMAE | NF | 1x
-      - 日本01 | NF | 1x 2
-      - 英国01 | NF | 1x
-      - 日本03 | STCP GAME | NF | 1x
       - SR*灾难备用 SG
       - 澳大利亚01 | 广移 | NF | 1x
       - 日本04 | 福移 | NF | 1x
-      - 日本08 | 福移 | 1x
-      - 日本08 | 福移 | 1x 2
-      - 香港03 | 广移 | NF | 1x
-      - 马来西亚01 | 广港 | NF | 1x
-      - 韩国01 | 广移 | 1x
-      - 香港05 | 广移 | NF | 1.2x
+      - 日本03 | STCP GAME | NF | 1x
+      - 马来西亚02 | 沪港 | NF | 1x
+      - 香港04 | Azure | NF | 1x
       - 日本02 | Softbank GMAE | NF | 1x
+      - 香港05 | 广移 | NF | 1.2x
       - SP*香港 00
   - name: 🎯 全球直连
     type: select
@@ -261,27 +177,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港04 | Azure | NF | 1x
       - Fake IPLC | 2x
-      - 香港06 | Azure | NF | 1x 5Gbps
-      - 香港06 | Azure | NF | 1x 5Gbps 2
       - SP*香港 01
-      - 日本01 | NF | 1x
-      - 马来西亚02 | 沪港 | NF | 1x
       - 日本07 | Softbank GMAE | NF | 1x
-      - 日本01 | NF | 1x 2
-      - 英国01 | NF | 1x
-      - 日本03 | STCP GAME | NF | 1x
       - SR*灾难备用 SG
       - 澳大利亚01 | 广移 | NF | 1x
       - 日本04 | 福移 | NF | 1x
-      - 日本08 | 福移 | 1x
-      - 日本08 | 福移 | 1x 2
-      - 香港03 | 广移 | NF | 1x
-      - 马来西亚01 | 广港 | NF | 1x
-      - 韩国01 | 广移 | 1x
-      - 香港05 | 广移 | NF | 1.2x
+      - 日本03 | STCP GAME | NF | 1x
+      - 马来西亚02 | 沪港 | NF | 1x
+      - 香港04 | Azure | NF | 1x
       - 日本02 | Softbank GMAE | NF | 1x
+      - 香港05 | 广移 | NF | 1.2x
       - SP*香港 00
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
