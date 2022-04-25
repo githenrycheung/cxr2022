@@ -5,75 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 【深港隧道】 香港04 10x, server: china-ct-cs01.898868.xyz, port: 21758, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: china-ct-cs01.898868.xyz, skip-cert-verify: true, udp: true}
-  - {name: 【直连】 香港05, server: baidu.hongkong.dnsfree.top, port: 55092, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 【直连】 香港07, server: baidu.hongkong.dnsfree.top, port: 55094, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 【直连】 香港08, server: baidu.hongkong.dnsfree.top, port: 55095, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 【直连】 香港10, server: pro.tls.hongkongaz.dnsfree.top, port: 55093, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 【直连】香港02【0x】, server: 20.239.49.44, port: 59814, type: ss, cipher: chacha20-ietf-poly1305, password: f94ef179-dbd0-459a-b316-1e9431316db5, udp: true}
-  - {name: 【深港隧道】 香港03 10x, server: china-ct-cs01.898868.xyz, port: 39278, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: china-ct-cs01.898868.xyz, skip-cert-verify: true, udp: true}
-  - {name: 【直连】 香港11, server: pro.tls.hongkongaz.dnsfree.top, port: 55094, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 【直连】香港01【免流】port.dnsfree.top, server: 20.239.49.44, port: 80, type: vmess, uuid: f94ef179-dbd0-459a-b316-1e9431316db5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tiebapic.baidu.com}, udp: true}
-  - {name: 【直连】 香港13, server: pro.tls.hongkongaz.dnsfree.top, port: 55096, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 【直连】 香港06, server: baidu.hongkong.dnsfree.top, port: 55093, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 【直连】 香港09, server: pro.tls.hongkongaz.dnsfree.top, port: 55092, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 【直连】 香港12, server: pro.tls.hongkongaz.dnsfree.top, port: 55095, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: TG盗圣频道- 🇭🇰 香港 4, server: pro.tls.hongkongaz.dnsfree.top, port: 55095, type: trojan, password: b71056e2-d8ad-4f7b-a1ba-57b67d0f854b, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: TG盗圣频道- 🇭🇰 香港 7, server: pro.tls.hongkongaz.dnsfree.top, port: 55096, type: trojan, password: b71056e2-d8ad-4f7b-a1ba-57b67d0f854b, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: TG盗圣频道- 🇭🇰 香港 3, server: pro.tls.hongkongaz.dnsfree.top, port: 55094, type: trojan, password: b71056e2-d8ad-4f7b-a1ba-57b67d0f854b, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: TG盗圣频道- 🇺🇸 美国 15, server: aead.tls.sksupersususu.dnsfree.top, port: 12348, type: trojan, password: b71056e2-d8ad-4f7b-a1ba-57b67d0f854b, sni: aead.tls.sksupersususu.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: TG盗圣频道- 🇺🇸 美国 2, server: aead.tls.sksupersususu.dnsfree.top, port: 12347, type: trojan, password: b71056e2-d8ad-4f7b-a1ba-57b67d0f854b, sni: aead.tls.sksupersususu.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: TG盗圣频道- 🇺🇸 美国 14, server: superjapan1111.dnsfree.top, port: 12390, type: trojan, password: b71056e2-d8ad-4f7b-a1ba-57b67d0f854b, sni: superjapan1111.dnsfree.top, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 【深港隧道】 香港04 10x
-      - 【直连】 香港05
-      - 【直连】 香港07
-      - 【直连】 香港08
-      - 【直连】 香港10
-      - 【直连】香港02【0x】
-      - 【深港隧道】 香港03 10x
-      - 【直连】 香港11
-      - 【直连】香港01【免流】port.dnsfree.top
-      - 【直连】 香港13
-      - 【直连】 香港06
-      - 【直连】 香港09
-      - 【直连】 香港12
+      - TG盗圣频道- 🇭🇰 香港 4
+      - TG盗圣频道- 🇭🇰 香港 7
+      - TG盗圣频道- 🇭🇰 香港 3
+      - TG盗圣频道- 🇺🇸 美国 15
+      - TG盗圣频道- 🇺🇸 美国 2
+      - TG盗圣频道- 🇺🇸 美国 14
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 【深港隧道】 香港04 10x
-      - 【直连】 香港05
-      - 【直连】 香港07
-      - 【直连】 香港08
-      - 【直连】 香港10
-      - 【直连】香港02【0x】
-      - 【深港隧道】 香港03 10x
-      - 【直连】 香港11
-      - 【直连】香港01【免流】port.dnsfree.top
-      - 【直连】 香港13
-      - 【直连】 香港06
-      - 【直连】 香港09
-      - 【直连】 香港12
+      - TG盗圣频道- 🇭🇰 香港 4
+      - TG盗圣频道- 🇭🇰 香港 7
+      - TG盗圣频道- 🇭🇰 香港 3
+      - TG盗圣频道- 🇺🇸 美国 15
+      - TG盗圣频道- 🇺🇸 美国 2
+      - TG盗圣频道- 🇺🇸 美国 14
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 【深港隧道】 香港04 10x
-      - 【直连】 香港05
-      - 【直连】 香港07
-      - 【直连】 香港08
-      - 【直连】 香港10
-      - 【直连】香港02【0x】
-      - 【深港隧道】 香港03 10x
-      - 【直连】 香港11
-      - 【直连】香港01【免流】port.dnsfree.top
-      - 【直连】 香港13
-      - 【直连】 香港06
-      - 【直连】 香港09
-      - 【直连】 香港12
+      - TG盗圣频道- 🇭🇰 香港 4
+      - TG盗圣频道- 🇭🇰 香港 7
+      - TG盗圣频道- 🇭🇰 香港 3
+      - TG盗圣频道- 🇺🇸 美国 15
+      - TG盗圣频道- 🇺🇸 美国 2
+      - TG盗圣频道- 🇺🇸 美国 14
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -92,92 +64,54 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 【深港隧道】 香港04 10x
-      - 【直连】 香港05
-      - 【直连】 香港07
-      - 【直连】 香港08
-      - 【直连】 香港10
-      - 【直连】香港02【0x】
-      - 【深港隧道】 香港03 10x
-      - 【直连】 香港11
-      - 【直连】香港01【免流】port.dnsfree.top
-      - 【直连】 香港13
-      - 【直连】 香港06
-      - 【直连】 香港09
-      - 【直连】 香港12
+      - TG盗圣频道- 🇭🇰 香港 4
+      - TG盗圣频道- 🇭🇰 香港 7
+      - TG盗圣频道- 🇭🇰 香港 3
+      - TG盗圣频道- 🇺🇸 美国 15
+      - TG盗圣频道- 🇺🇸 美国 2
+      - TG盗圣频道- 🇺🇸 美国 14
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 【深港隧道】 香港04 10x
-      - 【直连】 香港05
-      - 【直连】 香港07
-      - 【直连】 香港08
-      - 【直连】 香港10
-      - 【直连】香港02【0x】
-      - 【深港隧道】 香港03 10x
-      - 【直连】 香港11
-      - 【直连】香港01【免流】port.dnsfree.top
-      - 【直连】 香港13
-      - 【直连】 香港06
-      - 【直连】 香港09
-      - 【直连】 香港12
+      - TG盗圣频道- 🇭🇰 香港 4
+      - TG盗圣频道- 🇭🇰 香港 7
+      - TG盗圣频道- 🇭🇰 香港 3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 【深港隧道】 香港04 10x
-      - 【直连】 香港05
-      - 【直连】 香港07
-      - 【直连】 香港08
-      - 【直连】 香港10
-      - 【直连】香港02【0x】
-      - 【深港隧道】 香港03 10x
-      - 【直连】 香港11
-      - 【直连】香港01【免流】port.dnsfree.top
-      - 【直连】 香港13
-      - 【直连】 香港06
-      - 【直连】 香港09
-      - 【直连】 香港12
+      - TG盗圣频道- 🇭🇰 香港 4
+      - TG盗圣频道- 🇭🇰 香港 7
+      - TG盗圣频道- 🇭🇰 香港 3
+      - TG盗圣频道- 🇺🇸 美国 15
+      - TG盗圣频道- 🇺🇸 美国 2
+      - TG盗圣频道- 🇺🇸 美国 14
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 【深港隧道】 香港04 10x
-      - 【直连】 香港05
-      - 【直连】 香港07
-      - 【直连】 香港08
-      - 【直连】 香港10
-      - 【直连】香港02【0x】
-      - 【深港隧道】 香港03 10x
-      - 【直连】 香港11
-      - 【直连】香港01【免流】port.dnsfree.top
-      - 【直连】 香港13
-      - 【直连】 香港06
-      - 【直连】 香港09
-      - 【直连】 香港12
+      - TG盗圣频道- 🇭🇰 香港 4
+      - TG盗圣频道- 🇭🇰 香港 7
+      - TG盗圣频道- 🇭🇰 香港 3
+      - TG盗圣频道- 🇺🇸 美国 15
+      - TG盗圣频道- 🇺🇸 美国 2
+      - TG盗圣频道- 🇺🇸 美国 14
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 【深港隧道】 香港04 10x
-      - 【直连】 香港05
-      - 【直连】 香港07
-      - 【直连】 香港08
-      - 【直连】 香港10
-      - 【直连】香港02【0x】
-      - 【深港隧道】 香港03 10x
-      - 【直连】 香港11
-      - 【直连】香港01【免流】port.dnsfree.top
-      - 【直连】 香港13
-      - 【直连】 香港06
-      - 【直连】 香港09
-      - 【直连】 香港12
+      - TG盗圣频道- 🇭🇰 香港 4
+      - TG盗圣频道- 🇭🇰 香港 7
+      - TG盗圣频道- 🇭🇰 香港 3
+      - TG盗圣频道- 🇺🇸 美国 15
+      - TG盗圣频道- 🇺🇸 美国 2
+      - TG盗圣频道- 🇺🇸 美国 14
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -193,19 +127,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 【深港隧道】 香港04 10x
-      - 【直连】 香港05
-      - 【直连】 香港07
-      - 【直连】 香港08
-      - 【直连】 香港10
-      - 【直连】香港02【0x】
-      - 【深港隧道】 香港03 10x
-      - 【直连】 香港11
-      - 【直连】香港01【免流】port.dnsfree.top
-      - 【直连】 香港13
-      - 【直连】 香港06
-      - 【直连】 香港09
-      - 【直连】 香港12
+      - TG盗圣频道- 🇭🇰 香港 4
+      - TG盗圣频道- 🇭🇰 香港 7
+      - TG盗圣频道- 🇭🇰 香港 3
+      - TG盗圣频道- 🇺🇸 美国 15
+      - TG盗圣频道- 🇺🇸 美国 2
+      - TG盗圣频道- 🇺🇸 美国 14
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
