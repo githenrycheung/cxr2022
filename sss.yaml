@@ -5,47 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: TG盗圣频道- 🇭🇰 香港 4, server: pro.tls.hongkongaz.dnsfree.top, port: 55095, type: trojan, password: b71056e2-d8ad-4f7b-a1ba-57b67d0f854b, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: TG盗圣频道- 🇭🇰 香港 7, server: pro.tls.hongkongaz.dnsfree.top, port: 55096, type: trojan, password: b71056e2-d8ad-4f7b-a1ba-57b67d0f854b, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: TG盗圣频道- 🇭🇰 香港 3, server: pro.tls.hongkongaz.dnsfree.top, port: 55094, type: trojan, password: b71056e2-d8ad-4f7b-a1ba-57b67d0f854b, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: TG盗圣频道- 🇺🇸 美国 15, server: aead.tls.sksupersususu.dnsfree.top, port: 12348, type: trojan, password: b71056e2-d8ad-4f7b-a1ba-57b67d0f854b, sni: aead.tls.sksupersususu.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: TG盗圣频道- 🇺🇸 美国 2, server: aead.tls.sksupersususu.dnsfree.top, port: 12347, type: trojan, password: b71056e2-d8ad-4f7b-a1ba-57b67d0f854b, sni: aead.tls.sksupersususu.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: TG盗圣频道- 🇺🇸 美国 14, server: superjapan1111.dnsfree.top, port: 12390, type: trojan, password: b71056e2-d8ad-4f7b-a1ba-57b67d0f854b, sni: superjapan1111.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【直连】 香港03, server: pro.tls.hongkongaz.dnsfree.top, port: 55091, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【直连】日本06【0x】, server: superjapan1111.dnsfree.top, port: 12388, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: superjapan1111.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【直连】日本02【0x】, server: superjapan1111.dnsfree.top, port: 12390, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: superjapan1111.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【湘日隧道】 日本03 10x, server: china.changlian-axecc.898868.xyz, port: 11979, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: china.changlian-axecc.898868.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG盗圣频道- 🇭🇰 香港 4
-      - TG盗圣频道- 🇭🇰 香港 7
-      - TG盗圣频道- 🇭🇰 香港 3
-      - TG盗圣频道- 🇺🇸 美国 15
-      - TG盗圣频道- 🇺🇸 美国 2
-      - TG盗圣频道- 🇺🇸 美国 14
+      - 【直连】 香港03
+      - 【直连】日本06【0x】
+      - 【直连】日本02【0x】
+      - 【湘日隧道】 日本03 10x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - TG盗圣频道- 🇭🇰 香港 4
-      - TG盗圣频道- 🇭🇰 香港 7
-      - TG盗圣频道- 🇭🇰 香港 3
-      - TG盗圣频道- 🇺🇸 美国 15
-      - TG盗圣频道- 🇺🇸 美国 2
-      - TG盗圣频道- 🇺🇸 美国 14
+      - 【直连】 香港03
+      - 【直连】日本06【0x】
+      - 【直连】日本02【0x】
+      - 【湘日隧道】 日本03 10x
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG盗圣频道- 🇭🇰 香港 4
-      - TG盗圣频道- 🇭🇰 香港 7
-      - TG盗圣频道- 🇭🇰 香港 3
-      - TG盗圣频道- 🇺🇸 美国 15
-      - TG盗圣频道- 🇺🇸 美国 2
-      - TG盗圣频道- 🇺🇸 美国 14
+      - 【直连】 香港03
+      - 【直连】日本06【0x】
+      - 【直连】日本02【0x】
+      - 【湘日隧道】 日本03 10x
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,54 +56,44 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG盗圣频道- 🇭🇰 香港 4
-      - TG盗圣频道- 🇭🇰 香港 7
-      - TG盗圣频道- 🇭🇰 香港 3
-      - TG盗圣频道- 🇺🇸 美国 15
-      - TG盗圣频道- 🇺🇸 美国 2
-      - TG盗圣频道- 🇺🇸 美国 14
+      - 【直连】 香港03
+      - 【直连】日本06【0x】
+      - 【直连】日本02【0x】
+      - 【湘日隧道】 日本03 10x
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - TG盗圣频道- 🇭🇰 香港 4
-      - TG盗圣频道- 🇭🇰 香港 7
-      - TG盗圣频道- 🇭🇰 香港 3
+      - 【直连】 香港03
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - TG盗圣频道- 🇭🇰 香港 4
-      - TG盗圣频道- 🇭🇰 香港 7
-      - TG盗圣频道- 🇭🇰 香港 3
-      - TG盗圣频道- 🇺🇸 美国 15
-      - TG盗圣频道- 🇺🇸 美国 2
-      - TG盗圣频道- 🇺🇸 美国 14
+      - 【直连】 香港03
+      - 【直连】日本06【0x】
+      - 【直连】日本02【0x】
+      - 【湘日隧道】 日本03 10x
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - TG盗圣频道- 🇭🇰 香港 4
-      - TG盗圣频道- 🇭🇰 香港 7
-      - TG盗圣频道- 🇭🇰 香港 3
-      - TG盗圣频道- 🇺🇸 美国 15
-      - TG盗圣频道- 🇺🇸 美国 2
-      - TG盗圣频道- 🇺🇸 美国 14
+      - 【直连】 香港03
+      - 【直连】日本06【0x】
+      - 【直连】日本02【0x】
+      - 【湘日隧道】 日本03 10x
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TG盗圣频道- 🇭🇰 香港 4
-      - TG盗圣频道- 🇭🇰 香港 7
-      - TG盗圣频道- 🇭🇰 香港 3
-      - TG盗圣频道- 🇺🇸 美国 15
-      - TG盗圣频道- 🇺🇸 美国 2
-      - TG盗圣频道- 🇺🇸 美国 14
+      - 【直连】 香港03
+      - 【直连】日本06【0x】
+      - 【直连】日本02【0x】
+      - 【湘日隧道】 日本03 10x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -127,12 +109,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TG盗圣频道- 🇭🇰 香港 4
-      - TG盗圣频道- 🇭🇰 香港 7
-      - TG盗圣频道- 🇭🇰 香港 3
-      - TG盗圣频道- 🇺🇸 美国 15
-      - TG盗圣频道- 🇺🇸 美国 2
-      - TG盗圣频道- 🇺🇸 美国 14
+      - 【直连】 香港03
+      - 【直连】日本06【0x】
+      - 【直连】日本02【0x】
+      - 【湘日隧道】 日本03 10x
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
