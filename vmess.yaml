@@ -5,71 +5,63 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 免费|香港|13 永久免费机场, server: pro.tls.hongkongaz.dnsfree.top, port: 55097, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 免费|香港|11 永久免费机场, server: pro.tls.hongkongaz.dnsfree.top, port: 55095, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 免费|香港|02 永久免费机场, server: baidu.hongkong.dnsfree.top, port: 55091, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 免费|香港|06 永久免费机场, server: baidu.hongkong.dnsfree.top, port: 55095, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 免费|香港|03 永久免费机场, server: baidu.hongkong.dnsfree.top, port: 55092, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 免费|香港|09 永久免费机场, server: pro.tls.hongkongaz.dnsfree.top, port: 55093, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 【DnsFree】香港-80端口, server: 20.239.49.44, port: 80, type: vmess, uuid: f94ef179-dbd0-459a-b316-1e9431316db5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tiebapic.baidu.com}, udp: true}
-  - {name: 【DnsFree】香港 0x, server: 20.239.49.44, port: 59814, type: ss, cipher: chacha20-ietf-poly1305, password: f94ef179-dbd0-459a-b316-1e9431316db5, udp: true}
-  - {name: 免费|香港|04 永久免费机场, server: baidu.hongkong.dnsfree.top, port: 55093, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 【DnsFree】日本-80端口, server: 20.27.53.193, port: 80, type: vmess, uuid: f94ef179-dbd0-459a-b316-1e9431316db5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tiebapic.baidu.com}, udp: true}
-  - {name: 免费|香港|12 永久免费机场, server: pro.tls.hongkongaz.dnsfree.top, port: 55096, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: "Free|HongKong|02 [Thin Node]", server: pro.tls.hongkongaz.dnsfree.top, port: 55091, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【直连】 香港05, server: baidu.hongkong.dnsfree.top, port: 55092, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【直连】香港02【0x】, server: 20.239.49.44, port: 59814, type: ss, cipher: chacha20-ietf-poly1305, password: 18c7133d-a808-43a1-bac7-75b27e07018e, udp: true}
+  - {name: 【直连】 香港07, server: baidu.hongkong.dnsfree.top, port: 55094, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【直连】 香港06, server: baidu.hongkong.dnsfree.top, port: 55093, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【直连】日本02【0x】, server: superjapan1111.dnsfree.top, port: 12390, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: superjapan1111.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【直连】日本04【免流】【0x】, server: superjapan1111.dnsfree.top, port: 80, type: vmess, uuid: 18c7133d-a808-43a1-bac7-75b27e07018e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tiebapic.baidu.com}, udp: true}
+  - {name: 【直连】日本05【0x】, server: superjapan1111.dnsfree.top, port: 12392, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: superjapan1111.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【直连】日本06【0x】, server: superjapan1111.dnsfree.top, port: 12388, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: superjapan1111.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【湘日隧道】 日本03 10x, server: china.changlian-axecc.898868.xyz, port: 11979, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: china.changlian-axecc.898868.xyz, skip-cert-verify: true, udp: true}
+  - {name: 【直连】香港01【免流】port.dnsfree.top, server: 20.239.49.44, port: 80, type: vmess, uuid: 18c7133d-a808-43a1-bac7-75b27e07018e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tiebapic.baidu.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 免费|香港|13 永久免费机场
-      - 免费|香港|11 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|03 永久免费机场
-      - 免费|香港|09 永久免费机场
-      - 【DnsFree】香港-80端口
-      - 【DnsFree】香港 0x
-      - 免费|香港|04 永久免费机场
-      - 【DnsFree】日本-80端口
-      - 免费|香港|12 永久免费机场
-      - Free|HongKong|02 [Thin Node]
+      - 【直连】 香港05
+      - 【直连】香港02【0x】
+      - 【直连】 香港07
+      - 【直连】 香港06
+      - 【直连】日本02【0x】
+      - 【直连】日本04【免流】【0x】
+      - 【直连】日本05【0x】
+      - 【直连】日本06【0x】
+      - 【湘日隧道】 日本03 10x
+      - 【直连】香港01【免流】port.dnsfree.top
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 免费|香港|13 永久免费机场
-      - 免费|香港|11 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|03 永久免费机场
-      - 免费|香港|09 永久免费机场
-      - 【DnsFree】香港-80端口
-      - 【DnsFree】香港 0x
-      - 免费|香港|04 永久免费机场
-      - 【DnsFree】日本-80端口
-      - 免费|香港|12 永久免费机场
-      - Free|HongKong|02 [Thin Node]
+      - 【直连】 香港05
+      - 【直连】香港02【0x】
+      - 【直连】 香港07
+      - 【直连】 香港06
+      - 【直连】日本02【0x】
+      - 【直连】日本04【免流】【0x】
+      - 【直连】日本05【0x】
+      - 【直连】日本06【0x】
+      - 【湘日隧道】 日本03 10x
+      - 【直连】香港01【免流】port.dnsfree.top
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 免费|香港|13 永久免费机场
-      - 免费|香港|11 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|03 永久免费机场
-      - 免费|香港|09 永久免费机场
-      - 【DnsFree】香港-80端口
-      - 【DnsFree】香港 0x
-      - 免费|香港|04 永久免费机场
-      - 【DnsFree】日本-80端口
-      - 免费|香港|12 永久免费机场
-      - Free|HongKong|02 [Thin Node]
+      - 【直连】 香港05
+      - 【直连】香港02【0x】
+      - 【直连】 香港07
+      - 【直连】 香港06
+      - 【直连】日本02【0x】
+      - 【直连】日本04【免流】【0x】
+      - 【直连】日本05【0x】
+      - 【直连】日本06【0x】
+      - 【湘日隧道】 日本03 10x
+      - 【直连】香港01【免流】port.dnsfree.top
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -88,85 +80,72 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 免费|香港|13 永久免费机场
-      - 免费|香港|11 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|03 永久免费机场
-      - 免费|香港|09 永久免费机场
-      - 【DnsFree】香港-80端口
-      - 【DnsFree】香港 0x
-      - 免费|香港|04 永久免费机场
-      - 【DnsFree】日本-80端口
-      - 免费|香港|12 永久免费机场
-      - Free|HongKong|02 [Thin Node]
+      - 【直连】 香港05
+      - 【直连】香港02【0x】
+      - 【直连】 香港07
+      - 【直连】 香港06
+      - 【直连】日本02【0x】
+      - 【直连】日本04【免流】【0x】
+      - 【直连】日本05【0x】
+      - 【直连】日本06【0x】
+      - 【湘日隧道】 日本03 10x
+      - 【直连】香港01【免流】port.dnsfree.top
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 免费|香港|13 永久免费机场
-      - 免费|香港|11 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|03 永久免费机场
-      - 免费|香港|09 永久免费机场
-      - 【DnsFree】香港-80端口
-      - 【DnsFree】香港 0x
-      - 免费|香港|04 永久免费机场
-      - 免费|香港|12 永久免费机场
+      - 【直连】 香港05
+      - 【直连】香港02【0x】
+      - 【直连】 香港07
+      - 【直连】 香港06
+      - 【直连】香港01【免流】port.dnsfree.top
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 免费|香港|13 永久免费机场
-      - 免费|香港|11 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|03 永久免费机场
-      - 免费|香港|09 永久免费机场
-      - 【DnsFree】香港-80端口
-      - 【DnsFree】香港 0x
-      - 免费|香港|04 永久免费机场
-      - 【DnsFree】日本-80端口
-      - 免费|香港|12 永久免费机场
-      - Free|HongKong|02 [Thin Node]
+      - 【直连】 香港05
+      - 【直连】香港02【0x】
+      - 【直连】 香港07
+      - 【直连】 香港06
+      - 【直连】日本02【0x】
+      - 【直连】日本04【免流】【0x】
+      - 【直连】日本05【0x】
+      - 【直连】日本06【0x】
+      - 【湘日隧道】 日本03 10x
+      - 【直连】香港01【免流】port.dnsfree.top
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 免费|香港|13 永久免费机场
-      - 免费|香港|11 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|03 永久免费机场
-      - 免费|香港|09 永久免费机场
-      - 【DnsFree】香港-80端口
-      - 【DnsFree】香港 0x
-      - 免费|香港|04 永久免费机场
-      - 【DnsFree】日本-80端口
-      - 免费|香港|12 永久免费机场
-      - Free|HongKong|02 [Thin Node]
+      - 【直连】 香港05
+      - 【直连】香港02【0x】
+      - 【直连】 香港07
+      - 【直连】 香港06
+      - 【直连】日本02【0x】
+      - 【直连】日本04【免流】【0x】
+      - 【直连】日本05【0x】
+      - 【直连】日本06【0x】
+      - 【湘日隧道】 日本03 10x
+      - 【直连】香港01【免流】port.dnsfree.top
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 免费|香港|13 永久免费机场
-      - 免费|香港|11 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|03 永久免费机场
-      - 免费|香港|09 永久免费机场
-      - 【DnsFree】香港-80端口
-      - 【DnsFree】香港 0x
-      - 免费|香港|04 永久免费机场
-      - 【DnsFree】日本-80端口
-      - 免费|香港|12 永久免费机场
-      - Free|HongKong|02 [Thin Node]
+      - 【直连】 香港05
+      - 【直连】香港02【0x】
+      - 【直连】 香港07
+      - 【直连】 香港06
+      - 【直连】日本02【0x】
+      - 【直连】日本04【免流】【0x】
+      - 【直连】日本05【0x】
+      - 【直连】日本06【0x】
+      - 【湘日隧道】 日本03 10x
+      - 【直连】香港01【免流】port.dnsfree.top
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -182,18 +161,16 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 免费|香港|13 永久免费机场
-      - 免费|香港|11 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|03 永久免费机场
-      - 免费|香港|09 永久免费机场
-      - 【DnsFree】香港-80端口
-      - 【DnsFree】香港 0x
-      - 免费|香港|04 永久免费机场
-      - 【DnsFree】日本-80端口
-      - 免费|香港|12 永久免费机场
-      - Free|HongKong|02 [Thin Node]
+      - 【直连】 香港05
+      - 【直连】香港02【0x】
+      - 【直连】 香港07
+      - 【直连】 香港06
+      - 【直连】日本02【0x】
+      - 【直连】日本04【免流】【0x】
+      - 【直连】日本05【0x】
+      - 【直连】日本06【0x】
+      - 【湘日隧道】 日本03 10x
+      - 【直连】香港01【免流】port.dnsfree.top
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
