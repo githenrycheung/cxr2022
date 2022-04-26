@@ -5,39 +5,75 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 【直连】 香港03, server: pro.tls.hongkongaz.dnsfree.top, port: 55091, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 【直连】日本06【0x】, server: superjapan1111.dnsfree.top, port: 12388, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: superjapan1111.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 【直连】日本02【0x】, server: superjapan1111.dnsfree.top, port: 12390, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: superjapan1111.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 【湘日隧道】 日本03 10x, server: china.changlian-axecc.898868.xyz, port: 11979, type: trojan, password: 18c7133d-a808-43a1-bac7-75b27e07018e, sni: china.changlian-axecc.898868.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港家庭宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: 1130f19a-466b-42a8-aaef-ca8a10639852, udp: true}
+  - {name: 【直连】香港02【0x】, server: 20.239.49.44, port: 59814, type: ss, cipher: chacha20-ietf-poly1305, password: f94ef179-dbd0-459a-b316-1e9431316db5, udp: true}
+  - {name: 【直连】 香港07, server: baidu.hongkong.dnsfree.top, port: 55094, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 香港IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45239, type: vmess, uuid: 1130f19a-466b-42a8-aaef-ca8a10639852, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
+  - {name: 【直连】 香港08, server: baidu.hongkong.dnsfree.top, port: 55095, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【直连】香港01【免流】port.dnsfree.top, server: 20.239.49.44, port: 80, type: vmess, uuid: f94ef179-dbd0-459a-b316-1e9431316db5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tiebapic.baidu.com}, udp: true}
+  - {name: 【直连】 香港05, server: baidu.hongkong.dnsfree.top, port: 55092, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 【直连】 香港06, server: baidu.hongkong.dnsfree.top, port: 55093, type: trojan, password: f94ef179-dbd0-459a-b316-1e9431316db5, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 台湾家庭宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45394, type: vmess, uuid: 1130f19a-466b-42a8-aaef-ca8a10639852, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
+  - {name: 新加坡IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45149, type: vmess, uuid: 1130f19a-466b-42a8-aaef-ca8a10639852, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
+  - {name: 日本IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: 1130f19a-466b-42a8-aaef-ca8a10639852, udp: true}
+  - {name: 新加坡IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45144, type: ss, cipher: chacha20-ietf-poly1305, password: 1130f19a-466b-42a8-aaef-ca8a10639852, udp: true}
+  - {name: 日本IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45184, type: vmess, uuid: 1130f19a-466b-42a8-aaef-ca8a10639852, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 【直连】 香港03
-      - 【直连】日本06【0x】
-      - 【直连】日本02【0x】
-      - 【湘日隧道】 日本03 10x
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 【直连】香港02【0x】
+      - 【直连】 香港07
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 【直连】 香港08
+      - 【直连】香港01【免流】port.dnsfree.top
+      - 【直连】 香港05
+      - 【直连】 香港06
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|V2|A01
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 【直连】 香港03
-      - 【直连】日本06【0x】
-      - 【直连】日本02【0x】
-      - 【湘日隧道】 日本03 10x
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 【直连】香港02【0x】
+      - 【直连】 香港07
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 【直连】 香港08
+      - 【直连】香港01【免流】port.dnsfree.top
+      - 【直连】 香港05
+      - 【直连】 香港06
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|V2|A01
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 【直连】 香港03
-      - 【直连】日本06【0x】
-      - 【直连】日本02【0x】
-      - 【湘日隧道】 日本03 10x
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 【直连】香港02【0x】
+      - 【直连】 香港07
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 【直连】 香港08
+      - 【直连】香港01【免流】port.dnsfree.top
+      - 【直连】 香港05
+      - 【直连】 香港06
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|V2|A01
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,44 +92,88 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 【直连】 香港03
-      - 【直连】日本06【0x】
-      - 【直连】日本02【0x】
-      - 【湘日隧道】 日本03 10x
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 【直连】香港02【0x】
+      - 【直连】 香港07
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 【直连】 香港08
+      - 【直连】香港01【免流】port.dnsfree.top
+      - 【直连】 香港05
+      - 【直连】 香港06
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|V2|A01
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 【直连】 香港03
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 【直连】香港02【0x】
+      - 【直连】 香港07
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 【直连】 香港08
+      - 【直连】香港01【免流】port.dnsfree.top
+      - 【直连】 香港05
+      - 【直连】 香港06
+      - 台湾家庭宽频|NF解锁|V2|A01
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 【直连】 香港03
-      - 【直连】日本06【0x】
-      - 【直连】日本02【0x】
-      - 【湘日隧道】 日本03 10x
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 【直连】香港02【0x】
+      - 【直连】 香港07
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 【直连】 香港08
+      - 【直连】香港01【免流】port.dnsfree.top
+      - 【直连】 香港05
+      - 【直连】 香港06
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|V2|A01
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 【直连】 香港03
-      - 【直连】日本06【0x】
-      - 【直连】日本02【0x】
-      - 【湘日隧道】 日本03 10x
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 【直连】香港02【0x】
+      - 【直连】 香港07
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 【直连】 香港08
+      - 【直连】香港01【免流】port.dnsfree.top
+      - 【直连】 香港05
+      - 【直连】 香港06
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|V2|A01
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 【直连】 香港03
-      - 【直连】日本06【0x】
-      - 【直连】日本02【0x】
-      - 【湘日隧道】 日本03 10x
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 【直连】香港02【0x】
+      - 【直连】 香港07
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 【直连】 香港08
+      - 【直连】香港01【免流】port.dnsfree.top
+      - 【直连】 香港05
+      - 【直连】 香港06
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|V2|A01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -109,10 +189,19 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 【直连】 香港03
-      - 【直连】日本06【0x】
-      - 【直连】日本02【0x】
-      - 【湘日隧道】 日本03 10x
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 【直连】香港02【0x】
+      - 【直连】 香港07
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 【直连】 香港08
+      - 【直连】香港01【免流】port.dnsfree.top
+      - 【直连】 香港05
+      - 【直连】 香港06
+      - 台湾家庭宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|V2|A01
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
