@@ -5,91 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 免费|香港|05 永久免费机场, server: baidu.hongkong.dnsfree.top, port: 55094, type: trojan, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 免费|香港|04 永久免费机场, server: baidu.hongkong.dnsfree.top, port: 55093, type: trojan, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 免费|香港|11 永久免费机场, server: pro.tls.hongkongaz.dnsfree.top, port: 55095, type: trojan, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 免费|香港|06 永久免费机场, server: baidu.hongkong.dnsfree.top, port: 55095, type: trojan, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 免费|香港|02 永久免费机场, server: baidu.hongkong.dnsfree.top, port: 55091, type: trojan, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: "Free|Japan|01 [Thin Node]", server: superjapan1111.dnsfree.top, port: 12387, type: trojan, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, sni: superjapan1111.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 免费|香港|09 永久免费机场, server: pro.tls.hongkongaz.dnsfree.top, port: 55093, type: trojan, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 免费|香港|12 永久免费机场, server: pro.tls.hongkongaz.dnsfree.top, port: 55096, type: trojan, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: "Free|HongKong|02 [Thin Node]", server: pro.tls.hongkongaz.dnsfree.top, port: 55091, type: trojan, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 免费|香港|10 永久免费机场, server: pro.tls.hongkongaz.dnsfree.top, port: 55094, type: trojan, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 免费|香港|08 永久免费机场, server: pro.tls.hongkongaz.dnsfree.top, port: 55092, type: trojan, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: "Free|Japan|02 [Thin Node]-80", server: superjapan1111.dnsfree.top, port: 80, type: vmess, uuid: 4482b51c-e12d-4f6f-836f-24f1df4fab02, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tiebapic.baidu.com}, udp: true}
-  - {name: 免费|香港|03 永久免费机场, server: baidu.hongkong.dnsfree.top, port: 55092, type: trojan, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: true, udp: true}
-  - {name: 免费|印度|02+https://t.me/DnsFreePort, server: 52.172.91.107, port: 12346, type: ss, cipher: chacha20-ietf-poly1305, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, udp: true}
-  - {name: 免费|印度|06+永久免费机场, server: 52.172.91.107, port: 12350, type: ss, cipher: chacha20-ietf-poly1305, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, udp: true}
-  - {name: 免费|印度|05+永久免费机场, server: 52.172.91.107, port: 12349, type: ss, cipher: chacha20-ietf-poly1305, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, udp: true}
-  - {name: 免费|印度|04+永久免费机场, server: 52.172.91.107, port: 12348, type: ss, cipher: chacha20-ietf-poly1305, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, udp: true}
+  - {name: LV1 日本 - realm隧道, server: jp.youzi.win, port: 27775, type: vmess, uuid: 0639a796-70ed-4c91-b3ac-1d6d3265f0d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: LV1 美国 - realm隧道, server: us.youzi.win, port: 27774, type: vmess, uuid: 0639a796-70ed-4c91-b3ac-1d6d3265f0d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: LV1 新加坡 - realm隧道, server: sg.youzi.win, port: 27773, type: vmess, uuid: 0639a796-70ed-4c91-b3ac-1d6d3265f0d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: LV1 香港 - realm隧道, server: hk.youzi.win, port: 27771, type: vmess, uuid: 0639a796-70ed-4c91-b3ac-1d6d3265f0d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 免费|香港|05 永久免费机场
-      - 免费|香港|04 永久免费机场
-      - 免费|香港|11 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - Free|Japan|01 [Thin Node]
-      - 免费|香港|09 永久免费机场
-      - 免费|香港|12 永久免费机场
-      - Free|HongKong|02 [Thin Node]
-      - 免费|香港|10 永久免费机场
-      - 免费|香港|08 永久免费机场
-      - Free|Japan|02 [Thin Node]-80
-      - 免费|香港|03 永久免费机场
-      - 免费|印度|02+https://t.me/DnsFreePort
-      - 免费|印度|06+永久免费机场
-      - 免费|印度|05+永久免费机场
-      - 免费|印度|04+永久免费机场
+      - LV1 日本 - realm隧道
+      - LV1 美国 - realm隧道
+      - LV1 新加坡 - realm隧道
+      - LV1 香港 - realm隧道
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 免费|香港|05 永久免费机场
-      - 免费|香港|04 永久免费机场
-      - 免费|香港|11 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - Free|Japan|01 [Thin Node]
-      - 免费|香港|09 永久免费机场
-      - 免费|香港|12 永久免费机场
-      - Free|HongKong|02 [Thin Node]
-      - 免费|香港|10 永久免费机场
-      - 免费|香港|08 永久免费机场
-      - Free|Japan|02 [Thin Node]-80
-      - 免费|香港|03 永久免费机场
-      - 免费|印度|02+https://t.me/DnsFreePort
-      - 免费|印度|06+永久免费机场
-      - 免费|印度|05+永久免费机场
-      - 免费|印度|04+永久免费机场
+      - LV1 日本 - realm隧道
+      - LV1 美国 - realm隧道
+      - LV1 新加坡 - realm隧道
+      - LV1 香港 - realm隧道
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 免费|香港|05 永久免费机场
-      - 免费|香港|04 永久免费机场
-      - 免费|香港|11 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - Free|Japan|01 [Thin Node]
-      - 免费|香港|09 永久免费机场
-      - 免费|香港|12 永久免费机场
-      - Free|HongKong|02 [Thin Node]
-      - 免费|香港|10 永久免费机场
-      - 免费|香港|08 永久免费机场
-      - Free|Japan|02 [Thin Node]-80
-      - 免费|香港|03 永久免费机场
-      - 免费|印度|02+https://t.me/DnsFreePort
-      - 免费|印度|06+永久免费机场
-      - 免费|印度|05+永久免费机场
-      - 免费|印度|04+永久免费机场
+      - LV1 日本 - realm隧道
+      - LV1 美国 - realm隧道
+      - LV1 新加坡 - realm隧道
+      - LV1 香港 - realm隧道
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -108,105 +56,44 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 免费|香港|05 永久免费机场
-      - 免费|香港|04 永久免费机场
-      - 免费|香港|11 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - Free|Japan|01 [Thin Node]
-      - 免费|香港|09 永久免费机场
-      - 免费|香港|12 永久免费机场
-      - Free|HongKong|02 [Thin Node]
-      - 免费|香港|10 永久免费机场
-      - 免费|香港|08 永久免费机场
-      - Free|Japan|02 [Thin Node]-80
-      - 免费|香港|03 永久免费机场
-      - 免费|印度|02+https://t.me/DnsFreePort
-      - 免费|印度|06+永久免费机场
-      - 免费|印度|05+永久免费机场
-      - 免费|印度|04+永久免费机场
+      - LV1 日本 - realm隧道
+      - LV1 美国 - realm隧道
+      - LV1 新加坡 - realm隧道
+      - LV1 香港 - realm隧道
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 免费|香港|05 永久免费机场
-      - 免费|香港|04 永久免费机场
-      - 免费|香港|11 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - 免费|香港|09 永久免费机场
-      - 免费|香港|12 永久免费机场
-      - 免费|香港|10 永久免费机场
-      - 免费|香港|08 永久免费机场
-      - 免费|香港|03 永久免费机场
+      - LV1 香港 - realm隧道
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 免费|香港|05 永久免费机场
-      - 免费|香港|04 永久免费机场
-      - 免费|香港|11 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - Free|Japan|01 [Thin Node]
-      - 免费|香港|09 永久免费机场
-      - 免费|香港|12 永久免费机场
-      - Free|HongKong|02 [Thin Node]
-      - 免费|香港|10 永久免费机场
-      - 免费|香港|08 永久免费机场
-      - Free|Japan|02 [Thin Node]-80
-      - 免费|香港|03 永久免费机场
-      - 免费|印度|02+https://t.me/DnsFreePort
-      - 免费|印度|06+永久免费机场
-      - 免费|印度|05+永久免费机场
-      - 免费|印度|04+永久免费机场
+      - LV1 日本 - realm隧道
+      - LV1 美国 - realm隧道
+      - LV1 新加坡 - realm隧道
+      - LV1 香港 - realm隧道
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 免费|香港|05 永久免费机场
-      - 免费|香港|04 永久免费机场
-      - 免费|香港|11 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - Free|Japan|01 [Thin Node]
-      - 免费|香港|09 永久免费机场
-      - 免费|香港|12 永久免费机场
-      - Free|HongKong|02 [Thin Node]
-      - 免费|香港|10 永久免费机场
-      - 免费|香港|08 永久免费机场
-      - Free|Japan|02 [Thin Node]-80
-      - 免费|香港|03 永久免费机场
-      - 免费|印度|02+https://t.me/DnsFreePort
-      - 免费|印度|06+永久免费机场
-      - 免费|印度|05+永久免费机场
-      - 免费|印度|04+永久免费机场
+      - LV1 日本 - realm隧道
+      - LV1 美国 - realm隧道
+      - LV1 新加坡 - realm隧道
+      - LV1 香港 - realm隧道
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 免费|香港|05 永久免费机场
-      - 免费|香港|04 永久免费机场
-      - 免费|香港|11 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - Free|Japan|01 [Thin Node]
-      - 免费|香港|09 永久免费机场
-      - 免费|香港|12 永久免费机场
-      - Free|HongKong|02 [Thin Node]
-      - 免费|香港|10 永久免费机场
-      - 免费|香港|08 永久免费机场
-      - Free|Japan|02 [Thin Node]-80
-      - 免费|香港|03 永久免费机场
-      - 免费|印度|02+https://t.me/DnsFreePort
-      - 免费|印度|06+永久免费机场
-      - 免费|印度|05+永久免费机场
-      - 免费|印度|04+永久免费机场
+      - LV1 日本 - realm隧道
+      - LV1 美国 - realm隧道
+      - LV1 新加坡 - realm隧道
+      - LV1 香港 - realm隧道
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -222,23 +109,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 免费|香港|05 永久免费机场
-      - 免费|香港|04 永久免费机场
-      - 免费|香港|11 永久免费机场
-      - 免费|香港|06 永久免费机场
-      - 免费|香港|02 永久免费机场
-      - Free|Japan|01 [Thin Node]
-      - 免费|香港|09 永久免费机场
-      - 免费|香港|12 永久免费机场
-      - Free|HongKong|02 [Thin Node]
-      - 免费|香港|10 永久免费机场
-      - 免费|香港|08 永久免费机场
-      - Free|Japan|02 [Thin Node]-80
-      - 免费|香港|03 永久免费机场
-      - 免费|印度|02+https://t.me/DnsFreePort
-      - 免费|印度|06+永久免费机场
-      - 免费|印度|05+永久免费机场
-      - 免费|印度|04+永久免费机场
+      - LV1 日本 - realm隧道
+      - LV1 美国 - realm隧道
+      - LV1 新加坡 - realm隧道
+      - LV1 香港 - realm隧道
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
