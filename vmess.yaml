@@ -5,63 +5,75 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[DnsFree]香港 03", server: 20.187.104.186, port: 30003, type: ss, cipher: chacha20-ietf-poly1305, password: 18c7133d-a808-43a1-bac7-75b27e07018e, udp: true}
-  - {name: "[DnsFree]香港 02", server: 20.187.104.186, port: 30002, type: ss, cipher: chacha20-ietf-poly1305, password: 18c7133d-a808-43a1-bac7-75b27e07018e, udp: true}
-  - {name: "[DnsFree]香港 04", server: 20.187.104.186, port: 30004, type: ss, cipher: chacha20-ietf-poly1305, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, udp: true}
-  - {name: "[DnsFree]香港 04 2", server: 20.187.104.186, port: 30004, type: ss, cipher: chacha20-ietf-poly1305, password: 18c7133d-a808-43a1-bac7-75b27e07018e, udp: true}
-  - {name: "[DnsFree]香港 02 2", server: 20.187.104.186, port: 30002, type: ss, cipher: chacha20-ietf-poly1305, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, udp: true}
-  - {name: "[DnsFree]香港 03 2", server: 20.187.104.186, port: 30003, type: ss, cipher: chacha20-ietf-poly1305, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, udp: true}
-  - {name: "[DnsFree]香港 01", server: 20.187.104.186, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: 18c7133d-a808-43a1-bac7-75b27e07018e, udp: true}
-  - {name: "[DnsFree]香港 01 2", server: 20.187.104.186, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, udp: true}
-  - {name: "[DnsFree]香港 06 HKBN 解锁流媒体", server: 138.19.28.2, port: 33996, type: ss, cipher: chacha20-ietf-poly1305, password: 18c7133d-a808-43a1-bac7-75b27e07018e, udp: true}
-  - {name: "[DnsFree]香港 06 HKBN 解锁流媒体 2", server: 138.19.28.2, port: 33996, type: ss, cipher: chacha20-ietf-poly1305, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, udp: true}
+  - {name: "[DnsFree]香港 06 HKBN 解锁流媒体", server: 138.19.28.2, port: 33996, type: ss, cipher: chacha20-ietf-poly1305, password: ed8c237a-02d1-4b6c-9e3f-73dda4512e67, udp: true}
+  - {name: "[DnsFree]香港 02", server: 20.187.104.186, port: 30002, type: ss, cipher: chacha20-ietf-poly1305, password: ed8c237a-02d1-4b6c-9e3f-73dda4512e67, udp: true}
+  - {name: "[DnsFree]香港 05", server: 20.187.104.186, port: 30005, type: ss, cipher: chacha20-ietf-poly1305, password: ed8c237a-02d1-4b6c-9e3f-73dda4512e67, udp: true}
+  - {name: "[DnsFree]香港 01", server: 20.187.104.186, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: ed8c237a-02d1-4b6c-9e3f-73dda4512e67, udp: true}
+  - {name: "[DnsFree]香港 03", server: 20.187.104.186, port: 30003, type: ss, cipher: chacha20-ietf-poly1305, password: ed8c237a-02d1-4b6c-9e3f-73dda4512e67, udp: true}
+  - {name: "[DnsFree]香港 04", server: 20.187.104.186, port: 30004, type: ss, cipher: chacha20-ietf-poly1305, password: ed8c237a-02d1-4b6c-9e3f-73dda4512e67, udp: true}
+  - {name: "[DnsFree]日本 01 80免流", server: 20.210.100.33, port: 80, type: vmess, uuid: ed8c237a-02d1-4b6c-9e3f-73dda4512e67, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: "[DnsFree] 日本 04", server: 20.210.100.33, port: 30003, type: ss, cipher: chacha20-ietf-poly1305, password: ed8c237a-02d1-4b6c-9e3f-73dda4512e67, udp: true}
+  - {name: "[DnsFree] 日本 06", server: 20.210.100.33, port: 30009, type: ss, cipher: chacha20-ietf-poly1305, password: ed8c237a-02d1-4b6c-9e3f-73dda4512e67, udp: true}
+  - {name: "[DnsFree] 日本 05", server: 20.210.100.33, port: 30004, type: ss, cipher: chacha20-ietf-poly1305, password: ed8c237a-02d1-4b6c-9e3f-73dda4512e67, udp: true}
+  - {name: "[DnsFree] 日本 03", server: 20.210.100.33, port: 30002, type: ss, cipher: chacha20-ietf-poly1305, password: ed8c237a-02d1-4b6c-9e3f-73dda4512e67, udp: true}
+  - {name: "[DnsFree] 日本 02", server: 20.210.100.33, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: ed8c237a-02d1-4b6c-9e3f-73dda4512e67, udp: true}
+  - {name: "[DnsFree]香港 80免流", server: 20.187.104.186, port: 80, type: vmess, uuid: ed8c237a-02d1-4b6c-9e3f-73dda4512e67, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[DnsFree]香港 03"
-      - "[DnsFree]香港 02"
-      - "[DnsFree]香港 04"
-      - "[DnsFree]香港 04 2"
-      - "[DnsFree]香港 02 2"
-      - "[DnsFree]香港 03 2"
-      - "[DnsFree]香港 01"
-      - "[DnsFree]香港 01 2"
       - "[DnsFree]香港 06 HKBN 解锁流媒体"
-      - "[DnsFree]香港 06 HKBN 解锁流媒体 2"
+      - "[DnsFree]香港 02"
+      - "[DnsFree]香港 05"
+      - "[DnsFree]香港 01"
+      - "[DnsFree]香港 03"
+      - "[DnsFree]香港 04"
+      - "[DnsFree]日本 01 80免流"
+      - "[DnsFree] 日本 04"
+      - "[DnsFree] 日本 06"
+      - "[DnsFree] 日本 05"
+      - "[DnsFree] 日本 03"
+      - "[DnsFree] 日本 02"
+      - "[DnsFree]香港 80免流"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[DnsFree]香港 03"
-      - "[DnsFree]香港 02"
-      - "[DnsFree]香港 04"
-      - "[DnsFree]香港 04 2"
-      - "[DnsFree]香港 02 2"
-      - "[DnsFree]香港 03 2"
-      - "[DnsFree]香港 01"
-      - "[DnsFree]香港 01 2"
       - "[DnsFree]香港 06 HKBN 解锁流媒体"
-      - "[DnsFree]香港 06 HKBN 解锁流媒体 2"
+      - "[DnsFree]香港 02"
+      - "[DnsFree]香港 05"
+      - "[DnsFree]香港 01"
+      - "[DnsFree]香港 03"
+      - "[DnsFree]香港 04"
+      - "[DnsFree]日本 01 80免流"
+      - "[DnsFree] 日本 04"
+      - "[DnsFree] 日本 06"
+      - "[DnsFree] 日本 05"
+      - "[DnsFree] 日本 03"
+      - "[DnsFree] 日本 02"
+      - "[DnsFree]香港 80免流"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[DnsFree]香港 03"
-      - "[DnsFree]香港 02"
-      - "[DnsFree]香港 04"
-      - "[DnsFree]香港 04 2"
-      - "[DnsFree]香港 02 2"
-      - "[DnsFree]香港 03 2"
-      - "[DnsFree]香港 01"
-      - "[DnsFree]香港 01 2"
       - "[DnsFree]香港 06 HKBN 解锁流媒体"
-      - "[DnsFree]香港 06 HKBN 解锁流媒体 2"
+      - "[DnsFree]香港 02"
+      - "[DnsFree]香港 05"
+      - "[DnsFree]香港 01"
+      - "[DnsFree]香港 03"
+      - "[DnsFree]香港 04"
+      - "[DnsFree]日本 01 80免流"
+      - "[DnsFree] 日本 04"
+      - "[DnsFree] 日本 06"
+      - "[DnsFree] 日本 05"
+      - "[DnsFree] 日本 03"
+      - "[DnsFree] 日本 02"
+      - "[DnsFree]香港 80免流"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,77 +92,86 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[DnsFree]香港 03"
-      - "[DnsFree]香港 02"
-      - "[DnsFree]香港 04"
-      - "[DnsFree]香港 04 2"
-      - "[DnsFree]香港 02 2"
-      - "[DnsFree]香港 03 2"
-      - "[DnsFree]香港 01"
-      - "[DnsFree]香港 01 2"
       - "[DnsFree]香港 06 HKBN 解锁流媒体"
-      - "[DnsFree]香港 06 HKBN 解锁流媒体 2"
+      - "[DnsFree]香港 02"
+      - "[DnsFree]香港 05"
+      - "[DnsFree]香港 01"
+      - "[DnsFree]香港 03"
+      - "[DnsFree]香港 04"
+      - "[DnsFree]日本 01 80免流"
+      - "[DnsFree] 日本 04"
+      - "[DnsFree] 日本 06"
+      - "[DnsFree] 日本 05"
+      - "[DnsFree] 日本 03"
+      - "[DnsFree] 日本 02"
+      - "[DnsFree]香港 80免流"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[DnsFree]香港 03"
-      - "[DnsFree]香港 02"
-      - "[DnsFree]香港 04"
-      - "[DnsFree]香港 04 2"
-      - "[DnsFree]香港 02 2"
-      - "[DnsFree]香港 03 2"
-      - "[DnsFree]香港 01"
-      - "[DnsFree]香港 01 2"
       - "[DnsFree]香港 06 HKBN 解锁流媒体"
-      - "[DnsFree]香港 06 HKBN 解锁流媒体 2"
+      - "[DnsFree]香港 02"
+      - "[DnsFree]香港 05"
+      - "[DnsFree]香港 01"
+      - "[DnsFree]香港 03"
+      - "[DnsFree]香港 04"
+      - "[DnsFree]香港 80免流"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[DnsFree]香港 03"
-      - "[DnsFree]香港 02"
-      - "[DnsFree]香港 04"
-      - "[DnsFree]香港 04 2"
-      - "[DnsFree]香港 02 2"
-      - "[DnsFree]香港 03 2"
-      - "[DnsFree]香港 01"
-      - "[DnsFree]香港 01 2"
       - "[DnsFree]香港 06 HKBN 解锁流媒体"
-      - "[DnsFree]香港 06 HKBN 解锁流媒体 2"
+      - "[DnsFree]香港 02"
+      - "[DnsFree]香港 05"
+      - "[DnsFree]香港 01"
+      - "[DnsFree]香港 03"
+      - "[DnsFree]香港 04"
+      - "[DnsFree]日本 01 80免流"
+      - "[DnsFree] 日本 04"
+      - "[DnsFree] 日本 06"
+      - "[DnsFree] 日本 05"
+      - "[DnsFree] 日本 03"
+      - "[DnsFree] 日本 02"
+      - "[DnsFree]香港 80免流"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[DnsFree]香港 03"
-      - "[DnsFree]香港 02"
-      - "[DnsFree]香港 04"
-      - "[DnsFree]香港 04 2"
-      - "[DnsFree]香港 02 2"
-      - "[DnsFree]香港 03 2"
-      - "[DnsFree]香港 01"
-      - "[DnsFree]香港 01 2"
       - "[DnsFree]香港 06 HKBN 解锁流媒体"
-      - "[DnsFree]香港 06 HKBN 解锁流媒体 2"
+      - "[DnsFree]香港 02"
+      - "[DnsFree]香港 05"
+      - "[DnsFree]香港 01"
+      - "[DnsFree]香港 03"
+      - "[DnsFree]香港 04"
+      - "[DnsFree]日本 01 80免流"
+      - "[DnsFree] 日本 04"
+      - "[DnsFree] 日本 06"
+      - "[DnsFree] 日本 05"
+      - "[DnsFree] 日本 03"
+      - "[DnsFree] 日本 02"
+      - "[DnsFree]香港 80免流"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[DnsFree]香港 03"
-      - "[DnsFree]香港 02"
-      - "[DnsFree]香港 04"
-      - "[DnsFree]香港 04 2"
-      - "[DnsFree]香港 02 2"
-      - "[DnsFree]香港 03 2"
-      - "[DnsFree]香港 01"
-      - "[DnsFree]香港 01 2"
       - "[DnsFree]香港 06 HKBN 解锁流媒体"
-      - "[DnsFree]香港 06 HKBN 解锁流媒体 2"
+      - "[DnsFree]香港 02"
+      - "[DnsFree]香港 05"
+      - "[DnsFree]香港 01"
+      - "[DnsFree]香港 03"
+      - "[DnsFree]香港 04"
+      - "[DnsFree]日本 01 80免流"
+      - "[DnsFree] 日本 04"
+      - "[DnsFree] 日本 06"
+      - "[DnsFree] 日本 05"
+      - "[DnsFree] 日本 03"
+      - "[DnsFree] 日本 02"
+      - "[DnsFree]香港 80免流"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -166,16 +187,19 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[DnsFree]香港 03"
-      - "[DnsFree]香港 02"
-      - "[DnsFree]香港 04"
-      - "[DnsFree]香港 04 2"
-      - "[DnsFree]香港 02 2"
-      - "[DnsFree]香港 03 2"
-      - "[DnsFree]香港 01"
-      - "[DnsFree]香港 01 2"
       - "[DnsFree]香港 06 HKBN 解锁流媒体"
-      - "[DnsFree]香港 06 HKBN 解锁流媒体 2"
+      - "[DnsFree]香港 02"
+      - "[DnsFree]香港 05"
+      - "[DnsFree]香港 01"
+      - "[DnsFree]香港 03"
+      - "[DnsFree]香港 04"
+      - "[DnsFree]日本 01 80免流"
+      - "[DnsFree] 日本 04"
+      - "[DnsFree] 日本 06"
+      - "[DnsFree] 日本 05"
+      - "[DnsFree] 日本 03"
+      - "[DnsFree] 日本 02"
+      - "[DnsFree]香港 80免流"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
