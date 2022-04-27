@@ -5,35 +5,103 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: SP*香港 01, server: hkml01.fenglingcloud.com, port: 80, type: vmess, uuid: 4560dd54-c0c4-4d25-8486-4a92e71065c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hkml01.fenglingcloud.com}, udp: true}
-  - {name: SR*灾难备用 SG, server: cm.fenglingcloud.com, port: 37611, type: ss, cipher: chacha20-ietf-poly1305, password: 4560dd54-c0c4-4d25-8486-4a92e71065c9, udp: true}
-  - {name: SP*香港 00, server: hkml00.fenglingcloud.com, port: 80, type: vmess, uuid: 4560dd54-c0c4-4d25-8486-4a92e71065c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /linggg, ws-headers: {Host: hkml00.fenglingcloud.com}, udp: true}
+  - {name: lv.5-中国==>香港5, server: zh01lv5hk05.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
+  - {name: lv.5-中国==>香港9, server: zh01lv5hk09.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
+  - {name: lv.5-中国==>香港7, server: zh01lv5hk07.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
+  - {name: lv.5-中国==>香港10, server: zh01lv5hk10.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
+  - {name: lv.5-中国==>香港6, server: zh01lv5hk06.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
+  - {name: lv.5-中国==>香港8, server: zh01lv5hk08.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
+  - {name: lv.5-中国==>英国5, server: zh01lv5uk05.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
+  - {name: lv.5-中国==>英国4, server: zh01lv5uk04.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
+  - {name: lv.5-中国==>英国3, server: zh01lv5uk03.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
+  - {name: lv.5-中国==>英国1, server: zh01lv5uk01.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
+  - {name: lv.5-中国==>英国2, server: zh01lv5uk02.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
+  - {name: lv.5-中国==>德国2, server: zh01lv5ge02.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
+  - {name: lv.5-中国==>德国5, server: zh01lv5ge05.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
+  - {name: lv.5-中国==>美国1, server: zh01lv5us01.feiguayun.xyz, port: 33087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
+  - {name: lv.5-中国==>德国4, server: zh01lv5ge04.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
+  - {name: 售后tg/土豆：@tzgaowei, server: test2.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
+  - {name: lv.5-中国==>加拿大5, server: zh01lv5ca05.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
+  - {name: lv.5-中国==>加拿大3, server: zh01lv5ca03.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
+  - {name: lv.5-中国==>加拿大4, server: zh01lv5ca04.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
+  - {name: lv.5-中国==>德国3, server: zh01lv5ge03.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SP*香港 01
-      - SR*灾难备用 SG
-      - SP*香港 00
+      - lv.5-中国==>香港5
+      - lv.5-中国==>香港9
+      - lv.5-中国==>香港7
+      - lv.5-中国==>香港10
+      - lv.5-中国==>香港6
+      - lv.5-中国==>香港8
+      - lv.5-中国==>英国5
+      - lv.5-中国==>英国4
+      - lv.5-中国==>英国3
+      - lv.5-中国==>英国1
+      - lv.5-中国==>英国2
+      - lv.5-中国==>德国2
+      - lv.5-中国==>德国5
+      - lv.5-中国==>美国1
+      - lv.5-中国==>德国4
+      - 售后tg/土豆：@tzgaowei
+      - lv.5-中国==>加拿大5
+      - lv.5-中国==>加拿大3
+      - lv.5-中国==>加拿大4
+      - lv.5-中国==>德国3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - SP*香港 01
-      - SR*灾难备用 SG
-      - SP*香港 00
+      - lv.5-中国==>香港5
+      - lv.5-中国==>香港9
+      - lv.5-中国==>香港7
+      - lv.5-中国==>香港10
+      - lv.5-中国==>香港6
+      - lv.5-中国==>香港8
+      - lv.5-中国==>英国5
+      - lv.5-中国==>英国4
+      - lv.5-中国==>英国3
+      - lv.5-中国==>英国1
+      - lv.5-中国==>英国2
+      - lv.5-中国==>德国2
+      - lv.5-中国==>德国5
+      - lv.5-中国==>美国1
+      - lv.5-中国==>德国4
+      - 售后tg/土豆：@tzgaowei
+      - lv.5-中国==>加拿大5
+      - lv.5-中国==>加拿大3
+      - lv.5-中国==>加拿大4
+      - lv.5-中国==>德国3
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SP*香港 01
-      - SR*灾难备用 SG
-      - SP*香港 00
+      - lv.5-中国==>香港5
+      - lv.5-中国==>香港9
+      - lv.5-中国==>香港7
+      - lv.5-中国==>香港10
+      - lv.5-中国==>香港6
+      - lv.5-中国==>香港8
+      - lv.5-中国==>英国5
+      - lv.5-中国==>英国4
+      - lv.5-中国==>英国3
+      - lv.5-中国==>英国1
+      - lv.5-中国==>英国2
+      - lv.5-中国==>德国2
+      - lv.5-中国==>德国5
+      - lv.5-中国==>美国1
+      - lv.5-中国==>德国4
+      - 售后tg/土豆：@tzgaowei
+      - lv.5-中国==>加拿大5
+      - lv.5-中国==>加拿大3
+      - lv.5-中国==>加拿大4
+      - lv.5-中国==>德国3
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,41 +120,113 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SP*香港 01
-      - SR*灾难备用 SG
-      - SP*香港 00
+      - lv.5-中国==>香港5
+      - lv.5-中国==>香港9
+      - lv.5-中国==>香港7
+      - lv.5-中国==>香港10
+      - lv.5-中国==>香港6
+      - lv.5-中国==>香港8
+      - lv.5-中国==>英国5
+      - lv.5-中国==>英国4
+      - lv.5-中国==>英国3
+      - lv.5-中国==>英国1
+      - lv.5-中国==>英国2
+      - lv.5-中国==>德国2
+      - lv.5-中国==>德国5
+      - lv.5-中国==>美国1
+      - lv.5-中国==>德国4
+      - 售后tg/土豆：@tzgaowei
+      - lv.5-中国==>加拿大5
+      - lv.5-中国==>加拿大3
+      - lv.5-中国==>加拿大4
+      - lv.5-中国==>德国3
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - SP*香港 01
-      - SP*香港 00
+      - lv.5-中国==>香港5
+      - lv.5-中国==>香港9
+      - lv.5-中国==>香港7
+      - lv.5-中国==>香港10
+      - lv.5-中国==>香港6
+      - lv.5-中国==>香港8
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - SP*香港 01
-      - SR*灾难备用 SG
-      - SP*香港 00
+      - lv.5-中国==>香港5
+      - lv.5-中国==>香港9
+      - lv.5-中国==>香港7
+      - lv.5-中国==>香港10
+      - lv.5-中国==>香港6
+      - lv.5-中国==>香港8
+      - lv.5-中国==>英国5
+      - lv.5-中国==>英国4
+      - lv.5-中国==>英国3
+      - lv.5-中国==>英国1
+      - lv.5-中国==>英国2
+      - lv.5-中国==>德国2
+      - lv.5-中国==>德国5
+      - lv.5-中国==>美国1
+      - lv.5-中国==>德国4
+      - 售后tg/土豆：@tzgaowei
+      - lv.5-中国==>加拿大5
+      - lv.5-中国==>加拿大3
+      - lv.5-中国==>加拿大4
+      - lv.5-中国==>德国3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - SP*香港 01
-      - SR*灾难备用 SG
-      - SP*香港 00
+      - lv.5-中国==>香港5
+      - lv.5-中国==>香港9
+      - lv.5-中国==>香港7
+      - lv.5-中国==>香港10
+      - lv.5-中国==>香港6
+      - lv.5-中国==>香港8
+      - lv.5-中国==>英国5
+      - lv.5-中国==>英国4
+      - lv.5-中国==>英国3
+      - lv.5-中国==>英国1
+      - lv.5-中国==>英国2
+      - lv.5-中国==>德国2
+      - lv.5-中国==>德国5
+      - lv.5-中国==>美国1
+      - lv.5-中国==>德国4
+      - 售后tg/土豆：@tzgaowei
+      - lv.5-中国==>加拿大5
+      - lv.5-中国==>加拿大3
+      - lv.5-中国==>加拿大4
+      - lv.5-中国==>德国3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SP*香港 01
-      - SR*灾难备用 SG
-      - SP*香港 00
+      - lv.5-中国==>香港5
+      - lv.5-中国==>香港9
+      - lv.5-中国==>香港7
+      - lv.5-中国==>香港10
+      - lv.5-中国==>香港6
+      - lv.5-中国==>香港8
+      - lv.5-中国==>英国5
+      - lv.5-中国==>英国4
+      - lv.5-中国==>英国3
+      - lv.5-中国==>英国1
+      - lv.5-中国==>英国2
+      - lv.5-中国==>德国2
+      - lv.5-中国==>德国5
+      - lv.5-中国==>美国1
+      - lv.5-中国==>德国4
+      - 售后tg/土豆：@tzgaowei
+      - lv.5-中国==>加拿大5
+      - lv.5-中国==>加拿大3
+      - lv.5-中国==>加拿大4
+      - lv.5-中国==>德国3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -102,9 +242,26 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SP*香港 01
-      - SR*灾难备用 SG
-      - SP*香港 00
+      - lv.5-中国==>香港5
+      - lv.5-中国==>香港9
+      - lv.5-中国==>香港7
+      - lv.5-中国==>香港10
+      - lv.5-中国==>香港6
+      - lv.5-中国==>香港8
+      - lv.5-中国==>英国5
+      - lv.5-中国==>英国4
+      - lv.5-中国==>英国3
+      - lv.5-中国==>英国1
+      - lv.5-中国==>英国2
+      - lv.5-中国==>德国2
+      - lv.5-中国==>德国5
+      - lv.5-中国==>美国1
+      - lv.5-中国==>德国4
+      - 售后tg/土豆：@tzgaowei
+      - lv.5-中国==>加拿大5
+      - lv.5-中国==>加拿大3
+      - lv.5-中国==>加拿大4
+      - lv.5-中国==>德国3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
