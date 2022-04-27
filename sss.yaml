@@ -5,155 +5,171 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Singapore 03, server: api-gzct.malibaba.xyz, port: 17099, type: trojan, password: 303f0e46-9f1f-37f3-99e3-33fa8fcf4e31, sni: api-gzct.malibaba.xyz, skip-cert-verify: true, udp: true}
-  - {name: "[DnsFree]香港 02", server: 20.187.104.186, port: 30002, type: ss, cipher: chacha20-ietf-poly1305, password: f94ef179-dbd0-459a-b316-1e9431316db5, udp: true}
-  - {name: 新加坡IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45149, type: vmess, uuid: 1130f19a-466b-42a8-aaef-ca8a10639852, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
-  - {name: HongKong 02, server: api-gzct.malibaba.xyz, port: 10081, type: trojan, password: 303f0e46-9f1f-37f3-99e3-33fa8fcf4e31, sni: api-gzct.malibaba.xyz, skip-cert-verify: true, udp: true}
-  - {name: "[DnsFree]香港 01", server: 20.187.104.186, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: f94ef179-dbd0-459a-b316-1e9431316db5, udp: true}
-  - {name: 香港IDC宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45239, type: vmess, uuid: 1130f19a-466b-42a8-aaef-ca8a10639852, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hz.bgp.rx.naiun.pw}, udp: true}
-  - {name: Singapore 05, server: api-gzct.malibaba.xyz, port: 37071, type: trojan, password: 303f0e46-9f1f-37f3-99e3-33fa8fcf4e31, sni: api-gzct.malibaba.xyz, skip-cert-verify: true, udp: true}
-  - {name: "[DnsFree]香港 04", server: 20.187.104.186, port: 30004, type: ss, cipher: chacha20-ietf-poly1305, password: f94ef179-dbd0-459a-b316-1e9431316db5, udp: true}
-  - {name: 香港IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45239, type: vmess, uuid: 1130f19a-466b-42a8-aaef-ca8a10639852, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
-  - {name: Singapore 04, server: api-gzct.malibaba.xyz, port: 18705, type: trojan, password: 303f0e46-9f1f-37f3-99e3-33fa8fcf4e31, sni: api-gzct.malibaba.xyz, skip-cert-verify: true, udp: true}
-  - {name: "[DnsFree]香港 03", server: 20.187.104.186, port: 30003, type: ss, cipher: chacha20-ietf-poly1305, password: f94ef179-dbd0-459a-b316-1e9431316db5, udp: true}
-  - {name: 香港家庭宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: 1130f19a-466b-42a8-aaef-ca8a10639852, udp: true}
-  - {name: HongKong 03, server: api-gzct.malibaba.xyz, port: 10082, type: trojan, password: 303f0e46-9f1f-37f3-99e3-33fa8fcf4e31, sni: api-gzct.malibaba.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港IDC宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: 1130f19a-466b-42a8-aaef-ca8a10639852, udp: true}
-  - {name: 美国IDC宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45194, type: vmess, uuid: 1130f19a-466b-42a8-aaef-ca8a10639852, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 美国IDC宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: 1130f19a-466b-42a8-aaef-ca8a10639852, udp: true}
-  - {name: 台湾家庭宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45394, type: vmess, uuid: 1130f19a-466b-42a8-aaef-ca8a10639852, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 香港IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: 1130f19a-466b-42a8-aaef-ca8a10639852, udp: true}
-  - {name: Singapore 02, server: api-01.malibaba.xyz, port: 38599, type: trojan, password: 303f0e46-9f1f-37f3-99e3-33fa8fcf4e31, sni: api-01.malibaba.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[DnsFree] 日本 02", server: 20.210.100.33, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, udp: true}
+  - {name: "[DnsFree] 日本 03", server: 20.210.100.33, port: 30002, type: ss, cipher: chacha20-ietf-poly1305, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, udp: true}
+  - {name: "[DnsFree] 日本 04", server: 20.210.100.33, port: 30003, type: ss, cipher: chacha20-ietf-poly1305, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, udp: true}
+  - {name: "[DnsFree] 日本 05", server: 20.210.100.33, port: 30004, type: ss, cipher: chacha20-ietf-poly1305, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, udp: true}
+  - {name: "[DnsFree] 日本 06", server: 20.210.100.33, port: 30009, type: ss, cipher: chacha20-ietf-poly1305, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, udp: true}
+  - {name: "[DnsFree]日本 01 80免流", server: 20.210.100.33, port: 80, type: vmess, uuid: 4482b51c-e12d-4f6f-836f-24f1df4fab02, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: "[DnsFree]香港 01", server: 20.187.104.186, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, udp: true}
+  - {name: "[DnsFree]香港 02", server: 20.187.104.186, port: 30002, type: ss, cipher: chacha20-ietf-poly1305, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, udp: true}
+  - {name: "[DnsFree]香港 03", server: 20.187.104.186, port: 30003, type: ss, cipher: chacha20-ietf-poly1305, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, udp: true}
+  - {name: "[DnsFree]香港 04", server: 20.187.104.186, port: 30004, type: ss, cipher: chacha20-ietf-poly1305, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, udp: true}
+  - {name: "[DnsFree]香港 05", server: 20.187.104.186, port: 30005, type: ss, cipher: chacha20-ietf-poly1305, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, udp: true}
+  - {name: "[DnsFree]香港 06 HKBN 解锁流媒体", server: 138.19.28.2, port: 33996, type: ss, cipher: chacha20-ietf-poly1305, password: 4482b51c-e12d-4f6f-836f-24f1df4fab02, udp: true}
+  - {name: "[DnsFree]香港 80免流", server: 20.187.104.186, port: 80, type: vmess, uuid: 4482b51c-e12d-4f6f-836f-24f1df4fab02, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}, udp: true}
   - {name: Singapore 01, server: api-01.malibaba.xyz, port: 31769, type: trojan, password: 303f0e46-9f1f-37f3-99e3-33fa8fcf4e31, sni: api-01.malibaba.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45194, type: vmess, uuid: 1130f19a-466b-42a8-aaef-ca8a10639852, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 日本IDC宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45184, type: vmess, uuid: 1130f19a-466b-42a8-aaef-ca8a10639852, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 美国IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: 1130f19a-466b-42a8-aaef-ca8a10639852, udp: true}
-  - {name: 日本IDC宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: 1130f19a-466b-42a8-aaef-ca8a10639852, udp: true}
-  - {name: 新加坡IDC宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45144, type: ss, cipher: chacha20-ietf-poly1305, password: 1130f19a-466b-42a8-aaef-ca8a10639852, udp: true}
-  - {name: 新加坡IDC宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45149, type: vmess, uuid: 1130f19a-466b-42a8-aaef-ca8a10639852, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 香港家庭宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: 1130f19a-466b-42a8-aaef-ca8a10639852, udp: true}
-  - {name: 台湾家庭宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45394, type: vmess, uuid: 1130f19a-466b-42a8-aaef-ca8a10639852, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
-  - {name: 台湾家庭宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45392, type: ss, cipher: chacha20-ietf-poly1305, password: 1130f19a-466b-42a8-aaef-ca8a10639852, udp: true}
-  - {name: 日本IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: 1130f19a-466b-42a8-aaef-ca8a10639852, udp: true}
-  - {name: 日本IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45184, type: vmess, uuid: 1130f19a-466b-42a8-aaef-ca8a10639852, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
-  - {name: "[DnsFree]香港 06 HKBN 解锁流媒体", server: 138.19.28.2, port: 33996, type: ss, cipher: chacha20-ietf-poly1305, password: f94ef179-dbd0-459a-b316-1e9431316db5, udp: true}
-  - {name: 新加坡IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45144, type: ss, cipher: chacha20-ietf-poly1305, password: 1130f19a-466b-42a8-aaef-ca8a10639852, udp: true}
+  - {name: Singapore 02, server: api-01.malibaba.xyz, port: 38599, type: trojan, password: 303f0e46-9f1f-37f3-99e3-33fa8fcf4e31, sni: api-01.malibaba.xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: 918ce9ab-8c7c-4b81-84aa-11100e98e05d, udp: true}
+  - {name: 美国IDC宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: 918ce9ab-8c7c-4b81-84aa-11100e98e05d, udp: true}
+  - {name: 美国IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45194, type: vmess, uuid: 918ce9ab-8c7c-4b81-84aa-11100e98e05d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
+  - {name: 美国IDC宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45194, type: vmess, uuid: 918ce9ab-8c7c-4b81-84aa-11100e98e05d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hz.bgp.rx.naiun.pw}, udp: true}
+  - {name: 日本IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: 918ce9ab-8c7c-4b81-84aa-11100e98e05d, udp: true}
+  - {name: 日本IDC宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: 918ce9ab-8c7c-4b81-84aa-11100e98e05d, udp: true}
+  - {name: 日本IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45184, type: vmess, uuid: 918ce9ab-8c7c-4b81-84aa-11100e98e05d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
+  - {name: 日本IDC宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45184, type: vmess, uuid: 918ce9ab-8c7c-4b81-84aa-11100e98e05d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hz.bgp.rx.naiun.pw}, udp: true}
+  - {name: 台湾家庭宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45392, type: ss, cipher: chacha20-ietf-poly1305, password: 918ce9ab-8c7c-4b81-84aa-11100e98e05d, udp: true}
+  - {name: 台湾家庭宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45392, type: ss, cipher: chacha20-ietf-poly1305, password: 918ce9ab-8c7c-4b81-84aa-11100e98e05d, udp: true}
+  - {name: 台湾家庭宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45394, type: vmess, uuid: 918ce9ab-8c7c-4b81-84aa-11100e98e05d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
+  - {name: 台湾家庭宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45394, type: vmess, uuid: 918ce9ab-8c7c-4b81-84aa-11100e98e05d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hz.bgp.rx.naiun.pw}, udp: true}
+  - {name: 香港IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: 918ce9ab-8c7c-4b81-84aa-11100e98e05d, udp: true}
+  - {name: 香港IDC宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: 918ce9ab-8c7c-4b81-84aa-11100e98e05d, udp: true}
+  - {name: 香港IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45239, type: vmess, uuid: 918ce9ab-8c7c-4b81-84aa-11100e98e05d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
+  - {name: 香港IDC宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45239, type: vmess, uuid: 918ce9ab-8c7c-4b81-84aa-11100e98e05d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hz.bgp.rx.naiun.pw}, udp: true}
+  - {name: 香港家庭宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: 918ce9ab-8c7c-4b81-84aa-11100e98e05d, udp: true}
+  - {name: 香港家庭宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: 918ce9ab-8c7c-4b81-84aa-11100e98e05d, udp: true}
+  - {name: 新加坡IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45144, type: ss, cipher: chacha20-ietf-poly1305, password: 918ce9ab-8c7c-4b81-84aa-11100e98e05d, udp: true}
+  - {name: 新加坡IDC宽频|NF解锁|SS|B01, server: hz.bgp.rx.naiun.pw, port: 45144, type: ss, cipher: chacha20-ietf-poly1305, password: 918ce9ab-8c7c-4b81-84aa-11100e98e05d, udp: true}
+  - {name: 新加坡IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45149, type: vmess, uuid: 918ce9ab-8c7c-4b81-84aa-11100e98e05d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
+  - {name: 新加坡IDC宽频|NF解锁|V2|B01, server: hz.bgp.rx.naiun.pw, port: 45149, type: vmess, uuid: 918ce9ab-8c7c-4b81-84aa-11100e98e05d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hz.bgp.rx.naiun.pw}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Singapore 03
-      - "[DnsFree]香港 02"
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - HongKong 02
+      - "[DnsFree] 日本 02"
+      - "[DnsFree] 日本 03"
+      - "[DnsFree] 日本 04"
+      - "[DnsFree] 日本 05"
+      - "[DnsFree] 日本 06"
+      - "[DnsFree]日本 01 80免流"
       - "[DnsFree]香港 01"
-      - 香港IDC宽频|NF解锁|V2|B01
-      - Singapore 05
-      - "[DnsFree]香港 04"
-      - 香港IDC宽频|NF解锁|V2|A01
-      - Singapore 04
+      - "[DnsFree]香港 02"
       - "[DnsFree]香港 03"
-      - 香港家庭宽频|NF解锁|SS|A01
-      - HongKong 03
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|V2|B01
+      - "[DnsFree]香港 04"
+      - "[DnsFree]香港 05"
+      - "[DnsFree]香港 06 HKBN 解锁流媒体"
+      - "[DnsFree]香港 80免流"
+      - Singapore 01
+      - Singapore 02
+      - 美国IDC宽频|NF解锁|SS|A01
       - 美国IDC宽频|NF解锁|SS|B01
+      - 美国IDC宽频|NF解锁|V2|A01
+      - 美国IDC宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|V2|A01
       - 台湾家庭宽频|NF解锁|V2|B01
       - 香港IDC宽频|NF解锁|SS|A01
-      - Singapore 02
-      - Singapore 01
-      - 美国IDC宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|SS|A01
       - 香港家庭宽频|NF解锁|SS|B01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|V2|A01
-      - "[DnsFree]香港 06 HKBN 解锁流媒体"
       - 新加坡IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|V2|B01
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Singapore 03
-      - "[DnsFree]香港 02"
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - HongKong 02
+      - "[DnsFree] 日本 02"
+      - "[DnsFree] 日本 03"
+      - "[DnsFree] 日本 04"
+      - "[DnsFree] 日本 05"
+      - "[DnsFree] 日本 06"
+      - "[DnsFree]日本 01 80免流"
       - "[DnsFree]香港 01"
-      - 香港IDC宽频|NF解锁|V2|B01
-      - Singapore 05
-      - "[DnsFree]香港 04"
-      - 香港IDC宽频|NF解锁|V2|A01
-      - Singapore 04
+      - "[DnsFree]香港 02"
       - "[DnsFree]香港 03"
-      - 香港家庭宽频|NF解锁|SS|A01
-      - HongKong 03
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|V2|B01
+      - "[DnsFree]香港 04"
+      - "[DnsFree]香港 05"
+      - "[DnsFree]香港 06 HKBN 解锁流媒体"
+      - "[DnsFree]香港 80免流"
+      - Singapore 01
+      - Singapore 02
+      - 美国IDC宽频|NF解锁|SS|A01
       - 美国IDC宽频|NF解锁|SS|B01
+      - 美国IDC宽频|NF解锁|V2|A01
+      - 美国IDC宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|V2|A01
       - 台湾家庭宽频|NF解锁|V2|B01
       - 香港IDC宽频|NF解锁|SS|A01
-      - Singapore 02
-      - Singapore 01
-      - 美国IDC宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|SS|A01
       - 香港家庭宽频|NF解锁|SS|B01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|V2|A01
-      - "[DnsFree]香港 06 HKBN 解锁流媒体"
       - 新加坡IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|V2|B01
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Singapore 03
-      - "[DnsFree]香港 02"
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - HongKong 02
+      - "[DnsFree] 日本 02"
+      - "[DnsFree] 日本 03"
+      - "[DnsFree] 日本 04"
+      - "[DnsFree] 日本 05"
+      - "[DnsFree] 日本 06"
+      - "[DnsFree]日本 01 80免流"
       - "[DnsFree]香港 01"
-      - 香港IDC宽频|NF解锁|V2|B01
-      - Singapore 05
-      - "[DnsFree]香港 04"
-      - 香港IDC宽频|NF解锁|V2|A01
-      - Singapore 04
+      - "[DnsFree]香港 02"
       - "[DnsFree]香港 03"
-      - 香港家庭宽频|NF解锁|SS|A01
-      - HongKong 03
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|V2|B01
+      - "[DnsFree]香港 04"
+      - "[DnsFree]香港 05"
+      - "[DnsFree]香港 06 HKBN 解锁流媒体"
+      - "[DnsFree]香港 80免流"
+      - Singapore 01
+      - Singapore 02
+      - 美国IDC宽频|NF解锁|SS|A01
       - 美国IDC宽频|NF解锁|SS|B01
+      - 美国IDC宽频|NF解锁|V2|A01
+      - 美国IDC宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|V2|A01
       - 台湾家庭宽频|NF解锁|V2|B01
       - 香港IDC宽频|NF解锁|SS|A01
-      - Singapore 02
-      - Singapore 01
-      - 美国IDC宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|SS|A01
       - 香港家庭宽频|NF解锁|SS|B01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|V2|A01
-      - "[DnsFree]香港 06 HKBN 解锁流媒体"
       - 新加坡IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|V2|B01
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -172,173 +188,192 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Singapore 03
-      - "[DnsFree]香港 02"
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - HongKong 02
+      - "[DnsFree] 日本 02"
+      - "[DnsFree] 日本 03"
+      - "[DnsFree] 日本 04"
+      - "[DnsFree] 日本 05"
+      - "[DnsFree] 日本 06"
+      - "[DnsFree]日本 01 80免流"
       - "[DnsFree]香港 01"
-      - 香港IDC宽频|NF解锁|V2|B01
-      - Singapore 05
-      - "[DnsFree]香港 04"
-      - 香港IDC宽频|NF解锁|V2|A01
-      - Singapore 04
+      - "[DnsFree]香港 02"
       - "[DnsFree]香港 03"
-      - 香港家庭宽频|NF解锁|SS|A01
-      - HongKong 03
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|V2|B01
+      - "[DnsFree]香港 04"
+      - "[DnsFree]香港 05"
+      - "[DnsFree]香港 06 HKBN 解锁流媒体"
+      - "[DnsFree]香港 80免流"
+      - Singapore 01
+      - Singapore 02
+      - 美国IDC宽频|NF解锁|SS|A01
       - 美国IDC宽频|NF解锁|SS|B01
+      - 美国IDC宽频|NF解锁|V2|A01
+      - 美国IDC宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|V2|A01
       - 台湾家庭宽频|NF解锁|V2|B01
       - 香港IDC宽频|NF解锁|SS|A01
-      - Singapore 02
-      - Singapore 01
-      - 美国IDC宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|SS|A01
       - 香港家庭宽频|NF解锁|SS|B01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|V2|A01
-      - "[DnsFree]香港 06 HKBN 解锁流媒体"
       - 新加坡IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|V2|B01
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[DnsFree]香港 02"
       - "[DnsFree]香港 01"
-      - 香港IDC宽频|NF解锁|V2|B01
-      - "[DnsFree]香港 04"
-      - 香港IDC宽频|NF解锁|V2|A01
+      - "[DnsFree]香港 02"
       - "[DnsFree]香港 03"
-      - 香港家庭宽频|NF解锁|SS|A01
-      - 香港IDC宽频|NF解锁|SS|B01
+      - "[DnsFree]香港 04"
+      - "[DnsFree]香港 05"
+      - "[DnsFree]香港 06 HKBN 解锁流媒体"
+      - "[DnsFree]香港 80免流"
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|V2|A01
       - 台湾家庭宽频|NF解锁|V2|B01
       - 香港IDC宽频|NF解锁|SS|A01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|SS|A01
       - 香港家庭宽频|NF解锁|SS|B01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - "[DnsFree]香港 06 HKBN 解锁流媒体"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Singapore 03
-      - "[DnsFree]香港 02"
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - HongKong 02
+      - "[DnsFree] 日本 02"
+      - "[DnsFree] 日本 03"
+      - "[DnsFree] 日本 04"
+      - "[DnsFree] 日本 05"
+      - "[DnsFree] 日本 06"
+      - "[DnsFree]日本 01 80免流"
       - "[DnsFree]香港 01"
-      - 香港IDC宽频|NF解锁|V2|B01
-      - Singapore 05
-      - "[DnsFree]香港 04"
-      - 香港IDC宽频|NF解锁|V2|A01
-      - Singapore 04
+      - "[DnsFree]香港 02"
       - "[DnsFree]香港 03"
-      - 香港家庭宽频|NF解锁|SS|A01
-      - HongKong 03
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|V2|B01
+      - "[DnsFree]香港 04"
+      - "[DnsFree]香港 05"
+      - "[DnsFree]香港 06 HKBN 解锁流媒体"
+      - "[DnsFree]香港 80免流"
+      - Singapore 01
+      - Singapore 02
+      - 美国IDC宽频|NF解锁|SS|A01
       - 美国IDC宽频|NF解锁|SS|B01
+      - 美国IDC宽频|NF解锁|V2|A01
+      - 美国IDC宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|V2|A01
       - 台湾家庭宽频|NF解锁|V2|B01
       - 香港IDC宽频|NF解锁|SS|A01
-      - Singapore 02
-      - Singapore 01
-      - 美国IDC宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|SS|A01
       - 香港家庭宽频|NF解锁|SS|B01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|V2|A01
-      - "[DnsFree]香港 06 HKBN 解锁流媒体"
       - 新加坡IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|V2|B01
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Singapore 03
-      - "[DnsFree]香港 02"
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - HongKong 02
+      - "[DnsFree] 日本 02"
+      - "[DnsFree] 日本 03"
+      - "[DnsFree] 日本 04"
+      - "[DnsFree] 日本 05"
+      - "[DnsFree] 日本 06"
+      - "[DnsFree]日本 01 80免流"
       - "[DnsFree]香港 01"
-      - 香港IDC宽频|NF解锁|V2|B01
-      - Singapore 05
-      - "[DnsFree]香港 04"
-      - 香港IDC宽频|NF解锁|V2|A01
-      - Singapore 04
+      - "[DnsFree]香港 02"
       - "[DnsFree]香港 03"
-      - 香港家庭宽频|NF解锁|SS|A01
-      - HongKong 03
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|V2|B01
+      - "[DnsFree]香港 04"
+      - "[DnsFree]香港 05"
+      - "[DnsFree]香港 06 HKBN 解锁流媒体"
+      - "[DnsFree]香港 80免流"
+      - Singapore 01
+      - Singapore 02
+      - 美国IDC宽频|NF解锁|SS|A01
       - 美国IDC宽频|NF解锁|SS|B01
+      - 美国IDC宽频|NF解锁|V2|A01
+      - 美国IDC宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|V2|A01
       - 台湾家庭宽频|NF解锁|V2|B01
       - 香港IDC宽频|NF解锁|SS|A01
-      - Singapore 02
-      - Singapore 01
-      - 美国IDC宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|SS|A01
       - 香港家庭宽频|NF解锁|SS|B01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|V2|A01
-      - "[DnsFree]香港 06 HKBN 解锁流媒体"
       - 新加坡IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|V2|B01
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Singapore 03
-      - "[DnsFree]香港 02"
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - HongKong 02
+      - "[DnsFree] 日本 02"
+      - "[DnsFree] 日本 03"
+      - "[DnsFree] 日本 04"
+      - "[DnsFree] 日本 05"
+      - "[DnsFree] 日本 06"
+      - "[DnsFree]日本 01 80免流"
       - "[DnsFree]香港 01"
-      - 香港IDC宽频|NF解锁|V2|B01
-      - Singapore 05
-      - "[DnsFree]香港 04"
-      - 香港IDC宽频|NF解锁|V2|A01
-      - Singapore 04
+      - "[DnsFree]香港 02"
       - "[DnsFree]香港 03"
-      - 香港家庭宽频|NF解锁|SS|A01
-      - HongKong 03
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|V2|B01
+      - "[DnsFree]香港 04"
+      - "[DnsFree]香港 05"
+      - "[DnsFree]香港 06 HKBN 解锁流媒体"
+      - "[DnsFree]香港 80免流"
+      - Singapore 01
+      - Singapore 02
+      - 美国IDC宽频|NF解锁|SS|A01
       - 美国IDC宽频|NF解锁|SS|B01
+      - 美国IDC宽频|NF解锁|V2|A01
+      - 美国IDC宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|V2|A01
       - 台湾家庭宽频|NF解锁|V2|B01
       - 香港IDC宽频|NF解锁|SS|A01
-      - Singapore 02
-      - Singapore 01
-      - 美国IDC宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|SS|A01
       - 香港家庭宽频|NF解锁|SS|B01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|V2|A01
-      - "[DnsFree]香港 06 HKBN 解锁流媒体"
       - 新加坡IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|V2|B01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -354,39 +389,43 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Singapore 03
-      - "[DnsFree]香港 02"
-      - 新加坡IDC宽频|NF解锁|V2|A01
-      - HongKong 02
+      - "[DnsFree] 日本 02"
+      - "[DnsFree] 日本 03"
+      - "[DnsFree] 日本 04"
+      - "[DnsFree] 日本 05"
+      - "[DnsFree] 日本 06"
+      - "[DnsFree]日本 01 80免流"
       - "[DnsFree]香港 01"
-      - 香港IDC宽频|NF解锁|V2|B01
-      - Singapore 05
-      - "[DnsFree]香港 04"
-      - 香港IDC宽频|NF解锁|V2|A01
-      - Singapore 04
+      - "[DnsFree]香港 02"
       - "[DnsFree]香港 03"
-      - 香港家庭宽频|NF解锁|SS|A01
-      - HongKong 03
-      - 香港IDC宽频|NF解锁|SS|B01
-      - 美国IDC宽频|NF解锁|V2|B01
+      - "[DnsFree]香港 04"
+      - "[DnsFree]香港 05"
+      - "[DnsFree]香港 06 HKBN 解锁流媒体"
+      - "[DnsFree]香港 80免流"
+      - Singapore 01
+      - Singapore 02
+      - 美国IDC宽频|NF解锁|SS|A01
       - 美国IDC宽频|NF解锁|SS|B01
+      - 美国IDC宽频|NF解锁|V2|A01
+      - 美国IDC宽频|NF解锁|V2|B01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|SS|B01
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 日本IDC宽频|NF解锁|V2|B01
+      - 台湾家庭宽频|NF解锁|SS|A01
+      - 台湾家庭宽频|NF解锁|SS|B01
+      - 台湾家庭宽频|NF解锁|V2|A01
       - 台湾家庭宽频|NF解锁|V2|B01
       - 香港IDC宽频|NF解锁|SS|A01
-      - Singapore 02
-      - Singapore 01
-      - 美国IDC宽频|NF解锁|V2|A01
-      - 日本IDC宽频|NF解锁|V2|B01
-      - 美国IDC宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|SS|B01
-      - 新加坡IDC宽频|NF解锁|V2|B01
+      - 香港IDC宽频|NF解锁|SS|B01
+      - 香港IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|V2|B01
+      - 香港家庭宽频|NF解锁|SS|A01
       - 香港家庭宽频|NF解锁|SS|B01
-      - 台湾家庭宽频|NF解锁|V2|A01
-      - 台湾家庭宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|SS|A01
-      - 日本IDC宽频|NF解锁|V2|A01
-      - "[DnsFree]香港 06 HKBN 解锁流媒体"
       - 新加坡IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|SS|B01
+      - 新加坡IDC宽频|NF解锁|V2|A01
+      - 新加坡IDC宽频|NF解锁|V2|B01
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
