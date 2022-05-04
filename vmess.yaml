@@ -5,107 +5,63 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK04|香港|x1.0, server: colagzcm.jumpwallsocks.online, port: 30004, type: trojan, password: 50818863-ff9b-4cd0-aa47-22387929db19, skip-cert-verify: true, udp: true}
-  - {name: MO01|澳门|SS|x5.0, server: colagzcm.jumpwallsocks.online, port: 48101, type: ss, cipher: chacha20-ietf-poly1305, password: 50818863-ff9b-4cd0-aa47-22387929db19, udp: true}
-  - {name: MO01|澳门|x5.0, server: colagzcm.jumpwallsocks.online, port: 38101, type: trojan, password: 50818863-ff9b-4cd0-aa47-22387929db19, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: JP01|日本|SS|x1.0, server: colagzcm.jumpwallsocks.online, port: 42001, type: ss, cipher: chacha20-ietf-poly1305, password: 50818863-ff9b-4cd0-aa47-22387929db19, udp: true}
-  - {name: HK05|香港|x1.0, server: colagzcm.jumpwallsocks.online, port: 30005, type: trojan, password: 50818863-ff9b-4cd0-aa47-22387929db19, skip-cert-verify: true, udp: true}
-  - {name: HK03|香港|x1.0, server: colagzcm.jumpwallsocks.online, port: 30003, type: trojan, password: 50818863-ff9b-4cd0-aa47-22387929db19, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: HK02|香港|x1.0, server: colagzcm.jumpwallsocks.online, port: 30002, type: trojan, password: 50818863-ff9b-4cd0-aa47-22387929db19, skip-cert-verify: true, udp: true}
-  - {name: TW02|台湾|x1.0, server: colagzcm.jumpwallsocks.online, port: 38002, type: trojan, password: 50818863-ff9b-4cd0-aa47-22387929db19, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: JP02|日本|x1.0, server: colagzcm.jumpwallsocks.online, port: 32002, type: trojan, password: 50818863-ff9b-4cd0-aa47-22387929db19, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: SG02|新加坡|x2.0, server: colagzcm.jumpwallsocks.online, port: 33005, type: trojan, password: 50818863-ff9b-4cd0-aa47-22387929db19, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: SG01|新加坡|x2.0, server: colagzcm.jumpwallsocks.online, port: 33001, type: trojan, password: 50818863-ff9b-4cd0-aa47-22387929db19, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: JP01|日本|x1.0, server: colagzcm.jumpwallsocks.online, port: 32001, type: trojan, password: 50818863-ff9b-4cd0-aa47-22387929db19, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: JP02|日本|SS|x1.0, server: colagzcm.jumpwallsocks.online, port: 42002, type: ss, cipher: chacha20-ietf-poly1305, password: 50818863-ff9b-4cd0-aa47-22387929db19, udp: true}
-  - {name: HK01|香港|SS|x1.0, server: colagzcm.jumpwallsocks.online, port: 40001, type: ss, cipher: chacha20-ietf-poly1305, password: 50818863-ff9b-4cd0-aa47-22387929db19, udp: true}
-  - {name: TW01|台湾|x1.0, server: colagzcm.jumpwallsocks.online, port: 38001, type: trojan, password: 50818863-ff9b-4cd0-aa47-22387929db19, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: MY01|马来西亚|SS|x1.0, server: colagzcm.jumpwallsocks.online, port: 49001, type: ss, cipher: chacha20-ietf-poly1305, password: 50818863-ff9b-4cd0-aa47-22387929db19, udp: true}
-  - {name: MY01|马来西亚|x1.0, server: colagzcm.jumpwallsocks.online, port: 39001, type: trojan, password: 50818863-ff9b-4cd0-aa47-22387929db19, skip-cert-verify: true, udp: true}
-  - {name: HK02|香港|SS|x1.0, server: colagzcm.jumpwallsocks.online, port: 40002, type: ss, cipher: chacha20-ietf-poly1305, password: 50818863-ff9b-4cd0-aa47-22387929db19, udp: true}
-  - {name: TH01|泰国|SS|x1.0, server: colagzcm.jumpwallsocks.online, port: 43003, type: ss, cipher: chacha20-ietf-poly1305, password: 50818863-ff9b-4cd0-aa47-22387929db19, udp: true}
-  - {name: TH01|泰国|x1.0, server: colagzcm.jumpwallsocks.online, port: 33003, type: trojan, password: 50818863-ff9b-4cd0-aa47-22387929db19, skip-cert-verify: true, udp: true}
-  - {name: KR01|韩国|x1.0, server: colagzcm.jumpwallsocks.online, port: 34001, type: trojan, password: 50818863-ff9b-4cd0-aa47-22387929db19, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
+  - {name: 日本IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45184, type: vmess, uuid: f670b1c2-1037-46ae-aba5-d3fabc0ef261, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gz.bgp.rx.naiun.pw}}, udp: true}
+  - {name: 香港IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: f670b1c2-1037-46ae-aba5-d3fabc0ef261, udp: true}
+  - {name: 英国IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45324, type: ss, cipher: chacha20-ietf-poly1305, password: f670b1c2-1037-46ae-aba5-d3fabc0ef261, udp: true}
+  - {name: 美国IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45194, type: vmess, uuid: f670b1c2-1037-46ae-aba5-d3fabc0ef261, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gz.bgp.rx.naiun.pw}}, udp: true}
+  - {name: 美国IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: f670b1c2-1037-46ae-aba5-d3fabc0ef261, udp: true}
+  - {name: 香港家庭宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45250, type: vmess, uuid: f670b1c2-1037-46ae-aba5-d3fabc0ef261, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gz.bgp.rx.naiun.pw}}, udp: true}
+  - {name: 英国IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45413, type: vmess, uuid: f670b1c2-1037-46ae-aba5-d3fabc0ef261, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gz.bgp.rx.naiun.pw}}, udp: true}
+  - {name: 香港家庭宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: f670b1c2-1037-46ae-aba5-d3fabc0ef261, udp: true}
+  - {name: 日本IDC宽频|NF解锁|SS|A01, server: gz.bgp.rx.naiun.pw, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: f670b1c2-1037-46ae-aba5-d3fabc0ef261, udp: true}
+  - {name: 新加坡IDC宽频|NF解锁|V2|A01, server: gz.bgp.rx.naiun.pw, port: 45149, type: vmess, uuid: f670b1c2-1037-46ae-aba5-d3fabc0ef261, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gz.bgp.rx.naiun.pw}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK04|香港|x1.0
-      - MO01|澳门|SS|x5.0
-      - MO01|澳门|x5.0
-      - JP01|日本|SS|x1.0
-      - HK05|香港|x1.0
-      - HK03|香港|x1.0
-      - HK02|香港|x1.0
-      - TW02|台湾|x1.0
-      - JP02|日本|x1.0
-      - SG02|新加坡|x2.0
-      - SG01|新加坡|x2.0
-      - JP01|日本|x1.0
-      - JP02|日本|SS|x1.0
-      - HK01|香港|SS|x1.0
-      - TW01|台湾|x1.0
-      - MY01|马来西亚|SS|x1.0
-      - MY01|马来西亚|x1.0
-      - HK02|香港|SS|x1.0
-      - TH01|泰国|SS|x1.0
-      - TH01|泰国|x1.0
-      - KR01|韩国|x1.0
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 英国IDC宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|V2|A01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|V2|A01
+      - 英国IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HK04|香港|x1.0
-      - MO01|澳门|SS|x5.0
-      - MO01|澳门|x5.0
-      - JP01|日本|SS|x1.0
-      - HK05|香港|x1.0
-      - HK03|香港|x1.0
-      - HK02|香港|x1.0
-      - TW02|台湾|x1.0
-      - JP02|日本|x1.0
-      - SG02|新加坡|x2.0
-      - SG01|新加坡|x2.0
-      - JP01|日本|x1.0
-      - JP02|日本|SS|x1.0
-      - HK01|香港|SS|x1.0
-      - TW01|台湾|x1.0
-      - MY01|马来西亚|SS|x1.0
-      - MY01|马来西亚|x1.0
-      - HK02|香港|SS|x1.0
-      - TH01|泰国|SS|x1.0
-      - TH01|泰国|x1.0
-      - KR01|韩国|x1.0
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 英国IDC宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|V2|A01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|V2|A01
+      - 英国IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK04|香港|x1.0
-      - MO01|澳门|SS|x5.0
-      - MO01|澳门|x5.0
-      - JP01|日本|SS|x1.0
-      - HK05|香港|x1.0
-      - HK03|香港|x1.0
-      - HK02|香港|x1.0
-      - TW02|台湾|x1.0
-      - JP02|日本|x1.0
-      - SG02|新加坡|x2.0
-      - SG01|新加坡|x2.0
-      - JP01|日本|x1.0
-      - JP02|日本|SS|x1.0
-      - HK01|香港|SS|x1.0
-      - TW01|台湾|x1.0
-      - MY01|马来西亚|SS|x1.0
-      - MY01|马来西亚|x1.0
-      - HK02|香港|SS|x1.0
-      - TH01|泰国|SS|x1.0
-      - TH01|泰国|x1.0
-      - KR01|韩国|x1.0
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 英国IDC宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|V2|A01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|V2|A01
+      - 英国IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -124,119 +80,70 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK04|香港|x1.0
-      - MO01|澳门|SS|x5.0
-      - MO01|澳门|x5.0
-      - JP01|日本|SS|x1.0
-      - HK05|香港|x1.0
-      - HK03|香港|x1.0
-      - HK02|香港|x1.0
-      - TW02|台湾|x1.0
-      - JP02|日本|x1.0
-      - SG02|新加坡|x2.0
-      - SG01|新加坡|x2.0
-      - JP01|日本|x1.0
-      - JP02|日本|SS|x1.0
-      - HK01|香港|SS|x1.0
-      - TW01|台湾|x1.0
-      - MY01|马来西亚|SS|x1.0
-      - MY01|马来西亚|x1.0
-      - HK02|香港|SS|x1.0
-      - TH01|泰国|SS|x1.0
-      - TH01|泰国|x1.0
-      - KR01|韩国|x1.0
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 英国IDC宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|V2|A01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|V2|A01
+      - 英国IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - HK04|香港|x1.0
-      - HK05|香港|x1.0
-      - HK03|香港|x1.0
-      - HK02|香港|x1.0
-      - TW02|台湾|x1.0
-      - HK01|香港|SS|x1.0
-      - TW01|台湾|x1.0
-      - HK02|香港|SS|x1.0
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|A01
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HK04|香港|x1.0
-      - MO01|澳门|SS|x5.0
-      - MO01|澳门|x5.0
-      - JP01|日本|SS|x1.0
-      - HK05|香港|x1.0
-      - HK03|香港|x1.0
-      - HK02|香港|x1.0
-      - TW02|台湾|x1.0
-      - JP02|日本|x1.0
-      - SG02|新加坡|x2.0
-      - SG01|新加坡|x2.0
-      - JP01|日本|x1.0
-      - JP02|日本|SS|x1.0
-      - HK01|香港|SS|x1.0
-      - TW01|台湾|x1.0
-      - MY01|马来西亚|SS|x1.0
-      - MY01|马来西亚|x1.0
-      - HK02|香港|SS|x1.0
-      - TH01|泰国|SS|x1.0
-      - TH01|泰国|x1.0
-      - KR01|韩国|x1.0
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 英国IDC宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|V2|A01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|V2|A01
+      - 英国IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HK04|香港|x1.0
-      - MO01|澳门|SS|x5.0
-      - MO01|澳门|x5.0
-      - JP01|日本|SS|x1.0
-      - HK05|香港|x1.0
-      - HK03|香港|x1.0
-      - HK02|香港|x1.0
-      - TW02|台湾|x1.0
-      - JP02|日本|x1.0
-      - SG02|新加坡|x2.0
-      - SG01|新加坡|x2.0
-      - JP01|日本|x1.0
-      - JP02|日本|SS|x1.0
-      - HK01|香港|SS|x1.0
-      - TW01|台湾|x1.0
-      - MY01|马来西亚|SS|x1.0
-      - MY01|马来西亚|x1.0
-      - HK02|香港|SS|x1.0
-      - TH01|泰国|SS|x1.0
-      - TH01|泰国|x1.0
-      - KR01|韩国|x1.0
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 英国IDC宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|V2|A01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|V2|A01
+      - 英国IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK04|香港|x1.0
-      - MO01|澳门|SS|x5.0
-      - MO01|澳门|x5.0
-      - JP01|日本|SS|x1.0
-      - HK05|香港|x1.0
-      - HK03|香港|x1.0
-      - HK02|香港|x1.0
-      - TW02|台湾|x1.0
-      - JP02|日本|x1.0
-      - SG02|新加坡|x2.0
-      - SG01|新加坡|x2.0
-      - JP01|日本|x1.0
-      - JP02|日本|SS|x1.0
-      - HK01|香港|SS|x1.0
-      - TW01|台湾|x1.0
-      - MY01|马来西亚|SS|x1.0
-      - MY01|马来西亚|x1.0
-      - HK02|香港|SS|x1.0
-      - TH01|泰国|SS|x1.0
-      - TH01|泰国|x1.0
-      - KR01|韩国|x1.0
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 英国IDC宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|V2|A01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|V2|A01
+      - 英国IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -252,27 +159,16 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK04|香港|x1.0
-      - MO01|澳门|SS|x5.0
-      - MO01|澳门|x5.0
-      - JP01|日本|SS|x1.0
-      - HK05|香港|x1.0
-      - HK03|香港|x1.0
-      - HK02|香港|x1.0
-      - TW02|台湾|x1.0
-      - JP02|日本|x1.0
-      - SG02|新加坡|x2.0
-      - SG01|新加坡|x2.0
-      - JP01|日本|x1.0
-      - JP02|日本|SS|x1.0
-      - HK01|香港|SS|x1.0
-      - TW01|台湾|x1.0
-      - MY01|马来西亚|SS|x1.0
-      - MY01|马来西亚|x1.0
-      - HK02|香港|SS|x1.0
-      - TH01|泰国|SS|x1.0
-      - TH01|泰国|x1.0
-      - KR01|韩国|x1.0
+      - 日本IDC宽频|NF解锁|V2|A01
+      - 香港IDC宽频|NF解锁|SS|A01
+      - 英国IDC宽频|NF解锁|SS|A01
+      - 美国IDC宽频|NF解锁|V2|A01
+      - 美国IDC宽频|NF解锁|SS|A01
+      - 香港家庭宽频|NF解锁|V2|A01
+      - 英国IDC宽频|NF解锁|V2|A01
+      - 香港家庭宽频|NF解锁|SS|A01
+      - 日本IDC宽频|NF解锁|SS|A01
+      - 新加坡IDC宽频|NF解锁|V2|A01
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
