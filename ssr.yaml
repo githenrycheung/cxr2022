@@ -5,103 +5,191 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: lv.5-中国==>香港5, server: zh01lv5hk05.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
-  - {name: lv.5-中国==>香港9, server: zh01lv5hk09.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
-  - {name: lv.5-中国==>香港7, server: zh01lv5hk07.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
-  - {name: lv.5-中国==>香港10, server: zh01lv5hk10.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
-  - {name: lv.5-中国==>香港6, server: zh01lv5hk06.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
-  - {name: lv.5-中国==>香港8, server: zh01lv5hk08.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
-  - {name: lv.5-中国==>英国5, server: zh01lv5uk05.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
-  - {name: lv.5-中国==>英国4, server: zh01lv5uk04.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
-  - {name: lv.5-中国==>英国3, server: zh01lv5uk03.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
-  - {name: lv.5-中国==>英国1, server: zh01lv5uk01.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
-  - {name: lv.5-中国==>英国2, server: zh01lv5uk02.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
-  - {name: lv.5-中国==>德国2, server: zh01lv5ge02.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
-  - {name: lv.5-中国==>德国5, server: zh01lv5ge05.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
-  - {name: lv.5-中国==>美国1, server: zh01lv5us01.feiguayun.xyz, port: 33087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
-  - {name: lv.5-中国==>德国4, server: zh01lv5ge04.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
-  - {name: 售后tg/土豆：@tzgaowei, server: test2.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
-  - {name: lv.5-中国==>加拿大5, server: zh01lv5ca05.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
-  - {name: lv.5-中国==>加拿大3, server: zh01lv5ca03.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
-  - {name: lv.5-中国==>加拿大4, server: zh01lv5ca04.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
-  - {name: lv.5-中国==>德国3, server: zh01lv5ge03.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: 4575a105-d6be-4187-b124-4bcc5c9e3184, udp: true}
+  - {name: 80丨冰钉丨香港1Gbps丨3, server: azhk7.mayiyun.vip, port: 80, type: vmess, uuid: c7378697-b358-43cd-bd61-c34907a13dbf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: open.dingtalk.com}, udp: true}
+  - {name: 香港中转丨ss丨韩国500Mbps丨, server: azzz2.mayiyun.vip, port: 20004, type: ss, cipher: aes-256-gcm, password: c7378697-b358-43cd-bd61-c34907a13dbf, udp: true}
+  - {name: 香港环电-隧道2, server: cm.mj-cn.cyou, port: 26622, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.mj-cn.cyou}, udp: true}
+  - {name: 柬埔寨-优化2, server: cm.mj-cn.cyou, port: 16634, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.mj-cn.cyou}, udp: true}
+  - {name: 香港HKT2-优化3, server: ct.mj-cn.cyou, port: 16631, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ct.mj-cn.cyou}, udp: true}
+  - {name: 台湾-智能, server: gtm.mj-cn.cyou, port: 16616, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gtm.mj-cn.cyou}, udp: true}
+  - {name: 香港HKT2-优化2, server: cm.mj-cn.cyou, port: 16631, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.mj-cn.cyou}, udp: true}
+  - {name: 韩国-优化3, server: ct.mj-cn.cyou, port: 16619, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ct.mj-cn.cyou}, udp: true}
+  - {name: 香港HKT2-优化, server: cu.mj-cn.cyou, port: 16631, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.mj-cn.cyou}, udp: true}
+  - {name: 台湾-优化3, server: ct.mj-cn.cyou, port: 16616, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ct.mj-cn.cyou}, udp: true}
+  - {name: 韩国-智能, server: gtm.mj-cn.cyou, port: 16619, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gtm.mj-cn.cyou}, udp: true}
+  - {name: 香港中转丨ss丨美国100Mbps丨, server: azzz2.mayiyun.vip, port: 20013, type: ss, cipher: aes-256-gcm, password: c7378697-b358-43cd-bd61-c34907a13dbf, udp: true}
+  - {name: 香港中转丨ss丨英国100Mbps丨, server: azzz2.mayiyun.vip, port: 20007, type: ss, cipher: aes-256-gcm, password: c7378697-b358-43cd-bd61-c34907a13dbf, udp: true}
+  - {name: 美国-优化3, server: ct.mj-cn.cyou, port: 16632, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ct.mj-cn.cyou}, udp: true}
+  - {name: 香港-隧道2, server: cm.mj-cn.cyou, port: 26633, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.mj-cn.cyou}, udp: true}
+  - {name: 香港Az-优化2, server: cm.mj-cn.cyou, port: 16627, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.mj-cn.cyou}, udp: true}
+  - {name: 马来西亚-优化, server: cu.mj-cn.cyou, port: 26623, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.mj-cn.cyou}, udp: true}
+  - {name: 俄罗斯-优化, server: cu.mj-cn.cyou, port: 16625, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.mj-cn.cyou}, udp: true}
+  - {name: 马来西亚-优化3, server: cm.mj-cn.cyou, port: 26623, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.mj-cn.cyou}, udp: true}
+  - {name: 香港Az-优化3, server: ct.mj-cn.cyou, port: 16627, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ct.mj-cn.cyou}, udp: true}
+  - {name: 香港-优化3, server: ct.mj-cn.cyou, port: 16633, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ct.mj-cn.cyou}, udp: true}
+  - {name: 香港中转丨ss丨德国100Mbps丨, server: azzz2.mayiyun.vip, port: 20003, type: ss, cipher: aes-256-gcm, password: c7378697-b358-43cd-bd61-c34907a13dbf, udp: true}
+  - {name: 香港-隧道3, server: ct.mj-cn.cyou, port: 26633, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ct.mj-cn.cyou}, udp: true}
+  - {name: 香港-隧道, server: cu.mj-cn.cyou, port: 26633, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.mj-cn.cyou}, udp: true}
+  - {name: 新加坡-优化2, server: cm.mj-cn.cyou, port: 16618, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.mj-cn.cyou}, udp: true}
+  - {name: 香港中转丨ss丨荷兰500Mbps丨, server: azzz2.mayiyun.vip, port: 20001, type: ss, cipher: aes-256-gcm, password: c7378697-b358-43cd-bd61-c34907a13dbf, udp: true}
+  - {name: 印度-优化, server: cu.mj-cn.cyou, port: 16626, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.mj-cn.cyou}, udp: true}
+  - {name: 日本-智能, server: gtm.mj-cn.cyou, port: 16617, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gtm.mj-cn.cyou}, udp: true}
+  - {name: 新加坡-智能, server: gtm.mj-cn.cyou, port: 16618, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gtm.mj-cn.cyou}, udp: true}
+  - {name: 美国-优化, server: cu.mj-cn.cyou, port: 16632, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.mj-cn.cyou}, udp: true}
+  - {name: 流媒体 | 新加坡 | 解锁 Netflix 等20余家海外流媒体4K画质, server: netflix.fanqiangvpn.com, port: 443, type: vmess, uuid: ee8d15c0-927d-497a-ba84-65447a790f56, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /www.fanqiangvpn.com, ws-headers: {Host: netflix.fanqiangvpn.com}, udp: true}
+  - {name: 日本-优化2, server: cm.mj-cn.cyou, port: 16617, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.mj-cn.cyou}, udp: true}
+  - {name: 香港中转丨ss丨加拿大100Mbps丨, server: azzz2.mayiyun.vip, port: 20008, type: ss, cipher: aes-256-gcm, password: c7378697-b358-43cd-bd61-c34907a13dbf, udp: true}
+  - {name: 香港-优化, server: cu.mj-cn.cyou, port: 16633, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.mj-cn.cyou}, udp: true}
+  - {name: 新加坡-优化, server: cu.mj-cn.cyou, port: 16618, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.mj-cn.cyou}, udp: true}
+  - {name: 墨西哥-优化3, server: ct.mj-cn.cyou, port: 16636, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ct.mj-cn.cyou}, udp: true}
+  - {name: 英国-优化, server: cu.mj-cn.cyou, port: 23315, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.mj-cn.cyou}, udp: true}
+  - {name: 英国-优化2, server: cm.mj-cn.cyou, port: 23315, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.mj-cn.cyou}, udp: true}
+  - {name: 英国-优化3, server: ct.mj-cn.cyou, port: 23315, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ct.mj-cn.cyou}, udp: true}
+  - {name: 墨西哥-优化2, server: cm.mj-cn.cyou, port: 16636, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.mj-cn.cyou}, udp: true}
+  - {name: 阿根廷-优化1, server: cu.mj-cn.cyou, port: 16628, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.mj-cn.cyou}, udp: true}
+  - {name: 香港-限速100M-5月11日, server: free.fanqiang.eu, port: 16502, type: trojan, password: 28722b32-f7cd-4e10-8aed-f8358ca2e438, sni: free.fanqiang.eu, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - lv.5-中国==>香港5
-      - lv.5-中国==>香港9
-      - lv.5-中国==>香港7
-      - lv.5-中国==>香港10
-      - lv.5-中国==>香港6
-      - lv.5-中国==>香港8
-      - lv.5-中国==>英国5
-      - lv.5-中国==>英国4
-      - lv.5-中国==>英国3
-      - lv.5-中国==>英国1
-      - lv.5-中国==>英国2
-      - lv.5-中国==>德国2
-      - lv.5-中国==>德国5
-      - lv.5-中国==>美国1
-      - lv.5-中国==>德国4
-      - 售后tg/土豆：@tzgaowei
-      - lv.5-中国==>加拿大5
-      - lv.5-中国==>加拿大3
-      - lv.5-中国==>加拿大4
-      - lv.5-中国==>德国3
+      - 80丨冰钉丨香港1Gbps丨3
+      - 香港中转丨ss丨韩国500Mbps丨
+      - 香港环电-隧道2
+      - 柬埔寨-优化2
+      - 香港HKT2-优化3
+      - 台湾-智能
+      - 香港HKT2-优化2
+      - 韩国-优化3
+      - 香港HKT2-优化
+      - 台湾-优化3
+      - 韩国-智能
+      - 香港中转丨ss丨美国100Mbps丨
+      - 香港中转丨ss丨英国100Mbps丨
+      - 美国-优化3
+      - 香港-隧道2
+      - 香港Az-优化2
+      - 马来西亚-优化
+      - 俄罗斯-优化
+      - 马来西亚-优化3
+      - 香港Az-优化3
+      - 香港-优化3
+      - 香港中转丨ss丨德国100Mbps丨
+      - 香港-隧道3
+      - 香港-隧道
+      - 新加坡-优化2
+      - 香港中转丨ss丨荷兰500Mbps丨
+      - 印度-优化
+      - 日本-智能
+      - 新加坡-智能
+      - 美国-优化
+      - 流媒体 | 新加坡 | 解锁 Netflix 等20余家海外流媒体4K画质
+      - 日本-优化2
+      - 香港中转丨ss丨加拿大100Mbps丨
+      - 香港-优化
+      - 新加坡-优化
+      - 墨西哥-优化3
+      - 英国-优化
+      - 英国-优化2
+      - 英国-优化3
+      - 墨西哥-优化2
+      - 阿根廷-优化1
+      - 香港-限速100M-5月11日
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - lv.5-中国==>香港5
-      - lv.5-中国==>香港9
-      - lv.5-中国==>香港7
-      - lv.5-中国==>香港10
-      - lv.5-中国==>香港6
-      - lv.5-中国==>香港8
-      - lv.5-中国==>英国5
-      - lv.5-中国==>英国4
-      - lv.5-中国==>英国3
-      - lv.5-中国==>英国1
-      - lv.5-中国==>英国2
-      - lv.5-中国==>德国2
-      - lv.5-中国==>德国5
-      - lv.5-中国==>美国1
-      - lv.5-中国==>德国4
-      - 售后tg/土豆：@tzgaowei
-      - lv.5-中国==>加拿大5
-      - lv.5-中国==>加拿大3
-      - lv.5-中国==>加拿大4
-      - lv.5-中国==>德国3
+      - 80丨冰钉丨香港1Gbps丨3
+      - 香港中转丨ss丨韩国500Mbps丨
+      - 香港环电-隧道2
+      - 柬埔寨-优化2
+      - 香港HKT2-优化3
+      - 台湾-智能
+      - 香港HKT2-优化2
+      - 韩国-优化3
+      - 香港HKT2-优化
+      - 台湾-优化3
+      - 韩国-智能
+      - 香港中转丨ss丨美国100Mbps丨
+      - 香港中转丨ss丨英国100Mbps丨
+      - 美国-优化3
+      - 香港-隧道2
+      - 香港Az-优化2
+      - 马来西亚-优化
+      - 俄罗斯-优化
+      - 马来西亚-优化3
+      - 香港Az-优化3
+      - 香港-优化3
+      - 香港中转丨ss丨德国100Mbps丨
+      - 香港-隧道3
+      - 香港-隧道
+      - 新加坡-优化2
+      - 香港中转丨ss丨荷兰500Mbps丨
+      - 印度-优化
+      - 日本-智能
+      - 新加坡-智能
+      - 美国-优化
+      - 流媒体 | 新加坡 | 解锁 Netflix 等20余家海外流媒体4K画质
+      - 日本-优化2
+      - 香港中转丨ss丨加拿大100Mbps丨
+      - 香港-优化
+      - 新加坡-优化
+      - 墨西哥-优化3
+      - 英国-优化
+      - 英国-优化2
+      - 英国-优化3
+      - 墨西哥-优化2
+      - 阿根廷-优化1
+      - 香港-限速100M-5月11日
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - lv.5-中国==>香港5
-      - lv.5-中国==>香港9
-      - lv.5-中国==>香港7
-      - lv.5-中国==>香港10
-      - lv.5-中国==>香港6
-      - lv.5-中国==>香港8
-      - lv.5-中国==>英国5
-      - lv.5-中国==>英国4
-      - lv.5-中国==>英国3
-      - lv.5-中国==>英国1
-      - lv.5-中国==>英国2
-      - lv.5-中国==>德国2
-      - lv.5-中国==>德国5
-      - lv.5-中国==>美国1
-      - lv.5-中国==>德国4
-      - 售后tg/土豆：@tzgaowei
-      - lv.5-中国==>加拿大5
-      - lv.5-中国==>加拿大3
-      - lv.5-中国==>加拿大4
-      - lv.5-中国==>德国3
+      - 80丨冰钉丨香港1Gbps丨3
+      - 香港中转丨ss丨韩国500Mbps丨
+      - 香港环电-隧道2
+      - 柬埔寨-优化2
+      - 香港HKT2-优化3
+      - 台湾-智能
+      - 香港HKT2-优化2
+      - 韩国-优化3
+      - 香港HKT2-优化
+      - 台湾-优化3
+      - 韩国-智能
+      - 香港中转丨ss丨美国100Mbps丨
+      - 香港中转丨ss丨英国100Mbps丨
+      - 美国-优化3
+      - 香港-隧道2
+      - 香港Az-优化2
+      - 马来西亚-优化
+      - 俄罗斯-优化
+      - 马来西亚-优化3
+      - 香港Az-优化3
+      - 香港-优化3
+      - 香港中转丨ss丨德国100Mbps丨
+      - 香港-隧道3
+      - 香港-隧道
+      - 新加坡-优化2
+      - 香港中转丨ss丨荷兰500Mbps丨
+      - 印度-优化
+      - 日本-智能
+      - 新加坡-智能
+      - 美国-优化
+      - 流媒体 | 新加坡 | 解锁 Netflix 等20余家海外流媒体4K画质
+      - 日本-优化2
+      - 香港中转丨ss丨加拿大100Mbps丨
+      - 香港-优化
+      - 新加坡-优化
+      - 墨西哥-优化3
+      - 英国-优化
+      - 英国-优化2
+      - 英国-优化3
+      - 墨西哥-优化2
+      - 阿根廷-优化1
+      - 香港-限速100M-5月11日
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -120,113 +208,216 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - lv.5-中国==>香港5
-      - lv.5-中国==>香港9
-      - lv.5-中国==>香港7
-      - lv.5-中国==>香港10
-      - lv.5-中国==>香港6
-      - lv.5-中国==>香港8
-      - lv.5-中国==>英国5
-      - lv.5-中国==>英国4
-      - lv.5-中国==>英国3
-      - lv.5-中国==>英国1
-      - lv.5-中国==>英国2
-      - lv.5-中国==>德国2
-      - lv.5-中国==>德国5
-      - lv.5-中国==>美国1
-      - lv.5-中国==>德国4
-      - 售后tg/土豆：@tzgaowei
-      - lv.5-中国==>加拿大5
-      - lv.5-中国==>加拿大3
-      - lv.5-中国==>加拿大4
-      - lv.5-中国==>德国3
+      - 80丨冰钉丨香港1Gbps丨3
+      - 香港中转丨ss丨韩国500Mbps丨
+      - 香港环电-隧道2
+      - 柬埔寨-优化2
+      - 香港HKT2-优化3
+      - 台湾-智能
+      - 香港HKT2-优化2
+      - 韩国-优化3
+      - 香港HKT2-优化
+      - 台湾-优化3
+      - 韩国-智能
+      - 香港中转丨ss丨美国100Mbps丨
+      - 香港中转丨ss丨英国100Mbps丨
+      - 美国-优化3
+      - 香港-隧道2
+      - 香港Az-优化2
+      - 马来西亚-优化
+      - 俄罗斯-优化
+      - 马来西亚-优化3
+      - 香港Az-优化3
+      - 香港-优化3
+      - 香港中转丨ss丨德国100Mbps丨
+      - 香港-隧道3
+      - 香港-隧道
+      - 新加坡-优化2
+      - 香港中转丨ss丨荷兰500Mbps丨
+      - 印度-优化
+      - 日本-智能
+      - 新加坡-智能
+      - 美国-优化
+      - 流媒体 | 新加坡 | 解锁 Netflix 等20余家海外流媒体4K画质
+      - 日本-优化2
+      - 香港中转丨ss丨加拿大100Mbps丨
+      - 香港-优化
+      - 新加坡-优化
+      - 墨西哥-优化3
+      - 英国-优化
+      - 英国-优化2
+      - 英国-优化3
+      - 墨西哥-优化2
+      - 阿根廷-优化1
+      - 香港-限速100M-5月11日
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - lv.5-中国==>香港5
-      - lv.5-中国==>香港9
-      - lv.5-中国==>香港7
-      - lv.5-中国==>香港10
-      - lv.5-中国==>香港6
-      - lv.5-中国==>香港8
+      - 80丨冰钉丨香港1Gbps丨3
+      - 香港中转丨ss丨韩国500Mbps丨
+      - 香港环电-隧道2
+      - 香港HKT2-优化3
+      - 台湾-智能
+      - 香港HKT2-优化2
+      - 香港HKT2-优化
+      - 台湾-优化3
+      - 香港中转丨ss丨美国100Mbps丨
+      - 香港中转丨ss丨英国100Mbps丨
+      - 香港-隧道2
+      - 香港Az-优化2
+      - 香港Az-优化3
+      - 香港-优化3
+      - 香港中转丨ss丨德国100Mbps丨
+      - 香港-隧道3
+      - 香港-隧道
+      - 香港中转丨ss丨荷兰500Mbps丨
+      - 香港中转丨ss丨加拿大100Mbps丨
+      - 香港-优化
+      - 香港-限速100M-5月11日
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - lv.5-中国==>香港5
-      - lv.5-中国==>香港9
-      - lv.5-中国==>香港7
-      - lv.5-中国==>香港10
-      - lv.5-中国==>香港6
-      - lv.5-中国==>香港8
-      - lv.5-中国==>英国5
-      - lv.5-中国==>英国4
-      - lv.5-中国==>英国3
-      - lv.5-中国==>英国1
-      - lv.5-中国==>英国2
-      - lv.5-中国==>德国2
-      - lv.5-中国==>德国5
-      - lv.5-中国==>美国1
-      - lv.5-中国==>德国4
-      - 售后tg/土豆：@tzgaowei
-      - lv.5-中国==>加拿大5
-      - lv.5-中国==>加拿大3
-      - lv.5-中国==>加拿大4
-      - lv.5-中国==>德国3
+      - 80丨冰钉丨香港1Gbps丨3
+      - 香港中转丨ss丨韩国500Mbps丨
+      - 香港环电-隧道2
+      - 柬埔寨-优化2
+      - 香港HKT2-优化3
+      - 台湾-智能
+      - 香港HKT2-优化2
+      - 韩国-优化3
+      - 香港HKT2-优化
+      - 台湾-优化3
+      - 韩国-智能
+      - 香港中转丨ss丨美国100Mbps丨
+      - 香港中转丨ss丨英国100Mbps丨
+      - 美国-优化3
+      - 香港-隧道2
+      - 香港Az-优化2
+      - 马来西亚-优化
+      - 俄罗斯-优化
+      - 马来西亚-优化3
+      - 香港Az-优化3
+      - 香港-优化3
+      - 香港中转丨ss丨德国100Mbps丨
+      - 香港-隧道3
+      - 香港-隧道
+      - 新加坡-优化2
+      - 香港中转丨ss丨荷兰500Mbps丨
+      - 印度-优化
+      - 日本-智能
+      - 新加坡-智能
+      - 美国-优化
+      - 流媒体 | 新加坡 | 解锁 Netflix 等20余家海外流媒体4K画质
+      - 日本-优化2
+      - 香港中转丨ss丨加拿大100Mbps丨
+      - 香港-优化
+      - 新加坡-优化
+      - 墨西哥-优化3
+      - 英国-优化
+      - 英国-优化2
+      - 英国-优化3
+      - 墨西哥-优化2
+      - 阿根廷-优化1
+      - 香港-限速100M-5月11日
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - lv.5-中国==>香港5
-      - lv.5-中国==>香港9
-      - lv.5-中国==>香港7
-      - lv.5-中国==>香港10
-      - lv.5-中国==>香港6
-      - lv.5-中国==>香港8
-      - lv.5-中国==>英国5
-      - lv.5-中国==>英国4
-      - lv.5-中国==>英国3
-      - lv.5-中国==>英国1
-      - lv.5-中国==>英国2
-      - lv.5-中国==>德国2
-      - lv.5-中国==>德国5
-      - lv.5-中国==>美国1
-      - lv.5-中国==>德国4
-      - 售后tg/土豆：@tzgaowei
-      - lv.5-中国==>加拿大5
-      - lv.5-中国==>加拿大3
-      - lv.5-中国==>加拿大4
-      - lv.5-中国==>德国3
+      - 80丨冰钉丨香港1Gbps丨3
+      - 香港中转丨ss丨韩国500Mbps丨
+      - 香港环电-隧道2
+      - 柬埔寨-优化2
+      - 香港HKT2-优化3
+      - 台湾-智能
+      - 香港HKT2-优化2
+      - 韩国-优化3
+      - 香港HKT2-优化
+      - 台湾-优化3
+      - 韩国-智能
+      - 香港中转丨ss丨美国100Mbps丨
+      - 香港中转丨ss丨英国100Mbps丨
+      - 美国-优化3
+      - 香港-隧道2
+      - 香港Az-优化2
+      - 马来西亚-优化
+      - 俄罗斯-优化
+      - 马来西亚-优化3
+      - 香港Az-优化3
+      - 香港-优化3
+      - 香港中转丨ss丨德国100Mbps丨
+      - 香港-隧道3
+      - 香港-隧道
+      - 新加坡-优化2
+      - 香港中转丨ss丨荷兰500Mbps丨
+      - 印度-优化
+      - 日本-智能
+      - 新加坡-智能
+      - 美国-优化
+      - 流媒体 | 新加坡 | 解锁 Netflix 等20余家海外流媒体4K画质
+      - 日本-优化2
+      - 香港中转丨ss丨加拿大100Mbps丨
+      - 香港-优化
+      - 新加坡-优化
+      - 墨西哥-优化3
+      - 英国-优化
+      - 英国-优化2
+      - 英国-优化3
+      - 墨西哥-优化2
+      - 阿根廷-优化1
+      - 香港-限速100M-5月11日
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - lv.5-中国==>香港5
-      - lv.5-中国==>香港9
-      - lv.5-中国==>香港7
-      - lv.5-中国==>香港10
-      - lv.5-中国==>香港6
-      - lv.5-中国==>香港8
-      - lv.5-中国==>英国5
-      - lv.5-中国==>英国4
-      - lv.5-中国==>英国3
-      - lv.5-中国==>英国1
-      - lv.5-中国==>英国2
-      - lv.5-中国==>德国2
-      - lv.5-中国==>德国5
-      - lv.5-中国==>美国1
-      - lv.5-中国==>德国4
-      - 售后tg/土豆：@tzgaowei
-      - lv.5-中国==>加拿大5
-      - lv.5-中国==>加拿大3
-      - lv.5-中国==>加拿大4
-      - lv.5-中国==>德国3
+      - 80丨冰钉丨香港1Gbps丨3
+      - 香港中转丨ss丨韩国500Mbps丨
+      - 香港环电-隧道2
+      - 柬埔寨-优化2
+      - 香港HKT2-优化3
+      - 台湾-智能
+      - 香港HKT2-优化2
+      - 韩国-优化3
+      - 香港HKT2-优化
+      - 台湾-优化3
+      - 韩国-智能
+      - 香港中转丨ss丨美国100Mbps丨
+      - 香港中转丨ss丨英国100Mbps丨
+      - 美国-优化3
+      - 香港-隧道2
+      - 香港Az-优化2
+      - 马来西亚-优化
+      - 俄罗斯-优化
+      - 马来西亚-优化3
+      - 香港Az-优化3
+      - 香港-优化3
+      - 香港中转丨ss丨德国100Mbps丨
+      - 香港-隧道3
+      - 香港-隧道
+      - 新加坡-优化2
+      - 香港中转丨ss丨荷兰500Mbps丨
+      - 印度-优化
+      - 日本-智能
+      - 新加坡-智能
+      - 美国-优化
+      - 流媒体 | 新加坡 | 解锁 Netflix 等20余家海外流媒体4K画质
+      - 日本-优化2
+      - 香港中转丨ss丨加拿大100Mbps丨
+      - 香港-优化
+      - 新加坡-优化
+      - 墨西哥-优化3
+      - 英国-优化
+      - 英国-优化2
+      - 英国-优化3
+      - 墨西哥-优化2
+      - 阿根廷-优化1
+      - 香港-限速100M-5月11日
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -242,26 +433,48 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - lv.5-中国==>香港5
-      - lv.5-中国==>香港9
-      - lv.5-中国==>香港7
-      - lv.5-中国==>香港10
-      - lv.5-中国==>香港6
-      - lv.5-中国==>香港8
-      - lv.5-中国==>英国5
-      - lv.5-中国==>英国4
-      - lv.5-中国==>英国3
-      - lv.5-中国==>英国1
-      - lv.5-中国==>英国2
-      - lv.5-中国==>德国2
-      - lv.5-中国==>德国5
-      - lv.5-中国==>美国1
-      - lv.5-中国==>德国4
-      - 售后tg/土豆：@tzgaowei
-      - lv.5-中国==>加拿大5
-      - lv.5-中国==>加拿大3
-      - lv.5-中国==>加拿大4
-      - lv.5-中国==>德国3
+      - 80丨冰钉丨香港1Gbps丨3
+      - 香港中转丨ss丨韩国500Mbps丨
+      - 香港环电-隧道2
+      - 柬埔寨-优化2
+      - 香港HKT2-优化3
+      - 台湾-智能
+      - 香港HKT2-优化2
+      - 韩国-优化3
+      - 香港HKT2-优化
+      - 台湾-优化3
+      - 韩国-智能
+      - 香港中转丨ss丨美国100Mbps丨
+      - 香港中转丨ss丨英国100Mbps丨
+      - 美国-优化3
+      - 香港-隧道2
+      - 香港Az-优化2
+      - 马来西亚-优化
+      - 俄罗斯-优化
+      - 马来西亚-优化3
+      - 香港Az-优化3
+      - 香港-优化3
+      - 香港中转丨ss丨德国100Mbps丨
+      - 香港-隧道3
+      - 香港-隧道
+      - 新加坡-优化2
+      - 香港中转丨ss丨荷兰500Mbps丨
+      - 印度-优化
+      - 日本-智能
+      - 新加坡-智能
+      - 美国-优化
+      - 流媒体 | 新加坡 | 解锁 Netflix 等20余家海外流媒体4K画质
+      - 日本-优化2
+      - 香港中转丨ss丨加拿大100Mbps丨
+      - 香港-优化
+      - 新加坡-优化
+      - 墨西哥-优化3
+      - 英国-优化
+      - 英国-优化2
+      - 英国-优化3
+      - 墨西哥-优化2
+      - 阿根廷-优化1
+      - 香港-限速100M-5月11日
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
