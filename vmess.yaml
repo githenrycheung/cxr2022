@@ -5,123 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: SG_6148, server: 20.205.11.55, port: 60045, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.205.11.55}}, udp: true}
-  - {name: JP_4604, server: 20.205.125.236, port: 60005, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.205.125.236}}, udp: true}
-  - {name: SG_5993, server: 20.205.11.55, port: 60044, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.205.11.55}}, udp: true}
   - {name: JP_4677, server: 20.205.125.236, port: 60013, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.205.125.236}}, udp: true}
   - {name: JP_4599, server: 20.205.125.236, port: 60041, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.205.125.236}}, udp: true}
-  - {name: US_9746, server: 20.24.199.110, port: 60029, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.24.199.110}}, udp: true}
-  - {name: SG_6149, server: 20.205.11.55, port: 60042, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.205.11.55}}, udp: true}
-  - {name: SG_5986, server: 20.24.199.110, port: 60032, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SG_6125, server: 20.205.125.236, port: 20004, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.205.125.236}}, udp: true}
-  - {name: SG_6153, server: 20.205.11.55, port: 60046, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.205.11.55}}, udp: true}
-  - {name: US_9745, server: 20.24.199.110, port: 60025, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.24.199.110}}, udp: true}
-  - {name: JP_4671, server: 20.205.125.236, port: 60026, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.205.125.236}}, udp: true}
-  - {name: SG_6128, server: 20.205.125.236, port: 50019, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SG_5985, server: 20.24.199.110, port: 60036, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.24.199.110}}, udp: true}
-  - {name: JP_4676, server: 20.24.199.110, port: 60023, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SG_6147, server: 20.24.199.110, port: 39940, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.24.199.110}}, udp: true}
-  - {name: SG_6154, server: 20.24.77.204, port: 60014, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.24.77.204}}, udp: true}
-  - {name: JP_4677 2, server: 20.24.77.204, port: 60017, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.24.77.204}}, udp: true}
-  - {name: US_9826, server: 20.24.199.110, port: 60027, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.24.199.110}}, udp: true}
-  - {name: JP_4682, server: 20.24.77.204, port: 60034, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.24.77.204}}, udp: true}
-  - {name: JP_4596, server: 20.24.77.204, port: 60015, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.24.77.204}}, udp: true}
   - {name: JP_4669, server: 20.205.125.236, port: 60018, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.205.125.236}}, udp: true}
-  - {name: JP_4673, server: 20.205.125.236, port: 60012, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.205.125.236}}, udp: true}
-  - {name: JP_4680, server: 20.24.77.204, port: 60016, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.24.77.204}}, udp: true}
-  - {name: JP_4665, server: 20.24.77.204, port: 60010, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.24.77.204}}, udp: true}
+  - {name: JP_4671, server: 20.205.125.236, port: 60026, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.205.125.236}}, udp: true}
+  - {name: JP_4604, server: 20.205.125.236, port: 60005, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.205.125.236}}, udp: true}
+  - {name: SG_6154, server: 20.24.77.204, port: 60014, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.24.77.204}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SG_6148
-      - JP_4604
-      - SG_5993
       - JP_4677
       - JP_4599
-      - US_9746
-      - SG_6149
-      - SG_5986
-      - SG_6125
-      - SG_6153
-      - US_9745
-      - JP_4671
-      - SG_6128
-      - SG_5985
-      - JP_4676
-      - SG_6147
-      - SG_6154
-      - JP_4677 2
-      - US_9826
-      - JP_4682
-      - JP_4596
       - JP_4669
-      - JP_4673
-      - JP_4680
-      - JP_4665
+      - JP_4671
+      - JP_4604
+      - SG_6154
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - SG_6148
-      - JP_4604
-      - SG_5993
       - JP_4677
       - JP_4599
-      - US_9746
-      - SG_6149
-      - SG_5986
-      - SG_6125
-      - SG_6153
-      - US_9745
-      - JP_4671
-      - SG_6128
-      - SG_5985
-      - JP_4676
-      - SG_6147
-      - SG_6154
-      - JP_4677 2
-      - US_9826
-      - JP_4682
-      - JP_4596
       - JP_4669
-      - JP_4673
-      - JP_4680
-      - JP_4665
+      - JP_4671
+      - JP_4604
+      - SG_6154
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SG_6148
-      - JP_4604
-      - SG_5993
       - JP_4677
       - JP_4599
-      - US_9746
-      - SG_6149
-      - SG_5986
-      - SG_6125
-      - SG_6153
-      - US_9745
-      - JP_4671
-      - SG_6128
-      - SG_5985
-      - JP_4676
-      - SG_6147
-      - SG_6154
-      - JP_4677 2
-      - US_9826
-      - JP_4682
-      - JP_4596
       - JP_4669
-      - JP_4673
-      - JP_4680
-      - JP_4665
+      - JP_4671
+      - JP_4604
+      - SG_6154
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -140,31 +64,12 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SG_6148
-      - JP_4604
-      - SG_5993
       - JP_4677
       - JP_4599
-      - US_9746
-      - SG_6149
-      - SG_5986
-      - SG_6125
-      - SG_6153
-      - US_9745
-      - JP_4671
-      - SG_6128
-      - SG_5985
-      - JP_4676
-      - SG_6147
-      - SG_6154
-      - JP_4677 2
-      - US_9826
-      - JP_4682
-      - JP_4596
       - JP_4669
-      - JP_4673
-      - JP_4680
-      - JP_4665
+      - JP_4671
+      - JP_4604
+      - SG_6154
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -175,92 +80,35 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - SG_6148
-      - JP_4604
-      - SG_5993
       - JP_4677
       - JP_4599
-      - US_9746
-      - SG_6149
-      - SG_5986
-      - SG_6125
-      - SG_6153
-      - US_9745
-      - JP_4671
-      - SG_6128
-      - SG_5985
-      - JP_4676
-      - SG_6147
-      - SG_6154
-      - JP_4677 2
-      - US_9826
-      - JP_4682
-      - JP_4596
       - JP_4669
-      - JP_4673
-      - JP_4680
-      - JP_4665
+      - JP_4671
+      - JP_4604
+      - SG_6154
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - SG_6148
-      - JP_4604
-      - SG_5993
       - JP_4677
       - JP_4599
-      - US_9746
-      - SG_6149
-      - SG_5986
-      - SG_6125
-      - SG_6153
-      - US_9745
-      - JP_4671
-      - SG_6128
-      - SG_5985
-      - JP_4676
-      - SG_6147
-      - SG_6154
-      - JP_4677 2
-      - US_9826
-      - JP_4682
-      - JP_4596
       - JP_4669
-      - JP_4673
-      - JP_4680
-      - JP_4665
+      - JP_4671
+      - JP_4604
+      - SG_6154
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SG_6148
-      - JP_4604
-      - SG_5993
       - JP_4677
       - JP_4599
-      - US_9746
-      - SG_6149
-      - SG_5986
-      - SG_6125
-      - SG_6153
-      - US_9745
-      - JP_4671
-      - SG_6128
-      - SG_5985
-      - JP_4676
-      - SG_6147
-      - SG_6154
-      - JP_4677 2
-      - US_9826
-      - JP_4682
-      - JP_4596
       - JP_4669
-      - JP_4673
-      - JP_4680
-      - JP_4665
+      - JP_4671
+      - JP_4604
+      - SG_6154
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -276,31 +124,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SG_6148
-      - JP_4604
-      - SG_5993
       - JP_4677
       - JP_4599
-      - US_9746
-      - SG_6149
-      - SG_5986
-      - SG_6125
-      - SG_6153
-      - US_9745
-      - JP_4671
-      - SG_6128
-      - SG_5985
-      - JP_4676
-      - SG_6147
-      - SG_6154
-      - JP_4677 2
-      - US_9826
-      - JP_4682
-      - JP_4596
       - JP_4669
-      - JP_4673
-      - JP_4680
-      - JP_4665
+      - JP_4671
+      - JP_4604
+      - SG_6154
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
