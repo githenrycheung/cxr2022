@@ -5,187 +5,139 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[CT/CM]香港 08", server: cnrelaycm.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: "[CT/CM]香港 11", server: shusacu.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
   - {name: "[CT/CM]香港 05", server: shusacu.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: "[CT/CM]香港 07", server: shcu001online.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: "[CT/CM]香港 10", server: shcu001online.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: 香港2中转, server: 120.197.130.90, port: 10151, type: ss, cipher: aes-256-gcm, password: a3bdb8a9-7557-49f0-a5ff-b2ff98e36e65, udp: true}
-  - {name: "[CT/CM]香港 01", server: hzrelaycu.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: 香港3中转, server: 120.197.130.90, port: 10150, type: ss, cipher: aes-256-gcm, password: a3bdb8a9-7557-49f0-a5ff-b2ff98e36e65, udp: true}
+  - {name: "[CT/CM]香港 11", server: shusacu.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: "[CT/CM]香港 14", server: shusacu.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: "[CT/CM]香港 08", server: cnrelaycm.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
   - {name: 新加坡E, server: shallaz4.dnsflix.com, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: "[CT/CM]香港 13", server: shcu002online.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: "[CT/CM]香港 02", server: shcu002online.proconcn.xyz, port: 601, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: 台湾, server: cstwrelay.onlineto.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
   - {name: 新加坡C, server: shallaz4.dnsflix.com, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
   - {name: 新加坡D, server: shallaz4.dnsflix.com, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: "[CT/CM]香港 13", server: shcu002online.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: "[CT/CM]香港 17", server: shcu002online.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: "[CT/CM]香港 04", server: shcu001online.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: 新加坡B, server: shallaz.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: 日本 A, server: shallaz.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: 美国 优化-4, server: shusa.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: "[CT/CM]香港 14", server: shusacu.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: "[CT/CM]香港 01", server: hzrelaycu.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: tg@nfeng6-日本 多台负载均衡 中继B, server: gg02.nfeng6.pp.ua, port: 63086, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: /t.me/nfeng6}}, udp: true}
+  - {name: tg@nfeng6-日本 多台负载均衡 中继E, server: gg05.nfeng6.pp.ua, port: 63086, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: /t.me/nfeng6}}, udp: true}
   - {name: "[CT/CM]香港 16", server: shsuconpro.procncon.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: 台湾, server: cstwrelay.onlineto.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: 日本1中转, server: 120.197.130.90, port: 10160, type: ss, cipher: aes-256-gcm, password: a3bdb8a9-7557-49f0-a5ff-b2ff98e36e65, udp: true}
-  - {name: 美国 优化-1, server: shusa.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: 新加坡A, server: shallaz.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: 美国 优化-9, server: usastart.proconcn.xyz, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: 美国 优化-2, server: shusa.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: 香港1中转, server: 120.197.130.90, port: 10145, type: ss, cipher: aes-256-gcm, password: a3bdb8a9-7557-49f0-a5ff-b2ff98e36e65, udp: true}
-  - {name: "[CT/CM]香港 12", server: curelayhk.dnsflix.com, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: 新加坡1中转, server: 120.197.130.90, port: 10142, type: ss, cipher: aes-256-gcm, password: a3bdb8a9-7557-49f0-a5ff-b2ff98e36e65, udp: true}
-  - {name: 美国 优化-7, server: usastart.proconcn.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: 日本 B, server: shallaz.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: 美国 优化-8, server: usastart.proconcn.xyz, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: 日本 A, server: shallaz.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: tg@nfeng6-台湾 多台负载均衡 中继C, server: gg03.nfeng6.pp.ua, port: 63088, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: /t.me/nfeng6}}, udp: true}
   - {name: 美国 优化-10, server: usastart.proconcn.xyz, port: 569, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: 日本2中转, server: 120.197.130.90, port: 10170, type: ss, cipher: aes-256-gcm, password: a3bdb8a9-7557-49f0-a5ff-b2ff98e36e65, udp: true}
-  - {name: 韩国高速接入A, server: shallaz.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: "[CT/CM]香港 02", server: shcu002online.proconcn.xyz, port: 601, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: tg@nfeng6-新加坡 多台负载均衡 中继A, server: gg02.nfeng6.pp.ua, port: 63087, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: /t.me/nfeng6}}, udp: true}
+  - {name: 美国 优化-1, server: shusa.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: "[CT/CM]香港 12", server: curelayhk.dnsflix.com, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: tg@nfeng6-土耳其01 中继E, server: gg05.nfeng6.pp.ua, port: 63028, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: /t.me/nfeng6}}, udp: true}
+  - {name: 美国 优化-9, server: usastart.proconcn.xyz, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: 美国 优化-8, server: usastart.proconcn.xyz, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: 美国 优化-7, server: usastart.proconcn.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
   - {name: 英国 iplayer B, server: relaypro.procncon.xyz, port: 614, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: 新加坡A, server: shallaz.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: 美国 优化-4, server: shusa.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
   - {name: 英国 iplayer A, server: relaypro.procncon.xyz, port: 613, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: "[CT/CM]香港 03", server: curelayhk.dnsflix.com, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: 俄罗斯c RT, server: relaypro.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: 美国2中转, server: 120.197.130.90, port: 10169, type: ss, cipher: aes-256-gcm, password: a3bdb8a9-7557-49f0-a5ff-b2ff98e36e65, udp: true}
-  - {name: 新加坡2中转, server: 120.197.130.90, port: 10139, type: ss, cipher: aes-256-gcm, password: a3bdb8a9-7557-49f0-a5ff-b2ff98e36e65, udp: true}
+  - {name: 美国 优化-2, server: shusa.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[CT/CM]香港 08"
-      - "[CT/CM]香港 11"
       - "[CT/CM]香港 05"
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 10"
-      - 香港2中转
-      - "[CT/CM]香港 01"
-      - 香港3中转
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 14"
+      - "[CT/CM]香港 08"
       - 新加坡E
+      - "[CT/CM]香港 13"
+      - "[CT/CM]香港 02"
+      - 台湾
       - 新加坡C
       - 新加坡D
-      - "[CT/CM]香港 13"
-      - "[CT/CM]香港 17"
-      - "[CT/CM]香港 04"
-      - 新加坡B
-      - 日本 A
-      - 美国 优化-4
-      - "[CT/CM]香港 14"
+      - "[CT/CM]香港 01"
+      - tg@nfeng6-日本 多台负载均衡 中继B
+      - tg@nfeng6-日本 多台负载均衡 中继E
       - "[CT/CM]香港 16"
-      - 台湾
-      - 日本1中转
-      - 美国 优化-1
-      - 新加坡A
-      - 美国 优化-9
-      - 美国 优化-2
-      - 香港1中转
-      - "[CT/CM]香港 12"
-      - 新加坡1中转
-      - 美国 优化-7
-      - 日本 B
-      - 美国 优化-8
+      - 日本 A
+      - tg@nfeng6-台湾 多台负载均衡 中继C
       - 美国 优化-10
-      - 日本2中转
-      - 韩国高速接入A
-      - "[CT/CM]香港 02"
+      - tg@nfeng6-新加坡 多台负载均衡 中继A
+      - 美国 优化-1
+      - "[CT/CM]香港 12"
+      - tg@nfeng6-土耳其01 中继E
+      - 美国 优化-9
+      - 美国 优化-8
+      - 美国 优化-7
       - 英国 iplayer B
+      - 新加坡A
+      - 美国 优化-4
       - 英国 iplayer A
-      - "[CT/CM]香港 03"
-      - 俄罗斯c RT
-      - 美国2中转
-      - 新加坡2中转
+      - 美国 优化-2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[CT/CM]香港 08"
-      - "[CT/CM]香港 11"
       - "[CT/CM]香港 05"
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 10"
-      - 香港2中转
-      - "[CT/CM]香港 01"
-      - 香港3中转
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 14"
+      - "[CT/CM]香港 08"
       - 新加坡E
+      - "[CT/CM]香港 13"
+      - "[CT/CM]香港 02"
+      - 台湾
       - 新加坡C
       - 新加坡D
-      - "[CT/CM]香港 13"
-      - "[CT/CM]香港 17"
-      - "[CT/CM]香港 04"
-      - 新加坡B
-      - 日本 A
-      - 美国 优化-4
-      - "[CT/CM]香港 14"
+      - "[CT/CM]香港 01"
+      - tg@nfeng6-日本 多台负载均衡 中继B
+      - tg@nfeng6-日本 多台负载均衡 中继E
       - "[CT/CM]香港 16"
-      - 台湾
-      - 日本1中转
-      - 美国 优化-1
-      - 新加坡A
-      - 美国 优化-9
-      - 美国 优化-2
-      - 香港1中转
-      - "[CT/CM]香港 12"
-      - 新加坡1中转
-      - 美国 优化-7
-      - 日本 B
-      - 美国 优化-8
+      - 日本 A
+      - tg@nfeng6-台湾 多台负载均衡 中继C
       - 美国 优化-10
-      - 日本2中转
-      - 韩国高速接入A
-      - "[CT/CM]香港 02"
+      - tg@nfeng6-新加坡 多台负载均衡 中继A
+      - 美国 优化-1
+      - "[CT/CM]香港 12"
+      - tg@nfeng6-土耳其01 中继E
+      - 美国 优化-9
+      - 美国 优化-8
+      - 美国 优化-7
       - 英国 iplayer B
+      - 新加坡A
+      - 美国 优化-4
       - 英国 iplayer A
-      - "[CT/CM]香港 03"
-      - 俄罗斯c RT
-      - 美国2中转
-      - 新加坡2中转
+      - 美国 优化-2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[CT/CM]香港 08"
-      - "[CT/CM]香港 11"
       - "[CT/CM]香港 05"
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 10"
-      - 香港2中转
-      - "[CT/CM]香港 01"
-      - 香港3中转
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 14"
+      - "[CT/CM]香港 08"
       - 新加坡E
+      - "[CT/CM]香港 13"
+      - "[CT/CM]香港 02"
+      - 台湾
       - 新加坡C
       - 新加坡D
-      - "[CT/CM]香港 13"
-      - "[CT/CM]香港 17"
-      - "[CT/CM]香港 04"
-      - 新加坡B
-      - 日本 A
-      - 美国 优化-4
-      - "[CT/CM]香港 14"
+      - "[CT/CM]香港 01"
+      - tg@nfeng6-日本 多台负载均衡 中继B
+      - tg@nfeng6-日本 多台负载均衡 中继E
       - "[CT/CM]香港 16"
-      - 台湾
-      - 日本1中转
-      - 美国 优化-1
-      - 新加坡A
-      - 美国 优化-9
-      - 美国 优化-2
-      - 香港1中转
-      - "[CT/CM]香港 12"
-      - 新加坡1中转
-      - 美国 优化-7
-      - 日本 B
-      - 美国 优化-8
+      - 日本 A
+      - tg@nfeng6-台湾 多台负载均衡 中继C
       - 美国 优化-10
-      - 日本2中转
-      - 韩国高速接入A
-      - "[CT/CM]香港 02"
+      - tg@nfeng6-新加坡 多台负载均衡 中继A
+      - 美国 优化-1
+      - "[CT/CM]香港 12"
+      - tg@nfeng6-土耳其01 中继E
+      - 美国 优化-9
+      - 美国 优化-8
+      - 美国 优化-7
       - 英国 iplayer B
+      - 新加坡A
+      - 美国 优化-4
       - 英国 iplayer A
-      - "[CT/CM]香港 03"
-      - 俄罗斯c RT
-      - 美国2中转
-      - 新加坡2中转
+      - 美国 优化-2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -204,209 +156,157 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[CT/CM]香港 08"
-      - "[CT/CM]香港 11"
       - "[CT/CM]香港 05"
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 10"
-      - 香港2中转
-      - "[CT/CM]香港 01"
-      - 香港3中转
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 14"
+      - "[CT/CM]香港 08"
       - 新加坡E
+      - "[CT/CM]香港 13"
+      - "[CT/CM]香港 02"
+      - 台湾
       - 新加坡C
       - 新加坡D
-      - "[CT/CM]香港 13"
-      - "[CT/CM]香港 17"
-      - "[CT/CM]香港 04"
-      - 新加坡B
-      - 日本 A
-      - 美国 优化-4
-      - "[CT/CM]香港 14"
+      - "[CT/CM]香港 01"
+      - tg@nfeng6-日本 多台负载均衡 中继B
+      - tg@nfeng6-日本 多台负载均衡 中继E
       - "[CT/CM]香港 16"
-      - 台湾
-      - 日本1中转
-      - 美国 优化-1
-      - 新加坡A
-      - 美国 优化-9
-      - 美国 优化-2
-      - 香港1中转
-      - "[CT/CM]香港 12"
-      - 新加坡1中转
-      - 美国 优化-7
-      - 日本 B
-      - 美国 优化-8
+      - 日本 A
+      - tg@nfeng6-台湾 多台负载均衡 中继C
       - 美国 优化-10
-      - 日本2中转
-      - 韩国高速接入A
-      - "[CT/CM]香港 02"
+      - tg@nfeng6-新加坡 多台负载均衡 中继A
+      - 美国 优化-1
+      - "[CT/CM]香港 12"
+      - tg@nfeng6-土耳其01 中继E
+      - 美国 优化-9
+      - 美国 优化-8
+      - 美国 优化-7
       - 英国 iplayer B
+      - 新加坡A
+      - 美国 优化-4
       - 英国 iplayer A
-      - "[CT/CM]香港 03"
-      - 俄罗斯c RT
-      - 美国2中转
-      - 新加坡2中转
+      - 美国 优化-2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[CT/CM]香港 08"
-      - "[CT/CM]香港 11"
       - "[CT/CM]香港 05"
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 10"
-      - 香港2中转
-      - "[CT/CM]香港 01"
-      - 香港3中转
-      - "[CT/CM]香港 13"
-      - "[CT/CM]香港 17"
-      - "[CT/CM]香港 04"
+      - "[CT/CM]香港 11"
       - "[CT/CM]香港 14"
-      - "[CT/CM]香港 16"
-      - 台湾
-      - 香港1中转
-      - "[CT/CM]香港 12"
+      - "[CT/CM]香港 08"
+      - "[CT/CM]香港 13"
       - "[CT/CM]香港 02"
-      - "[CT/CM]香港 03"
+      - 台湾
+      - "[CT/CM]香港 01"
+      - tg@nfeng6-日本 多台负载均衡 中继B
+      - tg@nfeng6-日本 多台负载均衡 中继E
+      - "[CT/CM]香港 16"
+      - tg@nfeng6-台湾 多台负载均衡 中继C
+      - tg@nfeng6-新加坡 多台负载均衡 中继A
+      - "[CT/CM]香港 12"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[CT/CM]香港 08"
-      - "[CT/CM]香港 11"
       - "[CT/CM]香港 05"
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 10"
-      - 香港2中转
-      - "[CT/CM]香港 01"
-      - 香港3中转
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 14"
+      - "[CT/CM]香港 08"
       - 新加坡E
+      - "[CT/CM]香港 13"
+      - "[CT/CM]香港 02"
+      - 台湾
       - 新加坡C
       - 新加坡D
-      - "[CT/CM]香港 13"
-      - "[CT/CM]香港 17"
-      - "[CT/CM]香港 04"
-      - 新加坡B
-      - 日本 A
-      - 美国 优化-4
-      - "[CT/CM]香港 14"
+      - "[CT/CM]香港 01"
+      - tg@nfeng6-日本 多台负载均衡 中继B
+      - tg@nfeng6-日本 多台负载均衡 中继E
       - "[CT/CM]香港 16"
-      - 台湾
-      - 日本1中转
-      - 美国 优化-1
-      - 新加坡A
-      - 美国 优化-9
-      - 美国 优化-2
-      - 香港1中转
-      - "[CT/CM]香港 12"
-      - 新加坡1中转
-      - 美国 优化-7
-      - 日本 B
-      - 美国 优化-8
+      - 日本 A
+      - tg@nfeng6-台湾 多台负载均衡 中继C
       - 美国 优化-10
-      - 日本2中转
-      - 韩国高速接入A
-      - "[CT/CM]香港 02"
+      - tg@nfeng6-新加坡 多台负载均衡 中继A
+      - 美国 优化-1
+      - "[CT/CM]香港 12"
+      - tg@nfeng6-土耳其01 中继E
+      - 美国 优化-9
+      - 美国 优化-8
+      - 美国 优化-7
       - 英国 iplayer B
+      - 新加坡A
+      - 美国 优化-4
       - 英国 iplayer A
-      - "[CT/CM]香港 03"
-      - 俄罗斯c RT
-      - 美国2中转
-      - 新加坡2中转
+      - 美国 优化-2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[CT/CM]香港 08"
-      - "[CT/CM]香港 11"
       - "[CT/CM]香港 05"
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 10"
-      - 香港2中转
-      - "[CT/CM]香港 01"
-      - 香港3中转
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 14"
+      - "[CT/CM]香港 08"
       - 新加坡E
+      - "[CT/CM]香港 13"
+      - "[CT/CM]香港 02"
+      - 台湾
       - 新加坡C
       - 新加坡D
-      - "[CT/CM]香港 13"
-      - "[CT/CM]香港 17"
-      - "[CT/CM]香港 04"
-      - 新加坡B
-      - 日本 A
-      - 美国 优化-4
-      - "[CT/CM]香港 14"
+      - "[CT/CM]香港 01"
+      - tg@nfeng6-日本 多台负载均衡 中继B
+      - tg@nfeng6-日本 多台负载均衡 中继E
       - "[CT/CM]香港 16"
-      - 台湾
-      - 日本1中转
-      - 美国 优化-1
-      - 新加坡A
-      - 美国 优化-9
-      - 美国 优化-2
-      - 香港1中转
-      - "[CT/CM]香港 12"
-      - 新加坡1中转
-      - 美国 优化-7
-      - 日本 B
-      - 美国 优化-8
+      - 日本 A
+      - tg@nfeng6-台湾 多台负载均衡 中继C
       - 美国 优化-10
-      - 日本2中转
-      - 韩国高速接入A
-      - "[CT/CM]香港 02"
+      - tg@nfeng6-新加坡 多台负载均衡 中继A
+      - 美国 优化-1
+      - "[CT/CM]香港 12"
+      - tg@nfeng6-土耳其01 中继E
+      - 美国 优化-9
+      - 美国 优化-8
+      - 美国 优化-7
       - 英国 iplayer B
+      - 新加坡A
+      - 美国 优化-4
       - 英国 iplayer A
-      - "[CT/CM]香港 03"
-      - 俄罗斯c RT
-      - 美国2中转
-      - 新加坡2中转
+      - 美国 优化-2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[CT/CM]香港 08"
-      - "[CT/CM]香港 11"
       - "[CT/CM]香港 05"
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 10"
-      - 香港2中转
-      - "[CT/CM]香港 01"
-      - 香港3中转
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 14"
+      - "[CT/CM]香港 08"
       - 新加坡E
+      - "[CT/CM]香港 13"
+      - "[CT/CM]香港 02"
+      - 台湾
       - 新加坡C
       - 新加坡D
-      - "[CT/CM]香港 13"
-      - "[CT/CM]香港 17"
-      - "[CT/CM]香港 04"
-      - 新加坡B
-      - 日本 A
-      - 美国 优化-4
-      - "[CT/CM]香港 14"
+      - "[CT/CM]香港 01"
+      - tg@nfeng6-日本 多台负载均衡 中继B
+      - tg@nfeng6-日本 多台负载均衡 中继E
       - "[CT/CM]香港 16"
-      - 台湾
-      - 日本1中转
-      - 美国 优化-1
-      - 新加坡A
-      - 美国 优化-9
-      - 美国 优化-2
-      - 香港1中转
-      - "[CT/CM]香港 12"
-      - 新加坡1中转
-      - 美国 优化-7
-      - 日本 B
-      - 美国 优化-8
+      - 日本 A
+      - tg@nfeng6-台湾 多台负载均衡 中继C
       - 美国 优化-10
-      - 日本2中转
-      - 韩国高速接入A
-      - "[CT/CM]香港 02"
+      - tg@nfeng6-新加坡 多台负载均衡 中继A
+      - 美国 优化-1
+      - "[CT/CM]香港 12"
+      - tg@nfeng6-土耳其01 中继E
+      - 美国 优化-9
+      - 美国 优化-8
+      - 美国 优化-7
       - 英国 iplayer B
+      - 新加坡A
+      - 美国 优化-4
       - 英国 iplayer A
-      - "[CT/CM]香港 03"
-      - 俄罗斯c RT
-      - 美国2中转
-      - 新加坡2中转
+      - 美国 优化-2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -422,47 +322,35 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[CT/CM]香港 08"
-      - "[CT/CM]香港 11"
       - "[CT/CM]香港 05"
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 10"
-      - 香港2中转
-      - "[CT/CM]香港 01"
-      - 香港3中转
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 14"
+      - "[CT/CM]香港 08"
       - 新加坡E
+      - "[CT/CM]香港 13"
+      - "[CT/CM]香港 02"
+      - 台湾
       - 新加坡C
       - 新加坡D
-      - "[CT/CM]香港 13"
-      - "[CT/CM]香港 17"
-      - "[CT/CM]香港 04"
-      - 新加坡B
-      - 日本 A
-      - 美国 优化-4
-      - "[CT/CM]香港 14"
+      - "[CT/CM]香港 01"
+      - tg@nfeng6-日本 多台负载均衡 中继B
+      - tg@nfeng6-日本 多台负载均衡 中继E
       - "[CT/CM]香港 16"
-      - 台湾
-      - 日本1中转
-      - 美国 优化-1
-      - 新加坡A
-      - 美国 优化-9
-      - 美国 优化-2
-      - 香港1中转
-      - "[CT/CM]香港 12"
-      - 新加坡1中转
-      - 美国 优化-7
-      - 日本 B
-      - 美国 优化-8
+      - 日本 A
+      - tg@nfeng6-台湾 多台负载均衡 中继C
       - 美国 优化-10
-      - 日本2中转
-      - 韩国高速接入A
-      - "[CT/CM]香港 02"
+      - tg@nfeng6-新加坡 多台负载均衡 中继A
+      - 美国 优化-1
+      - "[CT/CM]香港 12"
+      - tg@nfeng6-土耳其01 中继E
+      - 美国 优化-9
+      - 美国 优化-8
+      - 美国 优化-7
       - 英国 iplayer B
+      - 新加坡A
+      - 美国 优化-4
       - 英国 iplayer A
-      - "[CT/CM]香港 03"
-      - 俄罗斯c RT
-      - 美国2中转
-      - 新加坡2中转
+      - 美国 优化-2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
