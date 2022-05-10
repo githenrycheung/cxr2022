@@ -5,55 +5,79 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: ️‍🌈 JK1-V3-广台01_v2ray_1_5x流量_19, server: jike-gzyd.jiserver.xyz, port: 39203, type: vmess, uuid: 221828e0-4192-342c-99fc-9a0af6e06823, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: "%7B%22host%22:%22jike1-hinet02.jiserver.xyz%22%7D"}, udp: true}
-  - {name: JK1-V4-沪新GIA01_v2ray_48, server: jike-gzyd.jiserver.xyz, port: 29851, type: vmess, uuid: 221828e0-4192-342c-99fc-9a0af6e06823, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: "%7B%22host%22:%22jike1-giasg01.jiserver.xyz%22%7D"}, udp: true}
-  - {name: JK1-V4-广港BGP01_v2ray_43, server: jike-gzyd.jiserver.xyz, port: 29705, type: vmess, uuid: 221828e0-4192-342c-99fc-9a0af6e06823, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: "%7B%22host%22:%22jike1-azhk21.jiserver.xyz%22%7D"}, udp: true}
-  - {name: ️‍🌈 JK1-V3-广新GIA01_v2ray_1_5x流量_22, server: jike-gzyd.jiserver.xyz, port: 29853, type: vmess, uuid: 221828e0-4192-342c-99fc-9a0af6e06823, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: "%7B%22host%22:%22jike1-giasg02.jiserver.xyz%22%7D"}, udp: true}
-  - {name: ️‍🌈 JK1-V3-广台02_v2ray_1_5x流量_20, server: jike-gzyd.jiserver.xyz, port: 39213, type: vmess, uuid: 221828e0-4192-342c-99fc-9a0af6e06823, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: "%7B%22host%22:%22jike1-newhinet02.jiserver.xyz%22%7D"}, udp: true}
-  - {name: 美国 | 體驗套餐 | D | 10x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |, server: qinton002.bmbai.buzz, port: 20603, type: vmess, uuid: ddd45ba3-80fb-38f9-8e8a-83d469e103fc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ssl.baiyu.click}, udp: true}
-  - {name: 美国 | 體驗套餐 | C | 10x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |, server: qinton002.bmbai.buzz, port: 20602, type: vmess, uuid: ddd45ba3-80fb-38f9-8e8a-83d469e103fc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ssl.baiyu.click}, udp: true}
-  - {name: ASB 日本 东京都 B组 Amaz数据中心 双千兆高速, server: aogb.aooc.lol, port: 443, type: vmess, uuid: bc715b62-7d0c-3702-9471-8dc1e8d96945, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /achgo, ws-headers: {Host: "%7B%22Host%22:%22aog.aooc.lol%22%7D"}, udp: true}
+  - {name: 香港|TG@p2psharing  25, server: lt.yhy520.xyz, port: 58819, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|TG@p2psharing  27, server: dx.yhy520.xyz, port: 58804, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|TG@p2psharing  28, server: lt.yhy520.xyz, port: 58802, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|TG@p2psharing  24, server: lt.yhy520.xyz, port: 58820, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: 印尼|TG@p2psharing  3, server: dx.yhy520.xyz, port: 58824, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|TG@p2psharing  23, server: dx.yhy520.xyz, port: 58801, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本|TG@p2psharing  11, server: dx.yhy520.xyz, port: 58805, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡|TG@p2psharing9, server: dx.yhy520.xyz, port: 58807, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡|TG@p2psharing10, server: lt.yhy520.xyz, port: 58808, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: 台湾|TG@p2psharing  7, server: dx.yhy520.xyz, port: 58821, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: 印尼|TG@p2psharing  4, server: lt.yhy520.xyz, port: 58829, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: 印度|TG@p2psharing  5, server: dx.yhy520.xyz, port: 58811, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: 越南|TG@p2psharing  19, server: dx.yhy520.xyz, port: 58814, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: 韩国|TG@p2psharing  22, server: lt.yhy520.xyz, port: 58810, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ️‍🌈 JK1-V3-广台01_v2ray_1_5x流量_19
-      - JK1-V4-沪新GIA01_v2ray_48
-      - JK1-V4-广港BGP01_v2ray_43
-      - ️‍🌈 JK1-V3-广新GIA01_v2ray_1_5x流量_22
-      - ️‍🌈 JK1-V3-广台02_v2ray_1_5x流量_20
-      - 美国 | 體驗套餐 | D | 10x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
-      - 美国 | 體驗套餐 | C | 10x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
-      - ASB 日本 东京都 B组 Amaz数据中心 双千兆高速
+      - 香港|TG@p2psharing  25
+      - 香港|TG@p2psharing  27
+      - 香港|TG@p2psharing  28
+      - 香港|TG@p2psharing  24
+      - 印尼|TG@p2psharing  3
+      - 香港|TG@p2psharing  23
+      - 日本|TG@p2psharing  11
+      - 新加坡|TG@p2psharing9
+      - 新加坡|TG@p2psharing10
+      - 台湾|TG@p2psharing  7
+      - 印尼|TG@p2psharing  4
+      - 印度|TG@p2psharing  5
+      - 越南|TG@p2psharing  19
+      - 韩国|TG@p2psharing  22
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - ️‍🌈 JK1-V3-广台01_v2ray_1_5x流量_19
-      - JK1-V4-沪新GIA01_v2ray_48
-      - JK1-V4-广港BGP01_v2ray_43
-      - ️‍🌈 JK1-V3-广新GIA01_v2ray_1_5x流量_22
-      - ️‍🌈 JK1-V3-广台02_v2ray_1_5x流量_20
-      - 美国 | 體驗套餐 | D | 10x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
-      - 美国 | 體驗套餐 | C | 10x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
-      - ASB 日本 东京都 B组 Amaz数据中心 双千兆高速
+      - 香港|TG@p2psharing  25
+      - 香港|TG@p2psharing  27
+      - 香港|TG@p2psharing  28
+      - 香港|TG@p2psharing  24
+      - 印尼|TG@p2psharing  3
+      - 香港|TG@p2psharing  23
+      - 日本|TG@p2psharing  11
+      - 新加坡|TG@p2psharing9
+      - 新加坡|TG@p2psharing10
+      - 台湾|TG@p2psharing  7
+      - 印尼|TG@p2psharing  4
+      - 印度|TG@p2psharing  5
+      - 越南|TG@p2psharing  19
+      - 韩国|TG@p2psharing  22
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ️‍🌈 JK1-V3-广台01_v2ray_1_5x流量_19
-      - JK1-V4-沪新GIA01_v2ray_48
-      - JK1-V4-广港BGP01_v2ray_43
-      - ️‍🌈 JK1-V3-广新GIA01_v2ray_1_5x流量_22
-      - ️‍🌈 JK1-V3-广台02_v2ray_1_5x流量_20
-      - 美国 | 體驗套餐 | D | 10x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
-      - 美国 | 體驗套餐 | C | 10x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
-      - ASB 日本 东京都 B组 Amaz数据中心 双千兆高速
+      - 香港|TG@p2psharing  25
+      - 香港|TG@p2psharing  27
+      - 香港|TG@p2psharing  28
+      - 香港|TG@p2psharing  24
+      - 印尼|TG@p2psharing  3
+      - 香港|TG@p2psharing  23
+      - 日本|TG@p2psharing  11
+      - 新加坡|TG@p2psharing9
+      - 新加坡|TG@p2psharing10
+      - 台湾|TG@p2psharing  7
+      - 印尼|TG@p2psharing  4
+      - 印度|TG@p2psharing  5
+      - 越南|TG@p2psharing  19
+      - 韩国|TG@p2psharing  22
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,62 +96,89 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ️‍🌈 JK1-V3-广台01_v2ray_1_5x流量_19
-      - JK1-V4-沪新GIA01_v2ray_48
-      - JK1-V4-广港BGP01_v2ray_43
-      - ️‍🌈 JK1-V3-广新GIA01_v2ray_1_5x流量_22
-      - ️‍🌈 JK1-V3-广台02_v2ray_1_5x流量_20
-      - 美国 | 體驗套餐 | D | 10x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
-      - 美国 | 體驗套餐 | C | 10x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
-      - ASB 日本 东京都 B组 Amaz数据中心 双千兆高速
+      - 香港|TG@p2psharing  25
+      - 香港|TG@p2psharing  27
+      - 香港|TG@p2psharing  28
+      - 香港|TG@p2psharing  24
+      - 印尼|TG@p2psharing  3
+      - 香港|TG@p2psharing  23
+      - 日本|TG@p2psharing  11
+      - 新加坡|TG@p2psharing9
+      - 新加坡|TG@p2psharing10
+      - 台湾|TG@p2psharing  7
+      - 印尼|TG@p2psharing  4
+      - 印度|TG@p2psharing  5
+      - 越南|TG@p2psharing  19
+      - 韩国|TG@p2psharing  22
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - ️‍🌈 JK1-V3-广台01_v2ray_1_5x流量_19
-      - JK1-V4-广港BGP01_v2ray_43
-      - ️‍🌈 JK1-V3-广台02_v2ray_1_5x流量_20
+      - 香港|TG@p2psharing  25
+      - 香港|TG@p2psharing  27
+      - 香港|TG@p2psharing  28
+      - 香港|TG@p2psharing  24
+      - 香港|TG@p2psharing  23
+      - 台湾|TG@p2psharing  7
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - ️‍🌈 JK1-V3-广台01_v2ray_1_5x流量_19
-      - JK1-V4-沪新GIA01_v2ray_48
-      - JK1-V4-广港BGP01_v2ray_43
-      - ️‍🌈 JK1-V3-广新GIA01_v2ray_1_5x流量_22
-      - ️‍🌈 JK1-V3-广台02_v2ray_1_5x流量_20
-      - 美国 | 體驗套餐 | D | 10x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
-      - 美国 | 體驗套餐 | C | 10x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
-      - ASB 日本 东京都 B组 Amaz数据中心 双千兆高速
+      - 香港|TG@p2psharing  25
+      - 香港|TG@p2psharing  27
+      - 香港|TG@p2psharing  28
+      - 香港|TG@p2psharing  24
+      - 印尼|TG@p2psharing  3
+      - 香港|TG@p2psharing  23
+      - 日本|TG@p2psharing  11
+      - 新加坡|TG@p2psharing9
+      - 新加坡|TG@p2psharing10
+      - 台湾|TG@p2psharing  7
+      - 印尼|TG@p2psharing  4
+      - 印度|TG@p2psharing  5
+      - 越南|TG@p2psharing  19
+      - 韩国|TG@p2psharing  22
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - ️‍🌈 JK1-V3-广台01_v2ray_1_5x流量_19
-      - JK1-V4-沪新GIA01_v2ray_48
-      - JK1-V4-广港BGP01_v2ray_43
-      - ️‍🌈 JK1-V3-广新GIA01_v2ray_1_5x流量_22
-      - ️‍🌈 JK1-V3-广台02_v2ray_1_5x流量_20
-      - 美国 | 體驗套餐 | D | 10x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
-      - 美国 | 體驗套餐 | C | 10x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
-      - ASB 日本 东京都 B组 Amaz数据中心 双千兆高速
+      - 香港|TG@p2psharing  25
+      - 香港|TG@p2psharing  27
+      - 香港|TG@p2psharing  28
+      - 香港|TG@p2psharing  24
+      - 印尼|TG@p2psharing  3
+      - 香港|TG@p2psharing  23
+      - 日本|TG@p2psharing  11
+      - 新加坡|TG@p2psharing9
+      - 新加坡|TG@p2psharing10
+      - 台湾|TG@p2psharing  7
+      - 印尼|TG@p2psharing  4
+      - 印度|TG@p2psharing  5
+      - 越南|TG@p2psharing  19
+      - 韩国|TG@p2psharing  22
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ️‍🌈 JK1-V3-广台01_v2ray_1_5x流量_19
-      - JK1-V4-沪新GIA01_v2ray_48
-      - JK1-V4-广港BGP01_v2ray_43
-      - ️‍🌈 JK1-V3-广新GIA01_v2ray_1_5x流量_22
-      - ️‍🌈 JK1-V3-广台02_v2ray_1_5x流量_20
-      - 美国 | 體驗套餐 | D | 10x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
-      - 美国 | 體驗套餐 | C | 10x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
-      - ASB 日本 东京都 B组 Amaz数据中心 双千兆高速
+      - 香港|TG@p2psharing  25
+      - 香港|TG@p2psharing  27
+      - 香港|TG@p2psharing  28
+      - 香港|TG@p2psharing  24
+      - 印尼|TG@p2psharing  3
+      - 香港|TG@p2psharing  23
+      - 日本|TG@p2psharing  11
+      - 新加坡|TG@p2psharing9
+      - 新加坡|TG@p2psharing10
+      - 台湾|TG@p2psharing  7
+      - 印尼|TG@p2psharing  4
+      - 印度|TG@p2psharing  5
+      - 越南|TG@p2psharing  19
+      - 韩国|TG@p2psharing  22
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -143,14 +194,20 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ️‍🌈 JK1-V3-广台01_v2ray_1_5x流量_19
-      - JK1-V4-沪新GIA01_v2ray_48
-      - JK1-V4-广港BGP01_v2ray_43
-      - ️‍🌈 JK1-V3-广新GIA01_v2ray_1_5x流量_22
-      - ️‍🌈 JK1-V3-广台02_v2ray_1_5x流量_20
-      - 美国 | 體驗套餐 | D | 10x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
-      - 美国 | 體驗套餐 | C | 10x | 官網 | ninihao.cc | 体验节点不等于付费节点效果 |
-      - ASB 日本 东京都 B组 Amaz数据中心 双千兆高速
+      - 香港|TG@p2psharing  25
+      - 香港|TG@p2psharing  27
+      - 香港|TG@p2psharing  28
+      - 香港|TG@p2psharing  24
+      - 印尼|TG@p2psharing  3
+      - 香港|TG@p2psharing  23
+      - 日本|TG@p2psharing  11
+      - 新加坡|TG@p2psharing9
+      - 新加坡|TG@p2psharing10
+      - 台湾|TG@p2psharing  7
+      - 印尼|TG@p2psharing  4
+      - 印度|TG@p2psharing  5
+      - 越南|TG@p2psharing  19
+      - 韩国|TG@p2psharing  22
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
