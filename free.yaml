@@ -5,79 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 越南-东莞, server: china.ct.a.898868.xyz, port: 10200, type: vmess, uuid: b64b0f9c-23df-3112-a790-d8aa068aa2fe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: china.ct.a.898868.xyz}, udp: true}
-  - {name: 新加坡-东莞, server: china.ct.a.898868.xyz, port: 23600, type: vmess, uuid: b64b0f9c-23df-3112-a790-d8aa068aa2fe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: china.ct.a.898868.xyz}, udp: true}
-  - {name: 新加坡-广港隧道|专线|1.5x, server: gy3.anoob.icu, port: 28906, type: vmess, uuid: b64b0f9c-23df-3112-a790-d8aa068aa2fe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: gy3.anoob.icu}, udp: true}
-  - {name: 台湾-沪日隧道, server: whcu.cwcsrsyby.xyz, port: 22360, type: vmess, uuid: b64b0f9c-23df-3112-a790-d8aa068aa2fe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: whcu.cwcsrsyby.xyz}, udp: true}
-  - {name: 日本-湘日隧道|专线|1.5x, server: cs.anoob.icu, port: 10500, type: vmess, uuid: b64b0f9c-23df-3112-a790-d8aa068aa2fe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: cs.anoob.icu}, udp: true}
-  - {name: 韩国-赣日隧道|专线|1.5x, server: cn2.anoob.icu, port: 11385, type: vmess, uuid: b64b0f9c-23df-3112-a790-d8aa068aa2fe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: cn2.anoob.icu}, udp: true}
-  - {name: 新加坡-湘日隧道|专线|1.5x, server: cs.anoob.icu, port: 39253, type: vmess, uuid: b64b0f9c-23df-3112-a790-d8aa068aa2fe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: cs.anoob.icu}, udp: true}
+  - {name: 韩国*vu*Mpls线路一, server: mplsgz1.ggbbba.xyz, port: 45786, type: ss, cipher: aes-256-gcm, password: gDQ8kr1HdHEK5DGU, udp: true}
+  - {name: 伦敦*vu*Mpls线路一, server: mplsgz1.ggbbba.xyz, port: 45785, type: ss, cipher: aes-256-gcm, password: gDQ8kr1HdHEK5DGU, udp: true}
+  - {name: 1-美国11节点负载均衡, server: ddns1.pdjc.cc, port: 42000, type: ss, cipher: chacha20-ietf-poly1305, password: 1f316deb-02e7-4050-acd9-abcb3942fd37, udp: true}
   - {name: tg@nfeng6-日本 多台负载均衡 中继B, server: gg02.nfeng6.pp.ua, port: 63086, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: /t.me/nfeng6}, udp: true}
-  - {name: 美国-赣日隧道|专线|1.5x, server: cn2.anoob.icu, port: 10200, type: vmess, uuid: b64b0f9c-23df-3112-a790-d8aa068aa2fe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: cn2.anoob.icu}, udp: true}
-  - {name: 香港原生-长沙, server: cs.anoob.icu, port: 53419, type: vmess, uuid: b64b0f9c-23df-3112-a790-d8aa068aa2fe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: cs.anoob.icu}, udp: true}
-  - {name: 台湾原生-赣日隧道|专线|1.5x, server: cn2.anoob.icu, port: 62361, type: vmess, uuid: b64b0f9c-23df-3112-a790-d8aa068aa2fe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: cn2.anoob.icu}, udp: true}
-  - {name: 中国|香港|NetflixC1, server: www.anlocn.ga, port: 10520, type: vmess, uuid: b64b0f9c-23df-3112-a790-d8aa068aa2fe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.anlocn.ga}, udp: true}
-  - {name: 美国-上海, server: whcu.cwcsrsyby.xyz, port: 6580, type: vmess, uuid: b64b0f9c-23df-3112-a790-d8aa068aa2fe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: whcu.cwcsrsyby.xyz}, udp: true}
-  - {name: 台湾原生-湘日隧道|专线|1.5x, server: cs.anoob.icu, port: 64766, type: vmess, uuid: b64b0f9c-23df-3112-a790-d8aa068aa2fe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: cs.anoob.icu}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 越南-东莞
-      - 新加坡-东莞
-      - 新加坡-广港隧道|专线|1.5x
-      - 台湾-沪日隧道
-      - 日本-湘日隧道|专线|1.5x
-      - 韩国-赣日隧道|专线|1.5x
-      - 新加坡-湘日隧道|专线|1.5x
+      - 韩国*vu*Mpls线路一
+      - 伦敦*vu*Mpls线路一
+      - 1-美国11节点负载均衡
       - tg@nfeng6-日本 多台负载均衡 中继B
-      - 美国-赣日隧道|专线|1.5x
-      - 香港原生-长沙
-      - 台湾原生-赣日隧道|专线|1.5x
-      - 中国|香港|NetflixC1
-      - 美国-上海
-      - 台湾原生-湘日隧道|专线|1.5x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 越南-东莞
-      - 新加坡-东莞
-      - 新加坡-广港隧道|专线|1.5x
-      - 台湾-沪日隧道
-      - 日本-湘日隧道|专线|1.5x
-      - 韩国-赣日隧道|专线|1.5x
-      - 新加坡-湘日隧道|专线|1.5x
+      - 韩国*vu*Mpls线路一
+      - 伦敦*vu*Mpls线路一
+      - 1-美国11节点负载均衡
       - tg@nfeng6-日本 多台负载均衡 中继B
-      - 美国-赣日隧道|专线|1.5x
-      - 香港原生-长沙
-      - 台湾原生-赣日隧道|专线|1.5x
-      - 中国|香港|NetflixC1
-      - 美国-上海
-      - 台湾原生-湘日隧道|专线|1.5x
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 越南-东莞
-      - 新加坡-东莞
-      - 新加坡-广港隧道|专线|1.5x
-      - 台湾-沪日隧道
-      - 日本-湘日隧道|专线|1.5x
-      - 韩国-赣日隧道|专线|1.5x
-      - 新加坡-湘日隧道|专线|1.5x
+      - 韩国*vu*Mpls线路一
+      - 伦敦*vu*Mpls线路一
+      - 1-美国11节点负载均衡
       - tg@nfeng6-日本 多台负载均衡 中继B
-      - 美国-赣日隧道|专线|1.5x
-      - 香港原生-长沙
-      - 台湾原生-赣日隧道|专线|1.5x
-      - 中国|香港|NetflixC1
-      - 美国-上海
-      - 台湾原生-湘日隧道|专线|1.5x
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -96,90 +56,44 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 越南-东莞
-      - 新加坡-东莞
-      - 新加坡-广港隧道|专线|1.5x
-      - 台湾-沪日隧道
-      - 日本-湘日隧道|专线|1.5x
-      - 韩国-赣日隧道|专线|1.5x
-      - 新加坡-湘日隧道|专线|1.5x
+      - 韩国*vu*Mpls线路一
+      - 伦敦*vu*Mpls线路一
+      - 1-美国11节点负载均衡
       - tg@nfeng6-日本 多台负载均衡 中继B
-      - 美国-赣日隧道|专线|1.5x
-      - 香港原生-长沙
-      - 台湾原生-赣日隧道|专线|1.5x
-      - 中国|香港|NetflixC1
-      - 美国-上海
-      - 台湾原生-湘日隧道|专线|1.5x
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 新加坡-广港隧道|专线|1.5x
-      - 台湾-沪日隧道
       - tg@nfeng6-日本 多台负载均衡 中继B
-      - 香港原生-长沙
-      - 台湾原生-赣日隧道|专线|1.5x
-      - 中国|香港|NetflixC1
-      - 台湾原生-湘日隧道|专线|1.5x
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 越南-东莞
-      - 新加坡-东莞
-      - 新加坡-广港隧道|专线|1.5x
-      - 台湾-沪日隧道
-      - 日本-湘日隧道|专线|1.5x
-      - 韩国-赣日隧道|专线|1.5x
-      - 新加坡-湘日隧道|专线|1.5x
+      - 韩国*vu*Mpls线路一
+      - 伦敦*vu*Mpls线路一
+      - 1-美国11节点负载均衡
       - tg@nfeng6-日本 多台负载均衡 中继B
-      - 美国-赣日隧道|专线|1.5x
-      - 香港原生-长沙
-      - 台湾原生-赣日隧道|专线|1.5x
-      - 中国|香港|NetflixC1
-      - 美国-上海
-      - 台湾原生-湘日隧道|专线|1.5x
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 越南-东莞
-      - 新加坡-东莞
-      - 新加坡-广港隧道|专线|1.5x
-      - 台湾-沪日隧道
-      - 日本-湘日隧道|专线|1.5x
-      - 韩国-赣日隧道|专线|1.5x
-      - 新加坡-湘日隧道|专线|1.5x
+      - 韩国*vu*Mpls线路一
+      - 伦敦*vu*Mpls线路一
+      - 1-美国11节点负载均衡
       - tg@nfeng6-日本 多台负载均衡 中继B
-      - 美国-赣日隧道|专线|1.5x
-      - 香港原生-长沙
-      - 台湾原生-赣日隧道|专线|1.5x
-      - 中国|香港|NetflixC1
-      - 美国-上海
-      - 台湾原生-湘日隧道|专线|1.5x
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 越南-东莞
-      - 新加坡-东莞
-      - 新加坡-广港隧道|专线|1.5x
-      - 台湾-沪日隧道
-      - 日本-湘日隧道|专线|1.5x
-      - 韩国-赣日隧道|专线|1.5x
-      - 新加坡-湘日隧道|专线|1.5x
+      - 韩国*vu*Mpls线路一
+      - 伦敦*vu*Mpls线路一
+      - 1-美国11节点负载均衡
       - tg@nfeng6-日本 多台负载均衡 中继B
-      - 美国-赣日隧道|专线|1.5x
-      - 香港原生-长沙
-      - 台湾原生-赣日隧道|专线|1.5x
-      - 中国|香港|NetflixC1
-      - 美国-上海
-      - 台湾原生-湘日隧道|专线|1.5x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -195,20 +109,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 越南-东莞
-      - 新加坡-东莞
-      - 新加坡-广港隧道|专线|1.5x
-      - 台湾-沪日隧道
-      - 日本-湘日隧道|专线|1.5x
-      - 韩国-赣日隧道|专线|1.5x
-      - 新加坡-湘日隧道|专线|1.5x
+      - 韩国*vu*Mpls线路一
+      - 伦敦*vu*Mpls线路一
+      - 1-美国11节点负载均衡
       - tg@nfeng6-日本 多台负载均衡 中继B
-      - 美国-赣日隧道|专线|1.5x
-      - 香港原生-长沙
-      - 台湾原生-赣日隧道|专线|1.5x
-      - 中国|香港|NetflixC1
-      - 美国-上海
-      - 台湾原生-湘日隧道|专线|1.5x
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
