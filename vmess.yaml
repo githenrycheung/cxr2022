@@ -5,55 +5,111 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港 B 80 免流, server: b1.158801.xyz, port: 80, type: vmess, uuid: ed8c237a-02d1-4b6c-9e3f-73dda4512e67, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: 香港 03, server: b2.158801.xyz, port: 22543, type: trojan, password: ed8c237a-02d1-4b6c-9e3f-73dda4512e67, sni: b2.158801.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 06, server: b1.158801.xyz, port: 22545, type: trojan, password: ed8c237a-02d1-4b6c-9e3f-73dda4512e67, sni: b1.158801.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 02, server: b2.158801.xyz, port: 22542, type: trojan, password: ed8c237a-02d1-4b6c-9e3f-73dda4512e67, sni: b2.158801.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 A 80 免流, server: b2.158801.xyz, port: 80, type: vmess, uuid: ed8c237a-02d1-4b6c-9e3f-73dda4512e67, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: 香港 08, server: b1.158801.xyz, port: 22547, type: trojan, password: ed8c237a-02d1-4b6c-9e3f-73dda4512e67, sni: b1.158801.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 07, server: b1.158801.xyz, port: 22546, type: trojan, password: ed8c237a-02d1-4b6c-9e3f-73dda4512e67, sni: b1.158801.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港 05, server: b1.158801.xyz, port: 22544, type: trojan, password: ed8c237a-02d1-4b6c-9e3f-73dda4512e67, sni: b1.158801.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[CT/CM]香港 06", server: hzrelaycu.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: "", udp: true}
+  - {name: "[CT/CM]香港 09", server: shcu001online.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: "", udp: true}
+  - {name: "[CT/CM]香港 08", server: cnrelaycm.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: "", udp: true}
+  - {name: "日本✈️中转 [香港Azure]", server: az1.chuangshi999.xyz, port: 64340, type: trojan, password: 830debf5-b6a5-47b7-ba6d-12d6227f3df3, sni: az1.chuangshi999.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[CT/CM]香港 11", server: shusacu.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: "", udp: true}
+  - {name: "[CT/CM]香港 05", server: shusacu.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: "", udp: true}
+  - {name: 韩国高速接入A, server: shallaz.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: "", udp: true}
+  - {name: "[CT/CM]香港 09 2", server: cnrelaycm.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: "[CT/CM]香港 02", server: shcu002online.proconcn.xyz, port: 601, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: "", udp: true}
+  - {name: "新加坡✈️中转 [湖南联通A]", server: hl1.liuliangzhuanfa.xyz, port: 26539, type: trojan, password: 830debf5-b6a5-47b7-ba6d-12d6227f3df3, sni: hl1.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
+  - {name: "香港✈️中转 [湖南联通]", server: hl1.liuliangzhuanfa.xyz, port: 45379, type: trojan, password: 830debf5-b6a5-47b7-ba6d-12d6227f3df3, sni: hl1.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[CT/CM]香港 04", server: shcu001online.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: "[CT/CM]香港 17", server: shcu002online.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: "[CT/CM]香港 13", server: shcu002online.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: "印度✈️中转  [湖南联通]", server: hl1.liuliangzhuanfa.xyz, port: 47718, type: trojan, password: 830debf5-b6a5-47b7-ba6d-12d6227f3df3, sni: hl1.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本 Japan(VIP)★, server: gz2.52168.xyz, port: 12107, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: "[CT/CM]香港 12", server: curelayhk.dnsflix.com, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: 美国 America(VIP)★, server: gz2.52168.xyz, port: 12108, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: 台湾 Taiwan★, server: gz2.52168.xyz, port: 12105, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: 德国 Germany★, server: gz2.52168.xyz, port: 12101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: 保加利亚 Bulgaria●, server: gz1.52168.xyz, port: 11102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: 美国 America●, server: gz1.52168.xyz, port: 11109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 B 80 免流
-      - 香港 03
-      - 香港 06
-      - 香港 02
-      - 香港 A 80 免流
-      - 香港 08
-      - 香港 07
-      - 香港 05
+      - "[CT/CM]香港 06"
+      - "[CT/CM]香港 09"
+      - "[CT/CM]香港 08"
+      - 日本✈️中转 [香港Azure]
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 05"
+      - 韩国高速接入A
+      - "[CT/CM]香港 09 2"
+      - "[CT/CM]香港 02"
+      - 新加坡✈️中转 [湖南联通A]
+      - 香港✈️中转 [湖南联通]
+      - "[CT/CM]香港 04"
+      - "[CT/CM]香港 17"
+      - "[CT/CM]香港 13"
+      - 印度✈️中转  [湖南联通]
+      - 日本 Japan(VIP)★
+      - "[CT/CM]香港 12"
+      - 美国 America(VIP)★
+      - 台湾 Taiwan★
+      - 德国 Germany★
+      - 保加利亚 Bulgaria●
+      - 美国 America●
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港 B 80 免流
-      - 香港 03
-      - 香港 06
-      - 香港 02
-      - 香港 A 80 免流
-      - 香港 08
-      - 香港 07
-      - 香港 05
+      - "[CT/CM]香港 06"
+      - "[CT/CM]香港 09"
+      - "[CT/CM]香港 08"
+      - 日本✈️中转 [香港Azure]
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 05"
+      - 韩国高速接入A
+      - "[CT/CM]香港 09 2"
+      - "[CT/CM]香港 02"
+      - 新加坡✈️中转 [湖南联通A]
+      - 香港✈️中转 [湖南联通]
+      - "[CT/CM]香港 04"
+      - "[CT/CM]香港 17"
+      - "[CT/CM]香港 13"
+      - 印度✈️中转  [湖南联通]
+      - 日本 Japan(VIP)★
+      - "[CT/CM]香港 12"
+      - 美国 America(VIP)★
+      - 台湾 Taiwan★
+      - 德国 Germany★
+      - 保加利亚 Bulgaria●
+      - 美国 America●
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 B 80 免流
-      - 香港 03
-      - 香港 06
-      - 香港 02
-      - 香港 A 80 免流
-      - 香港 08
-      - 香港 07
-      - 香港 05
+      - "[CT/CM]香港 06"
+      - "[CT/CM]香港 09"
+      - "[CT/CM]香港 08"
+      - 日本✈️中转 [香港Azure]
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 05"
+      - 韩国高速接入A
+      - "[CT/CM]香港 09 2"
+      - "[CT/CM]香港 02"
+      - 新加坡✈️中转 [湖南联通A]
+      - 香港✈️中转 [湖南联通]
+      - "[CT/CM]香港 04"
+      - "[CT/CM]香港 17"
+      - "[CT/CM]香港 13"
+      - 印度✈️中转  [湖南联通]
+      - 日本 Japan(VIP)★
+      - "[CT/CM]香港 12"
+      - 美国 America(VIP)★
+      - 台湾 Taiwan★
+      - 德国 Germany★
+      - 保加利亚 Bulgaria●
+      - 美国 America●
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,67 +128,129 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 B 80 免流
-      - 香港 03
-      - 香港 06
-      - 香港 02
-      - 香港 A 80 免流
-      - 香港 08
-      - 香港 07
-      - 香港 05
+      - "[CT/CM]香港 06"
+      - "[CT/CM]香港 09"
+      - "[CT/CM]香港 08"
+      - 日本✈️中转 [香港Azure]
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 05"
+      - 韩国高速接入A
+      - "[CT/CM]香港 09 2"
+      - "[CT/CM]香港 02"
+      - 新加坡✈️中转 [湖南联通A]
+      - 香港✈️中转 [湖南联通]
+      - "[CT/CM]香港 04"
+      - "[CT/CM]香港 17"
+      - "[CT/CM]香港 13"
+      - 印度✈️中转  [湖南联通]
+      - 日本 Japan(VIP)★
+      - "[CT/CM]香港 12"
+      - 美国 America(VIP)★
+      - 台湾 Taiwan★
+      - 德国 Germany★
+      - 保加利亚 Bulgaria●
+      - 美国 America●
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 B 80 免流
-      - 香港 03
-      - 香港 06
-      - 香港 02
-      - 香港 A 80 免流
-      - 香港 08
-      - 香港 07
-      - 香港 05
+      - "[CT/CM]香港 06"
+      - "[CT/CM]香港 09"
+      - "[CT/CM]香港 08"
+      - 日本✈️中转 [香港Azure]
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 05"
+      - "[CT/CM]香港 09 2"
+      - "[CT/CM]香港 02"
+      - 香港✈️中转 [湖南联通]
+      - "[CT/CM]香港 04"
+      - "[CT/CM]香港 17"
+      - "[CT/CM]香港 13"
+      - "[CT/CM]香港 12"
+      - 台湾 Taiwan★
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港 B 80 免流
-      - 香港 03
-      - 香港 06
-      - 香港 02
-      - 香港 A 80 免流
-      - 香港 08
-      - 香港 07
-      - 香港 05
+      - "[CT/CM]香港 06"
+      - "[CT/CM]香港 09"
+      - "[CT/CM]香港 08"
+      - 日本✈️中转 [香港Azure]
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 05"
+      - 韩国高速接入A
+      - "[CT/CM]香港 09 2"
+      - "[CT/CM]香港 02"
+      - 新加坡✈️中转 [湖南联通A]
+      - 香港✈️中转 [湖南联通]
+      - "[CT/CM]香港 04"
+      - "[CT/CM]香港 17"
+      - "[CT/CM]香港 13"
+      - 印度✈️中转  [湖南联通]
+      - 日本 Japan(VIP)★
+      - "[CT/CM]香港 12"
+      - 美国 America(VIP)★
+      - 台湾 Taiwan★
+      - 德国 Germany★
+      - 保加利亚 Bulgaria●
+      - 美国 America●
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港 B 80 免流
-      - 香港 03
-      - 香港 06
-      - 香港 02
-      - 香港 A 80 免流
-      - 香港 08
-      - 香港 07
-      - 香港 05
+      - "[CT/CM]香港 06"
+      - "[CT/CM]香港 09"
+      - "[CT/CM]香港 08"
+      - 日本✈️中转 [香港Azure]
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 05"
+      - 韩国高速接入A
+      - "[CT/CM]香港 09 2"
+      - "[CT/CM]香港 02"
+      - 新加坡✈️中转 [湖南联通A]
+      - 香港✈️中转 [湖南联通]
+      - "[CT/CM]香港 04"
+      - "[CT/CM]香港 17"
+      - "[CT/CM]香港 13"
+      - 印度✈️中转  [湖南联通]
+      - 日本 Japan(VIP)★
+      - "[CT/CM]香港 12"
+      - 美国 America(VIP)★
+      - 台湾 Taiwan★
+      - 德国 Germany★
+      - 保加利亚 Bulgaria●
+      - 美国 America●
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 B 80 免流
-      - 香港 03
-      - 香港 06
-      - 香港 02
-      - 香港 A 80 免流
-      - 香港 08
-      - 香港 07
-      - 香港 05
+      - "[CT/CM]香港 06"
+      - "[CT/CM]香港 09"
+      - "[CT/CM]香港 08"
+      - 日本✈️中转 [香港Azure]
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 05"
+      - 韩国高速接入A
+      - "[CT/CM]香港 09 2"
+      - "[CT/CM]香港 02"
+      - 新加坡✈️中转 [湖南联通A]
+      - 香港✈️中转 [湖南联通]
+      - "[CT/CM]香港 04"
+      - "[CT/CM]香港 17"
+      - "[CT/CM]香港 13"
+      - 印度✈️中转  [湖南联通]
+      - 日本 Japan(VIP)★
+      - "[CT/CM]香港 12"
+      - 美国 America(VIP)★
+      - 台湾 Taiwan★
+      - 德国 Germany★
+      - 保加利亚 Bulgaria●
+      - 美国 America●
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -148,14 +266,28 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 B 80 免流
-      - 香港 03
-      - 香港 06
-      - 香港 02
-      - 香港 A 80 免流
-      - 香港 08
-      - 香港 07
-      - 香港 05
+      - "[CT/CM]香港 06"
+      - "[CT/CM]香港 09"
+      - "[CT/CM]香港 08"
+      - 日本✈️中转 [香港Azure]
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 05"
+      - 韩国高速接入A
+      - "[CT/CM]香港 09 2"
+      - "[CT/CM]香港 02"
+      - 新加坡✈️中转 [湖南联通A]
+      - 香港✈️中转 [湖南联通]
+      - "[CT/CM]香港 04"
+      - "[CT/CM]香港 17"
+      - "[CT/CM]香港 13"
+      - 印度✈️中转  [湖南联通]
+      - 日本 Japan(VIP)★
+      - "[CT/CM]香港 12"
+      - 美国 America(VIP)★
+      - 台湾 Taiwan★
+      - 德国 Germany★
+      - 保加利亚 Bulgaria●
+      - 美国 America●
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
