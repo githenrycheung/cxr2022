@@ -6,15 +6,12 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: LV1 香港 - realm隧道, server: hk.youzi.win, port: 27771, type: vmess, uuid: c28c3721-09cc-485f-b4ac-69e69672f4ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: ✈️ Hongkong C, server: hk-relay-b.tencentvideos.us, port: 23034, type: trojan, password: 9febdf2f-8044-490f-b62d-06094e5bee04, sni: hk-relay-b.tencentvideos.us, skip-cert-verify: true, udp: true}
-  - {name: ✈️ Hongkong D, server: hk-relay-b.tencentvideos.us, port: 23035, type: trojan, password: 9febdf2f-8044-490f-b62d-06094e5bee04, sni: hk-relay-b.tencentvideos.us, skip-cert-verify: true, udp: true}
-  - {name: ✈️ Japan Osaka C, server: jp-relay-b.tencentvideos.us, port: 33003, type: trojan, password: 9febdf2f-8044-490f-b62d-06094e5bee04, sni: jp-relay-b.tencentvideos.us, skip-cert-verify: true, udp: true}
   - {name: LV1 日本 - realm隧道, server: jp.youzi.win, port: 27775, type: vmess, uuid: c28c3721-09cc-485f-b4ac-69e69672f4ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
   - {name: ✈️ Japan Tokyo B, server: jp-relay-a.tencentvideos.us, port: 33302, type: trojan, password: 9febdf2f-8044-490f-b62d-06094e5bee04, sni: jp-relay-a.tencentvideos.us, skip-cert-verify: true, udp: true}
+  - {name: ✈️ Japan Osaka C, server: jp-relay-b.tencentvideos.us, port: 33003, type: trojan, password: 9febdf2f-8044-490f-b62d-06094e5bee04, sni: jp-relay-b.tencentvideos.us, skip-cert-verify: true, udp: true}
   - {name: ✈️ Japan Osaka D, server: jp-relay-b.tencentvideos.us, port: 33004, type: trojan, password: 9febdf2f-8044-490f-b62d-06094e5bee04, sni: jp-relay-b.tencentvideos.us, skip-cert-verify: true, udp: true}
   - {name: SR*灾难备用 SG, server: cm.fenglingcloud.com, port: 37611, type: ss, cipher: chacha20-ietf-poly1305, password: 4560dd54-c0c4-4d25-8486-4a92e71065c9, udp: true}
   - {name: LV1 美国 - realm隧道, server: us.youzi.win, port: 27774, type: vmess, uuid: c28c3721-09cc-485f-b4ac-69e69672f4ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: ✈️ Hongkong E, server: hk-relay-b.tencentvideos.us, port: 23036, type: trojan, password: 9febdf2f-8044-490f-b62d-06094e5bee04, sni: hk-relay-b.tencentvideos.us, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -22,30 +19,24 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - LV1 香港 - realm隧道
-      - ✈️ Hongkong C
-      - ✈️ Hongkong D
-      - ✈️ Japan Osaka C
       - LV1 日本 - realm隧道
       - ✈️ Japan Tokyo B
+      - ✈️ Japan Osaka C
       - ✈️ Japan Osaka D
       - SR*灾难备用 SG
       - LV1 美国 - realm隧道
-      - ✈️ Hongkong E
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - LV1 香港 - realm隧道
-      - ✈️ Hongkong C
-      - ✈️ Hongkong D
-      - ✈️ Japan Osaka C
       - LV1 日本 - realm隧道
       - ✈️ Japan Tokyo B
+      - ✈️ Japan Osaka C
       - ✈️ Japan Osaka D
       - SR*灾难备用 SG
       - LV1 美国 - realm隧道
-      - ✈️ Hongkong E
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -53,15 +44,12 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - LV1 香港 - realm隧道
-      - ✈️ Hongkong C
-      - ✈️ Hongkong D
-      - ✈️ Japan Osaka C
       - LV1 日本 - realm隧道
       - ✈️ Japan Tokyo B
+      - ✈️ Japan Osaka C
       - ✈️ Japan Osaka D
       - SR*灾难备用 SG
       - LV1 美国 - realm隧道
-      - ✈️ Hongkong E
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -81,15 +69,12 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - LV1 香港 - realm隧道
-      - ✈️ Hongkong C
-      - ✈️ Hongkong D
-      - ✈️ Japan Osaka C
       - LV1 日本 - realm隧道
       - ✈️ Japan Tokyo B
+      - ✈️ Japan Osaka C
       - ✈️ Japan Osaka D
       - SR*灾难备用 SG
       - LV1 美国 - realm隧道
-      - ✈️ Hongkong E
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -102,30 +87,24 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - LV1 香港 - realm隧道
-      - ✈️ Hongkong C
-      - ✈️ Hongkong D
-      - ✈️ Japan Osaka C
       - LV1 日本 - realm隧道
       - ✈️ Japan Tokyo B
+      - ✈️ Japan Osaka C
       - ✈️ Japan Osaka D
       - SR*灾难备用 SG
       - LV1 美国 - realm隧道
-      - ✈️ Hongkong E
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - LV1 香港 - realm隧道
-      - ✈️ Hongkong C
-      - ✈️ Hongkong D
-      - ✈️ Japan Osaka C
       - LV1 日本 - realm隧道
       - ✈️ Japan Tokyo B
+      - ✈️ Japan Osaka C
       - ✈️ Japan Osaka D
       - SR*灾难备用 SG
       - LV1 美国 - realm隧道
-      - ✈️ Hongkong E
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -133,15 +112,12 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - LV1 香港 - realm隧道
-      - ✈️ Hongkong C
-      - ✈️ Hongkong D
-      - ✈️ Japan Osaka C
       - LV1 日本 - realm隧道
       - ✈️ Japan Tokyo B
+      - ✈️ Japan Osaka C
       - ✈️ Japan Osaka D
       - SR*灾难备用 SG
       - LV1 美国 - realm隧道
-      - ✈️ Hongkong E
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -158,15 +134,12 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - LV1 香港 - realm隧道
-      - ✈️ Hongkong C
-      - ✈️ Hongkong D
-      - ✈️ Japan Osaka C
       - LV1 日本 - realm隧道
       - ✈️ Japan Tokyo B
+      - ✈️ Japan Osaka C
       - ✈️ Japan Osaka D
       - SR*灾难备用 SG
       - LV1 美国 - realm隧道
-      - ✈️ Hongkong E
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
