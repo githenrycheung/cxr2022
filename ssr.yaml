@@ -5,51 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: LV1 韩国 - realm隧道, server: kr.youzi.win, port: 27772, type: vmess, uuid: 62fc7a9f-6fc6-4e25-bef8-a24141a1321a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: LV2 香港04流媒体解锁, server: native.youzi.win, port: 28884, type: vmess, uuid: 62fc7a9f-6fc6-4e25-bef8-a24141a1321a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: LV1 日本 - realm隧道, server: jp.youzi.win, port: 27775, type: vmess, uuid: 62fc7a9f-6fc6-4e25-bef8-a24141a1321a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: LV1 新加坡 - realm隧道, server: sg.youzi.win, port: 27773, type: vmess, uuid: 62fc7a9f-6fc6-4e25-bef8-a24141a1321a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: LV1 香港 - realm隧道, server: hk.youzi.win, port: 27771, type: vmess, uuid: 62fc7a9f-6fc6-4e25-bef8-a24141a1321a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: LV2 香港01流媒体解锁, server: native.youzi.win, port: 28881, type: vmess, uuid: 62fc7a9f-6fc6-4e25-bef8-a24141a1321a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: LV2 香港03流媒体解锁, server: native.youzi.win, port: 28883, type: vmess, uuid: 62fc7a9f-6fc6-4e25-bef8-a24141a1321a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: 香港中转丨ss丨香港500Mbps丨, server: azzz2.mayiyun.vip, port: 20002, type: ss, cipher: aes-256-gcm, password: 9e1691df-0661-4ac7-bc58-37bf08f8bb7f, udp: true}
+  - {name: ss丨香港1Gbps丨1, server: azhk1.mayiyun.vip, port: 10014, type: ss, cipher: aes-256-gcm, password: 9e1691df-0661-4ac7-bc58-37bf08f8bb7f, udp: true}
+  - {name: ss丨香港1Gbps丨2, server: azhk2.mayiyun.vip, port: 10015, type: ss, cipher: aes-256-gcm, password: 9e1691df-0661-4ac7-bc58-37bf08f8bb7f, udp: true}
+  - {name: 香港中转丨ss丨英国100Mbps丨, server: azzz2.mayiyun.vip, port: 20007, type: ss, cipher: aes-256-gcm, password: 9e1691df-0661-4ac7-bc58-37bf08f8bb7f, udp: true}
+  - {name: 香港中转丨ss丨韩国500Mbps丨, server: azzz2.mayiyun.vip, port: 20004, type: ss, cipher: aes-256-gcm, password: 9e1691df-0661-4ac7-bc58-37bf08f8bb7f, udp: true}
+  - {name: 香港中转丨ss丨台湾1Gbps丨, server: azzz2.mayiyun.vip, port: 20009, type: ss, cipher: aes-256-gcm, password: 9e1691df-0661-4ac7-bc58-37bf08f8bb7f, udp: true}
+  - {name: 香港中转丨ss丨日本1Gbps丨, server: azzz2.mayiyun.vip, port: 20021, type: ss, cipher: aes-256-gcm, password: 9e1691df-0661-4ac7-bc58-37bf08f8bb7f, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - LV1 韩国 - realm隧道
-      - LV2 香港04流媒体解锁
-      - LV1 日本 - realm隧道
-      - LV1 新加坡 - realm隧道
-      - LV1 香港 - realm隧道
-      - LV2 香港01流媒体解锁
-      - LV2 香港03流媒体解锁
+      - 香港中转丨ss丨香港500Mbps丨
+      - ss丨香港1Gbps丨1
+      - ss丨香港1Gbps丨2
+      - 香港中转丨ss丨英国100Mbps丨
+      - 香港中转丨ss丨韩国500Mbps丨
+      - 香港中转丨ss丨台湾1Gbps丨
+      - 香港中转丨ss丨日本1Gbps丨
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - LV1 韩国 - realm隧道
-      - LV2 香港04流媒体解锁
-      - LV1 日本 - realm隧道
-      - LV1 新加坡 - realm隧道
-      - LV1 香港 - realm隧道
-      - LV2 香港01流媒体解锁
-      - LV2 香港03流媒体解锁
+      - 香港中转丨ss丨香港500Mbps丨
+      - ss丨香港1Gbps丨1
+      - ss丨香港1Gbps丨2
+      - 香港中转丨ss丨英国100Mbps丨
+      - 香港中转丨ss丨韩国500Mbps丨
+      - 香港中转丨ss丨台湾1Gbps丨
+      - 香港中转丨ss丨日本1Gbps丨
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - LV1 韩国 - realm隧道
-      - LV2 香港04流媒体解锁
-      - LV1 日本 - realm隧道
-      - LV1 新加坡 - realm隧道
-      - LV1 香港 - realm隧道
-      - LV2 香港01流媒体解锁
-      - LV2 香港03流媒体解锁
+      - 香港中转丨ss丨香港500Mbps丨
+      - ss丨香港1Gbps丨1
+      - ss丨香港1Gbps丨2
+      - 香港中转丨ss丨英国100Mbps丨
+      - 香港中转丨ss丨韩国500Mbps丨
+      - 香港中转丨ss丨台湾1Gbps丨
+      - 香港中转丨ss丨日本1Gbps丨
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,59 +68,62 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - LV1 韩国 - realm隧道
-      - LV2 香港04流媒体解锁
-      - LV1 日本 - realm隧道
-      - LV1 新加坡 - realm隧道
-      - LV1 香港 - realm隧道
-      - LV2 香港01流媒体解锁
-      - LV2 香港03流媒体解锁
+      - 香港中转丨ss丨香港500Mbps丨
+      - ss丨香港1Gbps丨1
+      - ss丨香港1Gbps丨2
+      - 香港中转丨ss丨英国100Mbps丨
+      - 香港中转丨ss丨韩国500Mbps丨
+      - 香港中转丨ss丨台湾1Gbps丨
+      - 香港中转丨ss丨日本1Gbps丨
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - LV2 香港04流媒体解锁
-      - LV1 香港 - realm隧道
-      - LV2 香港01流媒体解锁
-      - LV2 香港03流媒体解锁
+      - 香港中转丨ss丨香港500Mbps丨
+      - ss丨香港1Gbps丨1
+      - ss丨香港1Gbps丨2
+      - 香港中转丨ss丨英国100Mbps丨
+      - 香港中转丨ss丨韩国500Mbps丨
+      - 香港中转丨ss丨台湾1Gbps丨
+      - 香港中转丨ss丨日本1Gbps丨
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - LV1 韩国 - realm隧道
-      - LV2 香港04流媒体解锁
-      - LV1 日本 - realm隧道
-      - LV1 新加坡 - realm隧道
-      - LV1 香港 - realm隧道
-      - LV2 香港01流媒体解锁
-      - LV2 香港03流媒体解锁
+      - 香港中转丨ss丨香港500Mbps丨
+      - ss丨香港1Gbps丨1
+      - ss丨香港1Gbps丨2
+      - 香港中转丨ss丨英国100Mbps丨
+      - 香港中转丨ss丨韩国500Mbps丨
+      - 香港中转丨ss丨台湾1Gbps丨
+      - 香港中转丨ss丨日本1Gbps丨
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - LV1 韩国 - realm隧道
-      - LV2 香港04流媒体解锁
-      - LV1 日本 - realm隧道
-      - LV1 新加坡 - realm隧道
-      - LV1 香港 - realm隧道
-      - LV2 香港01流媒体解锁
-      - LV2 香港03流媒体解锁
+      - 香港中转丨ss丨香港500Mbps丨
+      - ss丨香港1Gbps丨1
+      - ss丨香港1Gbps丨2
+      - 香港中转丨ss丨英国100Mbps丨
+      - 香港中转丨ss丨韩国500Mbps丨
+      - 香港中转丨ss丨台湾1Gbps丨
+      - 香港中转丨ss丨日本1Gbps丨
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - LV1 韩国 - realm隧道
-      - LV2 香港04流媒体解锁
-      - LV1 日本 - realm隧道
-      - LV1 新加坡 - realm隧道
-      - LV1 香港 - realm隧道
-      - LV2 香港01流媒体解锁
-      - LV2 香港03流媒体解锁
+      - 香港中转丨ss丨香港500Mbps丨
+      - ss丨香港1Gbps丨1
+      - ss丨香港1Gbps丨2
+      - 香港中转丨ss丨英国100Mbps丨
+      - 香港中转丨ss丨韩国500Mbps丨
+      - 香港中转丨ss丨台湾1Gbps丨
+      - 香港中转丨ss丨日本1Gbps丨
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -136,13 +139,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - LV1 韩国 - realm隧道
-      - LV2 香港04流媒体解锁
-      - LV1 日本 - realm隧道
-      - LV1 新加坡 - realm隧道
-      - LV1 香港 - realm隧道
-      - LV2 香港01流媒体解锁
-      - LV2 香港03流媒体解锁
+      - 香港中转丨ss丨香港500Mbps丨
+      - ss丨香港1Gbps丨1
+      - ss丨香港1Gbps丨2
+      - 香港中转丨ss丨英国100Mbps丨
+      - 香港中转丨ss丨韩国500Mbps丨
+      - 香港中转丨ss丨台湾1Gbps丨
+      - 香港中转丨ss丨日本1Gbps丨
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
