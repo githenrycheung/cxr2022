@@ -5,79 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港|TG@p2psharing  25, server: lt.yhy520.xyz, port: 58819, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港|TG@p2psharing  27, server: dx.yhy520.xyz, port: 58804, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港|TG@p2psharing  28, server: lt.yhy520.xyz, port: 58802, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港|TG@p2psharing  24, server: lt.yhy520.xyz, port: 58820, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 印尼|TG@p2psharing  3, server: dx.yhy520.xyz, port: 58824, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港|TG@p2psharing  23, server: dx.yhy520.xyz, port: 58801, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本|TG@p2psharing  11, server: dx.yhy520.xyz, port: 58805, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡|TG@p2psharing9, server: dx.yhy520.xyz, port: 58807, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡|TG@p2psharing10, server: lt.yhy520.xyz, port: 58808, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 台湾|TG@p2psharing  7, server: dx.yhy520.xyz, port: 58821, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 印尼|TG@p2psharing  4, server: lt.yhy520.xyz, port: 58829, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 印度|TG@p2psharing  5, server: dx.yhy520.xyz, port: 58811, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 越南|TG@p2psharing  19, server: dx.yhy520.xyz, port: 58814, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
-  - {name: 韩国|TG@p2psharing  22, server: lt.yhy520.xyz, port: 58810, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: LV1 韩国 - realm隧道, server: kr.youzi.win, port: 27772, type: vmess, uuid: 62fc7a9f-6fc6-4e25-bef8-a24141a1321a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: LV2 香港04流媒体解锁, server: native.youzi.win, port: 28884, type: vmess, uuid: 62fc7a9f-6fc6-4e25-bef8-a24141a1321a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: LV1 日本 - realm隧道, server: jp.youzi.win, port: 27775, type: vmess, uuid: 62fc7a9f-6fc6-4e25-bef8-a24141a1321a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: LV1 新加坡 - realm隧道, server: sg.youzi.win, port: 27773, type: vmess, uuid: 62fc7a9f-6fc6-4e25-bef8-a24141a1321a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: LV1 香港 - realm隧道, server: hk.youzi.win, port: 27771, type: vmess, uuid: 62fc7a9f-6fc6-4e25-bef8-a24141a1321a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: LV2 香港01流媒体解锁, server: native.youzi.win, port: 28881, type: vmess, uuid: 62fc7a9f-6fc6-4e25-bef8-a24141a1321a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
+  - {name: LV2 香港03流媒体解锁, server: native.youzi.win, port: 28883, type: vmess, uuid: 62fc7a9f-6fc6-4e25-bef8-a24141a1321a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港|TG@p2psharing  25
-      - 香港|TG@p2psharing  27
-      - 香港|TG@p2psharing  28
-      - 香港|TG@p2psharing  24
-      - 印尼|TG@p2psharing  3
-      - 香港|TG@p2psharing  23
-      - 日本|TG@p2psharing  11
-      - 新加坡|TG@p2psharing9
-      - 新加坡|TG@p2psharing10
-      - 台湾|TG@p2psharing  7
-      - 印尼|TG@p2psharing  4
-      - 印度|TG@p2psharing  5
-      - 越南|TG@p2psharing  19
-      - 韩国|TG@p2psharing  22
+      - LV1 韩国 - realm隧道
+      - LV2 香港04流媒体解锁
+      - LV1 日本 - realm隧道
+      - LV1 新加坡 - realm隧道
+      - LV1 香港 - realm隧道
+      - LV2 香港01流媒体解锁
+      - LV2 香港03流媒体解锁
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港|TG@p2psharing  25
-      - 香港|TG@p2psharing  27
-      - 香港|TG@p2psharing  28
-      - 香港|TG@p2psharing  24
-      - 印尼|TG@p2psharing  3
-      - 香港|TG@p2psharing  23
-      - 日本|TG@p2psharing  11
-      - 新加坡|TG@p2psharing9
-      - 新加坡|TG@p2psharing10
-      - 台湾|TG@p2psharing  7
-      - 印尼|TG@p2psharing  4
-      - 印度|TG@p2psharing  5
-      - 越南|TG@p2psharing  19
-      - 韩国|TG@p2psharing  22
+      - LV1 韩国 - realm隧道
+      - LV2 香港04流媒体解锁
+      - LV1 日本 - realm隧道
+      - LV1 新加坡 - realm隧道
+      - LV1 香港 - realm隧道
+      - LV2 香港01流媒体解锁
+      - LV2 香港03流媒体解锁
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港|TG@p2psharing  25
-      - 香港|TG@p2psharing  27
-      - 香港|TG@p2psharing  28
-      - 香港|TG@p2psharing  24
-      - 印尼|TG@p2psharing  3
-      - 香港|TG@p2psharing  23
-      - 日本|TG@p2psharing  11
-      - 新加坡|TG@p2psharing9
-      - 新加坡|TG@p2psharing10
-      - 台湾|TG@p2psharing  7
-      - 印尼|TG@p2psharing  4
-      - 印度|TG@p2psharing  5
-      - 越南|TG@p2psharing  19
-      - 韩国|TG@p2psharing  22
+      - LV1 韩国 - realm隧道
+      - LV2 香港04流媒体解锁
+      - LV1 日本 - realm隧道
+      - LV1 新加坡 - realm隧道
+      - LV1 香港 - realm隧道
+      - LV2 香港01流媒体解锁
+      - LV2 香港03流媒体解锁
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -96,89 +68,59 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港|TG@p2psharing  25
-      - 香港|TG@p2psharing  27
-      - 香港|TG@p2psharing  28
-      - 香港|TG@p2psharing  24
-      - 印尼|TG@p2psharing  3
-      - 香港|TG@p2psharing  23
-      - 日本|TG@p2psharing  11
-      - 新加坡|TG@p2psharing9
-      - 新加坡|TG@p2psharing10
-      - 台湾|TG@p2psharing  7
-      - 印尼|TG@p2psharing  4
-      - 印度|TG@p2psharing  5
-      - 越南|TG@p2psharing  19
-      - 韩国|TG@p2psharing  22
+      - LV1 韩国 - realm隧道
+      - LV2 香港04流媒体解锁
+      - LV1 日本 - realm隧道
+      - LV1 新加坡 - realm隧道
+      - LV1 香港 - realm隧道
+      - LV2 香港01流媒体解锁
+      - LV2 香港03流媒体解锁
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港|TG@p2psharing  25
-      - 香港|TG@p2psharing  27
-      - 香港|TG@p2psharing  28
-      - 香港|TG@p2psharing  24
-      - 香港|TG@p2psharing  23
-      - 台湾|TG@p2psharing  7
+      - LV2 香港04流媒体解锁
+      - LV1 香港 - realm隧道
+      - LV2 香港01流媒体解锁
+      - LV2 香港03流媒体解锁
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港|TG@p2psharing  25
-      - 香港|TG@p2psharing  27
-      - 香港|TG@p2psharing  28
-      - 香港|TG@p2psharing  24
-      - 印尼|TG@p2psharing  3
-      - 香港|TG@p2psharing  23
-      - 日本|TG@p2psharing  11
-      - 新加坡|TG@p2psharing9
-      - 新加坡|TG@p2psharing10
-      - 台湾|TG@p2psharing  7
-      - 印尼|TG@p2psharing  4
-      - 印度|TG@p2psharing  5
-      - 越南|TG@p2psharing  19
-      - 韩国|TG@p2psharing  22
+      - LV1 韩国 - realm隧道
+      - LV2 香港04流媒体解锁
+      - LV1 日本 - realm隧道
+      - LV1 新加坡 - realm隧道
+      - LV1 香港 - realm隧道
+      - LV2 香港01流媒体解锁
+      - LV2 香港03流媒体解锁
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港|TG@p2psharing  25
-      - 香港|TG@p2psharing  27
-      - 香港|TG@p2psharing  28
-      - 香港|TG@p2psharing  24
-      - 印尼|TG@p2psharing  3
-      - 香港|TG@p2psharing  23
-      - 日本|TG@p2psharing  11
-      - 新加坡|TG@p2psharing9
-      - 新加坡|TG@p2psharing10
-      - 台湾|TG@p2psharing  7
-      - 印尼|TG@p2psharing  4
-      - 印度|TG@p2psharing  5
-      - 越南|TG@p2psharing  19
-      - 韩国|TG@p2psharing  22
+      - LV1 韩国 - realm隧道
+      - LV2 香港04流媒体解锁
+      - LV1 日本 - realm隧道
+      - LV1 新加坡 - realm隧道
+      - LV1 香港 - realm隧道
+      - LV2 香港01流媒体解锁
+      - LV2 香港03流媒体解锁
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港|TG@p2psharing  25
-      - 香港|TG@p2psharing  27
-      - 香港|TG@p2psharing  28
-      - 香港|TG@p2psharing  24
-      - 印尼|TG@p2psharing  3
-      - 香港|TG@p2psharing  23
-      - 日本|TG@p2psharing  11
-      - 新加坡|TG@p2psharing9
-      - 新加坡|TG@p2psharing10
-      - 台湾|TG@p2psharing  7
-      - 印尼|TG@p2psharing  4
-      - 印度|TG@p2psharing  5
-      - 越南|TG@p2psharing  19
-      - 韩国|TG@p2psharing  22
+      - LV1 韩国 - realm隧道
+      - LV2 香港04流媒体解锁
+      - LV1 日本 - realm隧道
+      - LV1 新加坡 - realm隧道
+      - LV1 香港 - realm隧道
+      - LV2 香港01流媒体解锁
+      - LV2 香港03流媒体解锁
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -194,20 +136,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港|TG@p2psharing  25
-      - 香港|TG@p2psharing  27
-      - 香港|TG@p2psharing  28
-      - 香港|TG@p2psharing  24
-      - 印尼|TG@p2psharing  3
-      - 香港|TG@p2psharing  23
-      - 日本|TG@p2psharing  11
-      - 新加坡|TG@p2psharing9
-      - 新加坡|TG@p2psharing10
-      - 台湾|TG@p2psharing  7
-      - 印尼|TG@p2psharing  4
-      - 印度|TG@p2psharing  5
-      - 越南|TG@p2psharing  19
-      - 韩国|TG@p2psharing  22
+      - LV1 韩国 - realm隧道
+      - LV2 香港04流媒体解锁
+      - LV1 日本 - realm隧道
+      - LV1 新加坡 - realm隧道
+      - LV1 香港 - realm隧道
+      - LV2 香港01流媒体解锁
+      - LV2 香港03流媒体解锁
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
