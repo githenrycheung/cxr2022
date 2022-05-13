@@ -5,51 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港中转丨ss丨香港500Mbps丨, server: azzz2.mayiyun.vip, port: 20002, type: ss, cipher: aes-256-gcm, password: 9e1691df-0661-4ac7-bc58-37bf08f8bb7f, udp: true}
-  - {name: ss丨香港1Gbps丨1, server: azhk1.mayiyun.vip, port: 10014, type: ss, cipher: aes-256-gcm, password: 9e1691df-0661-4ac7-bc58-37bf08f8bb7f, udp: true}
-  - {name: ss丨香港1Gbps丨2, server: azhk2.mayiyun.vip, port: 10015, type: ss, cipher: aes-256-gcm, password: 9e1691df-0661-4ac7-bc58-37bf08f8bb7f, udp: true}
-  - {name: 香港中转丨ss丨英国100Mbps丨, server: azzz2.mayiyun.vip, port: 20007, type: ss, cipher: aes-256-gcm, password: 9e1691df-0661-4ac7-bc58-37bf08f8bb7f, udp: true}
-  - {name: 香港中转丨ss丨韩国500Mbps丨, server: azzz2.mayiyun.vip, port: 20004, type: ss, cipher: aes-256-gcm, password: 9e1691df-0661-4ac7-bc58-37bf08f8bb7f, udp: true}
-  - {name: 香港中转丨ss丨台湾1Gbps丨, server: azzz2.mayiyun.vip, port: 20009, type: ss, cipher: aes-256-gcm, password: 9e1691df-0661-4ac7-bc58-37bf08f8bb7f, udp: true}
-  - {name: 香港中转丨ss丨日本1Gbps丨, server: azzz2.mayiyun.vip, port: 20021, type: ss, cipher: aes-256-gcm, password: 9e1691df-0661-4ac7-bc58-37bf08f8bb7f, udp: true}
+  - {name: 菲律宾 Philippine●, server: gz1.52168.xyz, port: 11101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: 德国 Germany★, server: gz2.52168.xyz, port: 12101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: 美国 America●, server: gz1.52168.xyz, port: 11109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: 台灣 A01, server: ygzyd.sub-nthu.com, port: 35005, type: trojan, password: 87d5ee80-9dfa-4cb5-b644-062803bd0c19, sni: ygzyd.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 A01, server: ygzyd.sub-nthu.com, port: 35003, type: trojan, password: 87d5ee80-9dfa-4cb5-b644-062803bd0c19, sni: ygzyd.sub-nthu.com, skip-cert-verify: true, udp: true}
+  - {name: 香港 A01, server: ygzyd.sub-nthu.com, port: 35002, type: trojan, password: 87d5ee80-9dfa-4cb5-b644-062803bd0c19, sni: ygzyd.sub-nthu.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港中转丨ss丨香港500Mbps丨
-      - ss丨香港1Gbps丨1
-      - ss丨香港1Gbps丨2
-      - 香港中转丨ss丨英国100Mbps丨
-      - 香港中转丨ss丨韩国500Mbps丨
-      - 香港中转丨ss丨台湾1Gbps丨
-      - 香港中转丨ss丨日本1Gbps丨
+      - 菲律宾 Philippine●
+      - 德国 Germany★
+      - 美国 America●
+      - 台灣 A01
+      - 新加坡 A01
+      - 香港 A01
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港中转丨ss丨香港500Mbps丨
-      - ss丨香港1Gbps丨1
-      - ss丨香港1Gbps丨2
-      - 香港中转丨ss丨英国100Mbps丨
-      - 香港中转丨ss丨韩国500Mbps丨
-      - 香港中转丨ss丨台湾1Gbps丨
-      - 香港中转丨ss丨日本1Gbps丨
+      - 菲律宾 Philippine●
+      - 德国 Germany★
+      - 美国 America●
+      - 台灣 A01
+      - 新加坡 A01
+      - 香港 A01
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港中转丨ss丨香港500Mbps丨
-      - ss丨香港1Gbps丨1
-      - ss丨香港1Gbps丨2
-      - 香港中转丨ss丨英国100Mbps丨
-      - 香港中转丨ss丨韩国500Mbps丨
-      - 香港中转丨ss丨台湾1Gbps丨
-      - 香港中转丨ss丨日本1Gbps丨
+      - 菲律宾 Philippine●
+      - 德国 Germany★
+      - 美国 America●
+      - 台灣 A01
+      - 新加坡 A01
+      - 香港 A01
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,62 +64,53 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港中转丨ss丨香港500Mbps丨
-      - ss丨香港1Gbps丨1
-      - ss丨香港1Gbps丨2
-      - 香港中转丨ss丨英国100Mbps丨
-      - 香港中转丨ss丨韩国500Mbps丨
-      - 香港中转丨ss丨台湾1Gbps丨
-      - 香港中转丨ss丨日本1Gbps丨
+      - 菲律宾 Philippine●
+      - 德国 Germany★
+      - 美国 America●
+      - 台灣 A01
+      - 新加坡 A01
+      - 香港 A01
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港中转丨ss丨香港500Mbps丨
-      - ss丨香港1Gbps丨1
-      - ss丨香港1Gbps丨2
-      - 香港中转丨ss丨英国100Mbps丨
-      - 香港中转丨ss丨韩国500Mbps丨
-      - 香港中转丨ss丨台湾1Gbps丨
-      - 香港中转丨ss丨日本1Gbps丨
+      - 台灣 A01
+      - 香港 A01
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港中转丨ss丨香港500Mbps丨
-      - ss丨香港1Gbps丨1
-      - ss丨香港1Gbps丨2
-      - 香港中转丨ss丨英国100Mbps丨
-      - 香港中转丨ss丨韩国500Mbps丨
-      - 香港中转丨ss丨台湾1Gbps丨
-      - 香港中转丨ss丨日本1Gbps丨
+      - 菲律宾 Philippine●
+      - 德国 Germany★
+      - 美国 America●
+      - 台灣 A01
+      - 新加坡 A01
+      - 香港 A01
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港中转丨ss丨香港500Mbps丨
-      - ss丨香港1Gbps丨1
-      - ss丨香港1Gbps丨2
-      - 香港中转丨ss丨英国100Mbps丨
-      - 香港中转丨ss丨韩国500Mbps丨
-      - 香港中转丨ss丨台湾1Gbps丨
-      - 香港中转丨ss丨日本1Gbps丨
+      - 菲律宾 Philippine●
+      - 德国 Germany★
+      - 美国 America●
+      - 台灣 A01
+      - 新加坡 A01
+      - 香港 A01
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港中转丨ss丨香港500Mbps丨
-      - ss丨香港1Gbps丨1
-      - ss丨香港1Gbps丨2
-      - 香港中转丨ss丨英国100Mbps丨
-      - 香港中转丨ss丨韩国500Mbps丨
-      - 香港中转丨ss丨台湾1Gbps丨
-      - 香港中转丨ss丨日本1Gbps丨
+      - 菲律宾 Philippine●
+      - 德国 Germany★
+      - 美国 America●
+      - 台灣 A01
+      - 新加坡 A01
+      - 香港 A01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -139,13 +126,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港中转丨ss丨香港500Mbps丨
-      - ss丨香港1Gbps丨1
-      - ss丨香港1Gbps丨2
-      - 香港中转丨ss丨英国100Mbps丨
-      - 香港中转丨ss丨韩国500Mbps丨
-      - 香港中转丨ss丨台湾1Gbps丨
-      - 香港中转丨ss丨日本1Gbps丨
+      - 菲律宾 Philippine●
+      - 德国 Germany★
+      - 美国 America●
+      - 台灣 A01
+      - 新加坡 A01
+      - 香港 A01
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
